@@ -1,1 +1,5 @@
-# ReactApp
+# info                      
+reactapp.ir template 
+
+# todo 
+ - [ ] 

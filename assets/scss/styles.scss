@@ -4,9 +4,15 @@
 //? base
 @import 'base';
 
-//? Components
+//? theme
+//@import 'themes/theme'
 
-//? Layouts
+//? Components
+@import 'components';
+
+//? layout
+@import 'layout';
 
 //? pages
+@import 'pages';
 
