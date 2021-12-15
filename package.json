@@ -1,0 +1,26 @@
+{
+  "name": "luxury-hotels",
+  "version": "1.0.0",
+  "description": "first project luxury hotels",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevsHashtag/luxury-hotels.git"
+  },
+  "keywords": [
+    "luxury-hotels"
+  ],
+  "author": "DevsHashtag, Kamal Heydari, saeideh ansari, sajjad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevsHashtag/luxury-hotels/issues"
+  },
+  "homepage": "https://github.com/DevsHashtag/luxury-hotels#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
