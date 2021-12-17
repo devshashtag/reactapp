@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font awsome -->
@@ -14,12 +14,32 @@
     />
 
     <!-- styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>reactapp home</title>
   </head>
 
   <body>
+    <!-- topbar -->
+    <div class="top-bar">
+      <ul class="top-bar__links">
+        <li><a class="top-bar__link" href="./pages/about-us.html">درباره ما</a></li>
+        <li><a class="top-bar__link" href="./pages/contact.html">تماس با ما</a></li>
+      </ul>
+      <div class="top-bar__icons">
+        <div class="top-bar__icon top-bar__search">
+          <i class="fa fa-search" aria-hidden="true"></i> 
+        </div>
+        <div class="top-bar__icon top-bar__bag">
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i> 
+        </div>
+        <div class="top-bar__icon top-bar__perm">
+          <i class="fas fa-user" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <!-- end of topbar -->
+
     <!-- scrips -->
     <script type="module" src="./assets/js/index.js"></script>
   </body>
