@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch assets/scss/styles.scss assets/css/styles.css"
+    "sass": "sass --watch assets/scss/styles.scss assets/css/styles.css",
+    "server": "python -m http.server -b 127.0.0.1 3000"
   },
   "repository": {
     "type": "git",
