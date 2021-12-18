@@ -1,0 +1,20 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "reactapp.ir template",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/styles.scss ./assets/css/styles.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevsHashtag/ReactApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevsHashtag/ReactApp/issues"
+  },
+  "homepage": "https://github.com/DevsHashtag/ReactApp#readme"
+}
