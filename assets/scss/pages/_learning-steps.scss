@@ -17,10 +17,12 @@
     }
 
     &__content {
+        width: 100%;
         max-width: 1200px;
         padding: 1.2rem;
 
         &__paragraph {
+            
             text-align: justify;
             color: $gray-clr-2;
             font-size: 1.3rem;
