@@ -1,9 +1,9 @@
 .main {
     width: 100%;
-    @include flexcenter($fdir: column);
+    @include flex($fdir: column);
 
     &__header {
-        @include flexcenter();
+        @include flex();
         width: 100%;
         height: 293px;
         background-image: url("../images/banners/learning_step.jpeg");
@@ -42,7 +42,7 @@
             
             &__header {
                 padding-right: 2rem;
-                @include flexcenter($jc: flex-start);
+                @include flex($jcnt: flex-start);
                 margin-bottom: 30px;
 
                 &__icon {
@@ -65,8 +65,8 @@
             }
             &__box {
                 
-                @include flexcenter($fdir: column-reverse, $ai: flex-end);
-                @include breakpoint(md){@include flexcenter($fdir: row, $jc: space-between)};
+                @include flex($fdir: column-reverse, $aitem: flex-end);
+                @include breakpoint(md){@include flex($fdir: row, $jcnt: space-between)};
                
 
                 &__linkItem {

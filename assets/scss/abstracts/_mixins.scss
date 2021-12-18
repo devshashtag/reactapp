@@ -46,15 +46,6 @@
     width: $width;
     height: $height;
 }
-@mixin flexcenter($fdir:row,$jc:center,$ai:center){
-  display:  flex;
-  flex-direction: $fdir;
-  justify-content: $jc;
-  align-items: $ai;
-
-}
-
-
 // @include flex($fdir: row,$jcnt: center,$aitem:center, $gap:0);
 @mixin flex($fdir: row,$jcnt: center,$aitem:center, $gap:0) {
   display:flex;
