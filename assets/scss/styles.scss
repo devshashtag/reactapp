@@ -2,17 +2,16 @@
 @charset 'UTF-8';
 
 //? base
-@import 'base';
+@import "base";
 
 //? theme
 //@import 'themes/theme'
 
 //? Components
-@import 'components';
+@import "components";
 
 //? layout
-@import 'layout';
+@import "layout";
 
 //? pages
-@import 'pages';
-
+@import "pages";
