@@ -121,10 +121,11 @@ while true; do
   echo -ne "${text_color}Enter html path (example: ${light_green}folder_name/file_name.html${text_color}):\n${magenta}${html_folder}${input_color}"
   read html_path
   html_path=$(sed 's|^[\/]||' <<< "$html_path")
-  display_sep
   grep -q "\.html *$" <<< "$html_path" && {
+    display_sep
     break
   } || echo -e "${error_color}path file should end with .html extension!"
+  display_sep
 done
 
 # find directory path of file
