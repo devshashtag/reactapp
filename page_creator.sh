@@ -171,10 +171,10 @@ html_template "$html_file" "$html_name"
 echo -e "${text_color}scss path: ${path_color}${scss_path}"
 echo -e "${text_color}js   path: ${path_color}${js_path}"
 display_sep
-echo -e "${text_color}for ${path_color}scss ${text_color}file    Enter ${sep_color}1"
-echo -e "${text_color}for ${path_color}js   ${text_color}file    Enter ${sep_color}2"
-echo -e "${text_color}for ${path_color}both ${text_color}files   Enter ${sep_color}3"
-echo -e "${text_color}for exit Enter ${path_color}other numbers"
+echo -e "${text_color}for ${path_color}scss ${text_color}file Enter ${sep_color}1"
+echo -e "${text_color}for ${path_color}js   ${text_color}file Enter ${sep_color}2"
+echo -e "${text_color}for ${path_color}both ${text_color}file Enter ${sep_color}3"
+echo -e "${text_color}for ${path_color}exit ${text_color}Enter ${sep_color}other numbers"
 echo -ne "${text_color}Enter a number:${input_color} "
 read -n1 answer
 echo ;display_sep
