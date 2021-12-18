@@ -1,0 +1,97 @@
+.main{
+    width: 100%;
+    @include flexcenter($fdir:column);
+
+    &__header{
+        @include flexcenter();
+        width: 100%;
+        height: 293px;
+        background-image: url('../images/learning-steps/learning_step.jpeg');
+        background-size: cover;
+        background-position:center;
+        margin-bottom: 10px;
+
+        &__title{
+            color:$white-clr;
+            
+        }
+    }
+
+    &__content{
+        max-width: 1200px;
+        padding: 1.2rem;
+
+        &__paragraph{
+            text-align: justify;
+            color: $gray-clr-2;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+
+            &::first-letter{
+                padding-right: 1rem;
+            }
+        }
+
+        &__learning-step{
+
+            &__header{
+                padding-right: 2rem;
+                @include flexcenter($jc:flex-start);
+                margin-bottom: 30px;
+                
+                &__icon{
+                    color:$gray-clr-1;
+                    font-size: 2.5rem;
+                }
+                &__title{
+                    margin-right: 10px;
+                    color:$gray-clr-1;
+                    font-size: 1.2rem;
+                    
+                }
+                &__border{
+                    margin-right: 10px;
+                    height: 1px;
+                    flex-grow: 1;
+                    background-color: $gray-clr-5;
+                }
+            }
+            &__box{
+                @include flexcenter($fdir:row-reverse , $jc:space-between);
+
+                &__linkItem{
+                    width: 22%;
+                    margin:2px;
+                }
+            }
+            
+        }
+        
+        @media only screen and (max-width:768px){
+            max-width: 510px;  
+
+            &__paragraph{
+                font-size: 1.3rem;
+            }
+           
+
+            &__learning-step{
+                &__header{
+                
+                &__title{
+                    font-size: 1.4rem;
+                }
+            }
+                &__box{
+                    @include flexcenter($fdir:column,$ai:flex-end);
+                    
+                    &__linkItem{
+                        width: 310px;
+                    }
+                }
+            }
+          };
+    }
+
+    
+}
