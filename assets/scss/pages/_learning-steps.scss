@@ -70,7 +70,6 @@
                 &__linkItem {
                     width: 310px;
                     margin: 2px;
-                    
                     @include breakpoint(md){width:200px;height: 400px;}
                     @include breakpoint(lg){width: 277.5px;height: 188px;}
                     

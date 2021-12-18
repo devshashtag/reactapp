@@ -5,6 +5,8 @@
     position: relative;
     height: 100%;
     width: 100%;
+    pointer-events: none;
+    
    
     
    
@@ -19,6 +21,7 @@
         z-index: 10;
     }
     &__background{
+
         opacity: .3;
         position: absolute;
        object-fit: contain;
