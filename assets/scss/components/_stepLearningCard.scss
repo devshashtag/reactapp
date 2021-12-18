@@ -1,0 +1,31 @@
+.stepLearningCard{
+    background:$react-gr-clr;
+    padding: 30px 20px;
+    color:$white-clr;
+    position: relative;
+    height: 100%;
+    width: 100%;
+   
+    
+   
+
+
+    &__title{
+        margin-bottom: 25px;
+        z-index: 1;
+    }
+    &__paragraph{
+
+        z-index: 10;
+    }
+    &__background{
+        opacity: .3;
+        position: absolute;
+       object-fit: contain;
+        width: 60%;
+        height: 60%;
+        left: 10%;
+        bottom: 10%;
+        
+    }
+}
