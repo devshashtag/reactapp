@@ -4,13 +4,21 @@
   "description": "reactapp.ir template",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "sass": "sass --watch ./assets/scss/styles.scss ./assets/css/styles.css "
+=======
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/scss/styles.scss assets/css/styles.css"
+>>>>>>> 4d9b54d41b257dbe21d7f8454b375a4cfcf91b7c
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevsHashtag/ReactApp.git"
   },
+<<<<<<< HEAD
   "keywords": [],
+=======
+>>>>>>> 4d9b54d41b257dbe21d7f8454b375a4cfcf91b7c
   "author": "",
   "license": "ISC",
   "bugs": {
