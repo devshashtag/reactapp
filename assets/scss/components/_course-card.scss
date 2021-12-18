@@ -35,49 +35,53 @@
     font-size: 1.3rem;
     color: $gray-clr-2;
   }
-}
-.header {
-  &__icon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    i {
-      display: inline-block;
-      font-size: 2rem;
-      background: $gray-clr-4;
-      color: $white-clr;
-      padding: 1.5rem;
-      border-radius: 50%;
-      transition: 0.3s;
-      &:hover {
-        background: $white-clr;
-        color: $gray-clr-4;
+  .header {
+    &__icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      i {
+        display: inline-block;
+        font-size: 2rem;
+        background: $gray-clr-4;
+        color: $white-clr;
+        padding: 1.5rem;
+        border-radius: 50%;
+        transition: 0.3s;
+        @include breakpoint("lg") {
+          font-size: 1rem;
+          padding: 1.2rem;
+        }
+        &:hover {
+          background: $white-clr;
+          color: $gray-clr-4;
+        }
       }
     }
   }
-}
-
-.content {
-  &__title {
-    color: $gray-clr-2;
-    transition: 0.3s;
-    &:hover {
-      color: $gray-clr-1;
+  
+  .content {
+    &__title {
+      color: $gray-clr-2;
+      transition: 0.3s;
+      &:hover {
+        color: $gray-clr-1;
+      }
+    }
+    &__author {
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
     }
   }
-  &__author {
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-  }
-}
-
-.footer {
-  &__student,
-  &__price {
-    font-family: Tanha;
+  
+  .footer {
+    &__student,
+    &__price {
+      font-family: Tanha;
+    }
   }
 }
