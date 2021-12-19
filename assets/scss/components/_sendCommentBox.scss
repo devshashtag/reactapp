@@ -1,12 +1,12 @@
 .sendCommentBox {
-  max-width: 510px;
+  width: 100%;
   color:$gray-clr-2;
   font-size: 1.3rem;
   background-color: #f8f9fa;
   box-shadow: 0 0 5px 3px #eee;
   border: 2px solid $gray-clr-5;
   padding: 30px;
-  @include breakpoint(md){max-width: 780px;width: 100%;}
+  @include breakpoint(md){max-width: 780px;}
 
   form {
     height: 100%;

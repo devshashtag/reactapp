@@ -16,63 +16,152 @@
 </head>
 
 <body>
-  <!--start reviewTitle-->
-  <div class="reviewtitle__c__box">
-    <div class="reviewtitle__tab">
-      <input type="radio" name="review1" id="tab1" class="isactivetab" checked>
-      <label for="tab1">
-        <i class="far fa-comment-alt reviewtitle__tab__icon"></i>
-        <h4 class="reviewtitle__tab__title">نظرات</h4>
-      </label>
-    </div>
-    <div class="reviewtitle__tab">
-      <input type="radio" name="review1" id="tab2" class="isactivetab">
-      <label for="tab2">
-        <i class="far fa-comment-alt reviewtitle__tab__icon"></i>
-        <h4 class="reviewtitle__tab__title">پرسش ها</h4>
-      </label>
-    </div>
-  </div>
-  <!--End reviewTitle-->
+  <main class="main">
+    <section class="comments">
 
-  <!-- start commentCreatebox-->
-  <div class="sendCommentBox">
-    <form action="">
-      <div class='sendCommentBox__message'>
-        <p class="comment_describe">
-          نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری شده‌اند *
-        </p>
-        <div class="comment__input__box">
-          <label for="comment__msg">
-            دیدگاه شما *
+      <!--start reviewTitle-->
+      <div class="reviewtitle__c__box">
+        <div class="reviewtitle__tab">
+          <input type="radio" name="review1" id="tab1" class="isactivetab" checked>
+          <label for="tab1">
+            <i class="far fa-comment-alt reviewtitle__tab__icon"></i>
+            <h4 class="reviewtitle__tab__title">نظرات</h4>
           </label>
-          <textarea id="comment__msg" name="userMsg" class="input"></textarea>
+        </div>
+        <div class="reviewtitle__tab">
+          <input type="radio" name="review1" id="tab2" class="isactivetab">
+          <label for="tab2">
+            <i class="far fa-comment-alt reviewtitle__tab__icon"></i>
+            <h4 class="reviewtitle__tab__title">پرسش ها</h4>
+          </label>
         </div>
       </div>
+      <!--End reviewTitle-->
 
-      <div class="sendCommentBox__information">
-        <div class="comment__input__box">
-          <label for="comment__username">نام *</label>
-          <input type="text" name="userName" id="comment__username" class="input">
+
+      <div class="comment_box">
+
+        <!--start comment-->
+        <div class="comment__c">
+          <div class="comment__header">
+            <div class="comment__header__author">md
+              <span class="comment__header__author__tag"></span>
+            </div>
+            <div class="comment__header__time">دسامبر 7, 2021</div>
+            <button class="comment__header__reply">پاسخ</button>
+          </div>
+          <p class="comment__msg">سلام خسته نباشید
+            مشخصات سیستم پیشنهادی برای شروع دوره چیه ؟
+          <div class="comment__c">
+            <div class="comment__header">
+              <div class="comment__header__author">مهدی حسن زاده
+                <span class="comment__header__author__tag"></span>
+              </div>
+              <div class="comment__header__time">دسامبر 7, 2021</div>
+              <button class="comment__header__reply">پاسخ</button>
+            </div>
+            <p class="comment__msg">
+              سلام سلامت باشید
+              پیشنهاد من یک سیستم با 8GB رم، 128GB ssd حافظه، intel i5 برای cpu
+              البته اگر sdk اندروید رو میخواید به صورت کامل داشته باشید، باید حافظه بیشتری داشته باشید
+            </p>
+          </div>
+          </p>
         </div>
 
-        <div class="comment__input__box">
-          <label for="comment__useremail">ایمیل *</label>
-          <input type="text" name="userEmail" id="comment__useremail" class="input">
+        <div class="comment__c">
+          <div class="comment__header">
+            <div class="comment__header__author">md
+              <span class="comment__header__author__tag"></span>
+            </div>
+            <div class="comment__header__time">دسامبر 7, 2021</div>
+            <button class="comment__header__reply">پاسخ</button>
+          </div>
+          <p class="comment__msg">
+            سلام . واقعا ممنونم به خاطر دوره کامل و پروژه محورتون.واقعا هزینه دوره مناسبه اگر امکانش هست اگر کد تخفیفی
+            دارید که به من بدید یا اگه قراره تخفیفی کلا بزارید در آینده بهم بگید چون بالاخره دانشجوییه و بی پولی.ممنونم
+            از
+            سایت خوبتون.
+          </p>
         </div>
 
-        <div class="comment__recaptcha">
-          <label for="comment__amIHumman">i'm not a robot</label>
-          <input type="checkbox" id="comment__amIHumman">
+        <div class="comment__c">
+          <div class="comment__header">
+            <div class="comment__header__author">md
+              <span class="comment__header__author__tag"></span>
+            </div>
+            <div class="comment__header__time">دسامبر 7, 2021</div>
+            <button class="comment__header__reply">پاسخ</button>
+          </div>
+          <p class="comment__msg">
+            سلام . واقعا ممنونم به خاطر دوره کامل و پروژه محورتون.واقعا هزینه دوره مناسبه اگر امکانش هست اگر کد تخفیفی
+            دارید که به من بدید یا اگه قراره تخفیفی کلا بزارید در آینده بهم بگید چون بالاخره دانشجوییه و بی پولی.ممنونم
+            از
+            سایت خوبتون.
+          <div class="comment__c">
+            <div class="comment__header">
+              <div class="comment__header__author">md
+                <span class="comment__header__author__tag"></span>
+              </div>
+              <div class="comment__header__time">دسامبر 7, 2021</div>
+              <button class="comment__header__reply">پاسخ</button>
+            </div>
+            <p class="comment__msg">
+              سلام . واقعا ممنونم به خاطر دوره کامل و پروژه محورتون.واقعا هزینه دوره مناسبه اگر امکانش هست اگر کد تخفیفی
+              دارید که به من بدید یا اگه قراره تخفیفی کلا بزارید در آینده بهم بگید چون بالاخره دانشجوییه و بی
+              پولی.ممنونم
+              از
+              سایت خوبتون.
+            </p>
+          </div>
+          </p>
         </div>
+        <!--End comment-->
 
+        <!-- start commentCreatebox-->
+        <div class="sendCommentBox">
+          <form action="">
+            <div class='sendCommentBox__message'>
+              <p class="comment_describe">
+                نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری شده‌اند *
+              </p>
+              <div class="comment__input__box">
+                <label for="comment__msg">
+                  دیدگاه شما *
+                </label>
+                <textarea id="comment__msg" name="userMsg" class="input"></textarea>
+              </div>
+            </div>
+
+            <div class="sendCommentBox__information">
+              <div class="comment__input__box">
+                <label for="comment__username">نام *</label>
+                <input type="text" name="userName" id="comment__username" class="input">
+              </div>
+
+              <div class="comment__input__box">
+                <label for="comment__useremail">ایمیل *</label>
+                <input type="text" name="userEmail" id="comment__useremail" class="input">
+              </div>
+
+              <div class="comment__recaptcha">
+                <label for="comment__amIHumman">i'm not a robot</label>
+                <input type="checkbox" id="comment__amIHumman">
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn comment__submit">فرستادن دیدگاه</button>
+
+          </form>
+        </div>
+        <!-- end commentCreatebox-->
       </div>
 
-      <button type="submit" class="btn comment__submit">فرستادن دیدگاه</button>
 
-    </form>
-  </div>
-  <!-- end commentCreatebox-->
+
+    </section>
+  </main>
 </body>
 
 </html>
