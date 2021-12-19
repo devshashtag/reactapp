@@ -12,26 +12,41 @@
   
   .menu {
     &__list {
-      @include flex($jcnt:right, $gap:1.8rem);
+      @include flex($jcnt:right, $gap:1.9rem);
       padding:1rem;
       flex:1;
+
+      .list__dropdown {
+        @include flex($gap:1rem);
+        cursor:pointer;
+
+        .fa-angle-down {
+          font-size:1rem;
+          color:$navbar-dropdown-angle;
+          transition: .1s ease;
+        }
+
+        &:hover i {
+          color: $navbar-active-link-clr;
+        }
+      }
 
       a {
         font-size:1.4rem;
         color: $navbar-link-clr;
         cursor:pointer;
-        transition:color .1s ease-in;
-
-        .is-active {
-          color: $navbar-active-link-clr;
-          pointer-events:none;
-        }
 
         &:hover {
           color: $navbar-active-link-clr;
         }
       }
+
+      a.is-active {
+        color: $navbar-active-link-clr;
+        pointer-events:none;
+      }
     }
+
 
     &__buttons .button {
       &__myacc {
@@ -53,13 +68,7 @@
     }
   }
   
-  .list__dropdown {
-    @include flex($gap:1rem);
-    .fa-angle-down {
-      font-size:1rem;
-      color:$navbar-dropdown-angle;
-    }
-  }
+
 
   &__brand {
     @include flex();
