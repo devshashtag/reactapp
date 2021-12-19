@@ -1,0 +1,59 @@
+.sl-c-navbar {
+  @include flex($fdir:row-reverse);
+  height:6.5rem;
+  padding:0 6rem;
+  box-shadow:0 .2rem .2rem $navbar-box-shadow-clr;
+
+  &__menu {
+    @include flex($gap:2rem);
+    flex:1;
+  }
+  
+  &__list {
+    @include flex($jcnt:right, $gap:1.8rem);
+    padding:1rem;
+    flex:1;
+  }
+  
+  &__dropdown {
+    @include flex($jcnt:right, $gap:1rem);
+    &__angle {
+      font-size:1rem;
+      color:$navbar-dropdown-angle;
+    }
+  }
+
+  &__link {
+    font-size:1.4rem;
+    color: $navbar-link-clr;
+    cursor:pointer;
+    transition:color .1s ease-in;
+    &__active {
+      color: $navbar-active-link-clr;
+      pointer-events:none;
+    }
+
+    &:hover {
+      color: $navbar-active-link-clr;
+    }
+  }
+
+  &__button {
+    &__myacc {
+      background-color:$navbar-button-myacc-bg;
+      color:$navbar-button-myacc-clr;
+      font-size:1.3rem;
+      border-radius: 3px;
+      padding:1rem 1.7rem;
+      margin-left:-1.3rem;
+      &__icon {
+        font-size:1.3rem;
+      }
+    }
+    &--toggle { display:none; }
+  }
+  
+  &__brand {
+    @include flex();
+  }
+}
