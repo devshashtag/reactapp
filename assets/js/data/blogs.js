@@ -41,3 +41,5 @@ const blogs = [
     title: `آموزش کار با timing event ها`,
   },
 ];
+
+export default blogs;

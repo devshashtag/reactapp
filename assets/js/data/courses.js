@@ -111,3 +111,4 @@ const courses = [
     proposal: true,
   },
 ];
+export default courses;
