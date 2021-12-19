@@ -40,6 +40,7 @@
 
   &__button {
     &__myacc {
+      cursor:pointer;
       background-color:$navbar-button-myacc-bg;
       color:$navbar-button-myacc-clr;
       font-size:1.3rem;
@@ -50,7 +51,11 @@
         font-size:1.3rem;
       }
     }
-    &--toggle { display:none; }
+
+    &--toggle {
+      display:none;
+      cursor:pointer;
+    }
   }
   
   &__brand {
