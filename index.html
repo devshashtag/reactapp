@@ -45,42 +45,30 @@
     </div>
     <!-- end topbar -->
     <!-- start navbar -->
-    <nav class="sl-c-navbar">
-      <div class="sl-c-navbar__menu">
-        <ul class="sl-c-navbar__list">
-          <li>
-            <a
-              class="sl-c-navbar__link sl-c-navbar__link__active"
-              href="./pages/"
-              >صفحه اصلی</a
-            >
+    <nav class="navbar">
+      <div class="navbar__menu">
+        <ul class="menu__list">
+          <li><a class="is-active" href="./pages/">صفحه اصلی</a></li>
+          <li class="list__dropdown">
+            <a href="./pages/">دوره ها </a>
+            <i class="fa fa-angle-down"></i>
           </li>
-          <li class="sl-c-navbar__dropdown">
-            <a class="sl-c-navbar__link" href="./pages/">دوره ها </a>
-            <i class="fa fa-angle-down sl-c-navbar__dropdown__angle"></i>
-          </li>
-
-          <li><a class="sl-c-navbar__link" href="./pages/">بلاگ</a></li>
-          <li><a class="sl-c-navbar__link" href="./pages/">تالار گفتمان</a></li>
-          <li>
-            <a class="sl-c-navbar__link" href="https://t.me/">کانال تلگرام</a>
-          </li>
+          <li><a href="./pages/">بلاگ</a></li>
+          <li><a href="./pages/">تالار گفتمان</a></li>
+          <li><a href="https://t.me/">کانال تلگرام</a> </li>
         </ul>
-        <div class="sl-c-navbar__button">
-          <a class="sl-c-navbar__button__myacc" href="/pages/my-account.html">
-            <i class="sl-c-navbar__button__myacc__icon fa fa-user-lock"
-              >&nbsp;</i
-            >
-            ورود و ثبت نام
-          </a>
 
-          <button class="sl-c-navbar__button--toggle" type="button">
+        <div class="menu__buttons">
+          <a class="button__myacc" href="/pages/my-account.html">
+            <i class="myacc__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+          </a>
+          <button class="button--toggle" type="button">
             im toggle
           </button>
         </div>
       </div>
-      <div class="sl-c-navbar__brand">
-        <img src="./assets/images/navbar/brand.png" alt="reactapp brand" />
+      <div class="navbar__brand">
+        <img src="./assets/images/navbar/brand.png" alt="reactapp brand">
       </div>
     </nav>
     <!-- end navbar -->
