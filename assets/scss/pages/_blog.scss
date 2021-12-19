@@ -22,10 +22,10 @@
           @extend %yellowBtn;
         }
       }
-    }
-    .active {
-      @extend %yellowBtn;
-      cursor: auto;
+      .active {
+        @extend %yellowBtn;
+        cursor: auto;
+      }
     }
   }
 }
