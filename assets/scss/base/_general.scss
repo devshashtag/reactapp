@@ -36,9 +36,19 @@ section {
   }
 }
 
-%yellowBtn{
+%yellowBtn {
   background: $yellow-clr;
   padding: 0.5rem 1rem;
   color: $white-clr;
   border-radius: 0.4rem;
+}
+
+%paginationLinks {
+  font-family: Tanha;
+  @extend %yellowBtn;
+  background: $gray-clr-9;
+  color: $black-clr-1;
+  font-size: 1.3rem;
+  transition: 0.3s;
+  margin-left: 0.5rem;
 }
