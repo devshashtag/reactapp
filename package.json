@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch assets/scss/styles.scss assets/css/styles.css",
-    "server": "python http-server.py"
+    "server": "python scripts/http-server.py"
   },
   "repository": {
     "type": "git",
