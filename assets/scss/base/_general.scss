@@ -11,7 +11,7 @@ section {
 %card-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 3rem 2rem;
   justify-items: center;
   @include breakpoint(md) {
     grid-template-columns: 1fr 1fr;
