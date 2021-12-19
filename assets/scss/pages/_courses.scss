@@ -11,10 +11,10 @@
       border: 0.1rem solid $gray-clr-5;
       border-radius: 0.2rem;
       background: $white-clr;
-      display: grid;
-      justify-items: center;
-      align-items: center;
       @include breakpoint(md) {
+        display: grid;
+        justify-items: center;
+        align-items: center;
         grid-template-columns: auto 1fr;
         gap: 1rem;
       }
@@ -35,11 +35,13 @@
       cursor: auto;
     }
   }
+
   .sort__btns {
     display: none;
     @include breakpoint(md) {
       display: block;
     }
+
     button {
       border: 0.1rem solid $gray-clr-5;
       border-radius: 0.2rem;
@@ -51,33 +53,40 @@
         height: 25px;
       }
     }
+
     .selected {
       fill: $white-clr;
       background: black;
+      border: none;
     }
   }
+
   .sort__form {
-    width: 100%;
     padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column-reverse;
     gap: 1rem;
     @include breakpoint(md) {
+      width: 100%;
       flex-direction: row;
       justify-content: space-between;
     }
+
     div {
       border: 0.1rem solid $gray-clr-5;
       border-radius: 0.2rem;
     }
   }
+
   .form {
     &__search {
       padding: 1rem 0.5rem;
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 1rem;
-
+      @include breakpoint(md) {
+        width: min(100%, 28rem);
+      }
       input {
         font-size: 1.4rem;
       }
@@ -87,9 +96,10 @@
         color: $gray-clr-4;
       }
     }
+    
     &__select {
       @include breakpoint(md) {
-        width: min(100%, 400px);
+        width: min(100%, 26rem);
       }
       select {
         color: $gray-clr-2;
