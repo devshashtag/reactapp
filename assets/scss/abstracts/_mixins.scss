@@ -47,7 +47,6 @@
     height: $height;
 }
 
-
 // @include flex($fdir: row,$jcnt: center,$aitem:center, $gap:0);
 @mixin flex($fdir: row,$jcnt: center,$aitem:center, $gap:0) {
   display:flex;
