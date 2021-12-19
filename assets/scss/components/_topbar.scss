@@ -37,7 +37,7 @@
   @include breakpoint(sm) { padding:0 5rem; }
   @include breakpoint(lg) { 
     padding:0 6rem;
-    height:3.2rem; 
+    height:3.3rem; 
 
     &__links  { display:flex; }
     &__icons  { gap:3rem; }

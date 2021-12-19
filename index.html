@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font awsome -->
@@ -14,32 +14,77 @@
     />
 
     <!-- styles -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>reactapp home</title>
   </head>
 
   <body>
     <!-- topbar -->
+    <!-- start topbar -->
     <div class="top-bar">
       <ul class="top-bar__links">
-        <li><a class="top-bar__link" href="./pages/about-us.html">درباره ما</a></li>
-        <li><a class="top-bar__link" href="./pages/contact.html">تماس با ما</a></li>
+        <li>
+          <a class="top-bar__link" href="./pages/about-us.html">درباره ما</a>
+        </li>
+        <li>
+          <a class="top-bar__link" href="./pages/contact.html">تماس با ما</a>
+        </li>
       </ul>
       <div class="top-bar__icons">
         <div class="top-bar__icon top-bar__search">
-          <i class="fa fa-search" aria-hidden="true"></i> 
+          <i class="fa fa-search" aria-hidden="true"></i>
         </div>
         <div class="top-bar__icon top-bar__bag">
-          <i class="fa fa-shopping-bag" aria-hidden="true"></i> 
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
         </div>
         <div class="top-bar__icon top-bar__perm">
           <i class="fas fa-user" aria-hidden="true"></i>
         </div>
       </div>
     </div>
-    <!-- end of topbar -->
+    <!-- end topbar -->
+    <!-- start navbar -->
+    <nav class="sl-c-navbar">
+      <div class="sl-c-navbar__menu">
+        <ul class="sl-c-navbar__list">
+          <li>
+            <a
+              class="sl-c-navbar__link sl-c-navbar__link__active"
+              href="./pages/"
+              >صفحه اصلی</a
+            >
+          </li>
+          <li class="sl-c-navbar__dropdown">
+            <a class="sl-c-navbar__link" href="./pages/">دوره ها </a>
+            <i class="fa fa-angle-down sl-c-navbar__dropdown__angle"></i>
+          </li>
 
+          <li><a class="sl-c-navbar__link" href="./pages/">بلاگ</a></li>
+          <li><a class="sl-c-navbar__link" href="./pages/">تالار گفتمان</a></li>
+          <li>
+            <a class="sl-c-navbar__link" href="https://t.me/">کانال تلگرام</a>
+          </li>
+        </ul>
+        <div class="sl-c-navbar__button">
+          <a class="sl-c-navbar__button__myacc" href="/pages/my-account.html">
+            <i class="sl-c-navbar__button__myacc__icon fa fa-user-lock"
+              >&nbsp;</i
+            >
+            ورود و ثبت نام
+          </a>
+
+          <button class="sl-c-navbar__button--toggle" type="button">
+            im toggle
+          </button>
+        </div>
+      </div>
+      <div class="sl-c-navbar__brand">
+        <img src="./assets/images/navbar/brand.png" alt="reactapp brand" />
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- main home -->
     <main id="home">
       <!--! banner-top -->
       <div class="banner-top">
@@ -104,6 +149,7 @@
       </section>
       <!--! end of blogs -->
     </main>
+    <!-- end of main home -->
     <!-- scrips -->
     <script type="module" src="./assets/js/index.js"></script>
   </body>

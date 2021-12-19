@@ -39,7 +39,13 @@ $white-clr: #fff;
 $blue-clr-1: #3467ff;
 
 //* used in course-page
-$green-clr: #1fbd50;
+$green-clr:#1fbd50;
+
+$react-gr-clr:linear-gradient(180deg,#4d01df 0%,#8a2be1 100%);
+$nodeJs-gr-clr:linear-gradient(180deg,#1d7401 0%,#6e9601 100%);
+$js-gr-clr:linear-gradient(180deg,#edaf20 0%,#ed5e01 100%);
+$reactNative-gr-clr:linear-gradient(180deg,#4751ca 0%,#00a2e3 100%);
+
 
 //? sizes
 //* used in main-container
@@ -53,3 +59,15 @@ $topbar-link-hover-fg: cyan;
 
 $topbar-icon-fg: white;
 $topbar-icon-hover-fg: cyan;
+
+//? sl-c-navbar
+$navbar-box-shadow-clr: #efefef;
+
+$navbar-link-clr: $gray-clr-1;
+$navbar-active-link-clr: #000;
+
+$navbar-dropdown-angle: #aaa;
+
+$navbar-button-myacc-bg: $yellow-clr;
+$navbar-button-myacc-clr: $white-clr;
+
