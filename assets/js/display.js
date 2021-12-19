@@ -25,7 +25,7 @@ const dispalyCourses = (data = [], type = "title") => {
   <span>${separate(item.students)}</span>
   </div>
     <div class="footer__price">
-    <span>${item.price ? separate(item.price) : "رایگان"}</span>
+    <span>${item.price ? separate(item.price) : "رایگان!"}</span>
     </div>
   </div>
   </article>`;
