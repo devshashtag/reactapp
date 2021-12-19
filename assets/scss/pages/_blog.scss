@@ -17,21 +17,15 @@
     }
     &__pagination {
       a {
-        font-family: Tanha;
-        @extend %yellowBtn;
-        background: $gray-clr-9;
-        color: $black-clr-1;
-        font-size: 1.3rem;
-        transition: 0.3s;
-        margin-left: 0.5rem;
+        @extend %paginationLinks;
         &:hover {
           @extend %yellowBtn;
         }
       }
-      .active {
-        @extend %yellowBtn;
-        cursor: auto;
-      }
+    }
+    .active {
+      @extend %yellowBtn;
+      cursor: auto;
     }
   }
 }
