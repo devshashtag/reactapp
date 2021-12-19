@@ -2,20 +2,21 @@
   max-width: 1604px;
   margin: 0 auto;
 }
+
 .banner-mid {
-  background-image: url("../images/banners/home-banner-2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: url("../images/banners/home-banner-2.png") no-repeat center
+    center/cover;
   height: 35rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
   p {
     font-size: 1.5rem;
   }
+
   &__link {
     @extend %yellowBtn;
   }
