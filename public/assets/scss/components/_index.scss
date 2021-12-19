@@ -1,3 +1,18 @@
+@import "button";
+@import "cover";
+@import "course-card";
+@import "blog-card";
+@import "banners";
+
+// top bar 
+@import "topbar";
+
+// navbar, sidebar
+@import "navbar";
+@import "sidebar";
+
+// learning steps
 @import 'button';
 @import 'cover';
-
+@import 'stepLearningCard';
+@import 'sendCommentBox';

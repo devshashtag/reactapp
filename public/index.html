@@ -4,20 +4,141 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
     <title>reactapp home</title>
   </head>
 
   <body>
-    <div style="display:flex; gap:2rem; color:blue; text-decoration: underline;">
-      <a href="pages/blog.html">blog.html</a>
-      <div style="display:flex;flex-direction:column;gap:2rem;">
-        <a href="pages/courses.html">courses</a>
-        <a href="pages/courses/javascript.html">javascript</a>
+    <!-- topbar -->
+    <!-- start topbar -->
+    <div class="top-bar">
+      <ul class="top-bar__links">
+        <li>
+          <a class="top-bar__link" href="/pages/about-us.html">درباره ما</a>
+        </li>
+        <li>
+          <a class="top-bar__link" href="/pages/contact.html">تماس با ما</a>
+        </li>
+      </ul>
+      <div class="top-bar__icons">
+        <div class="top-bar__icon top-bar__search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="top-bar__icon top-bar__bag">
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        </div>
+        <div class="top-bar__icon top-bar__perm">
+          <i class="fas fa-user" aria-hidden="true"></i>
+        </div>
       </div>
-      <a href="pages/learning-steps.html">learning-steps</a>
-      <a href="pages/product-category.html">product-category</a>
     </div>
+    <!-- end topbar -->
+    <!-- start navbar -->
+    <nav class="navbar">
+      <div class="navbar__menu">
+        <ul class="menu__list">
+          <li><a class="is-active" href="/">صفحه اصلی</a></li>
+          <li class="list__dropdown">
+            <a href="/pages/courses.html">دوره ها </a>
+            <i class="fa fa-angle-down"></i>
+          </li>
+          <li><a href="/pages/blog.html">بلاگ</a></li>
+          <li><a href="/pages/forums.html">تالار گفتمان</a></li>
+          <li><a href="https://t.me/">کانال تلگرام</a> </li>
+        </ul>
+
+        <div class="menu__buttons">
+          <a class="button__myacc" href="/pages/my-account.html">
+            <i class="myacc__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+          </a>
+          <button class="button--toggle" type="button">
+            im toggle
+          </button>
+        </div>
+      </div>
+      <div class="navbar__brand">
+        <img src="./assets/images/navbar/brand.png" alt="reactapp brand">
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- main home -->
+    <main id="home">
+      <!--! banner-top -->
+      <div class="banner-top">
+        <img src="./assets/images/banners/home-banner-1.jpg" alt="banner" />
+      </div>
+      <!--! end of banner-top -->
+
+      <!--! full courses -->
+      <section class="full-courses">
+        <div class="full__header">
+          <h2>
+            دوره های جامع
+          </h2>
+        </div>
+        <div class="full__content">
+          <!--? courses rendered here -->
+        </div>
+      </section>
+      <!--! end of full courses -->
+
+      <!--! banner-mid -->
+      <div class="banner-mid">
+        <h3 class="banner-mid__title">حرکت در مسیر فول استک شدن</h3>
+        <p class="banner-mid__desc-1">
+          آموزش ساخت اپلیکیشن فروشگاهی به همراه پنل مدیریت
+        </p>
+        <p class="banner-mid__desc-2">
+          JavaScript - ReactJS - NodeJS - React Native - GraphQL
+        </p>
+        <a href="#" class="banner-mid__link">شروع مسیر</a>
+      </div>
+      <!--! end of banner-mid -->
+
+      <!--! proposal courses -->
+      <section class="proposal-courses">
+        <div class="proposal__header">
+          <h2 class="header__title">
+            دوره های پیشنهادی
+          </h2>
+          <a href="#" class="header__btn">همه دوره ها</a>
+        </div>
+        <div class="proposal__content">
+          <!--? courses rendered here -->
+        </div>
+      </section>
+      <!--! end of proposal courses -->
+
+      <!--! blogs -->
+      <section class="blogs">
+        <div class="blogs__header">
+          <h2 class="header__title">
+            مقالات
+          </h2>
+          <a href="#" class="header__btn">مشاهده همه</a>
+        </div>
+        <div class="blogs__content">
+          <!--? blogs rendered here -->
+        </div>
+        <a href="#" class="blogs__btn">
+          مشاهده همه مقالات
+        </a>
+      </section>
+      <!--! end of blogs -->
+    </main>
+    <!-- end of main home -->
+    <!-- scrips -->
+    <script type="module" src="./assets/js/index.js"></script>
   </body>
 </html>
