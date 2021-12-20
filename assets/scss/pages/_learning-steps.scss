@@ -1,7 +1,8 @@
-.main {
+.main_learning_step {
   width: 100%;
   @include flex($fdir: column);
-
+}
+  .main{
   &__header {
     @include flex();
     width: 100%;
