@@ -13,16 +13,17 @@
     display: flex;
     justify-content: space-between;
     padding: 0 1.2rem;
+    margin: 2rem 0;
     .header__btn {
       @extend %title-btn;
     }
   }
+
   .blogs {
     display: flex;
     flex-direction: column;
     &__btn {
       @extend %yellowBtn;
-
       align-self: flex-end;
       margin-left: 1.5rem;
     }

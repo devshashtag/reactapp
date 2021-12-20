@@ -1,0 +1,77 @@
+/* start navbar */
+.navbar {
+  @include flex($fdir:row-reverse);
+  height:6.5rem;
+  padding:0 6rem;
+  box-shadow:0 .2rem .2rem $navbar-box-shadow-clr;
+
+  &__menu {
+    @include flex($gap:2rem);
+    flex:1;
+  }
+  
+  .menu {
+    &__list {
+      @include flex($jcnt:right, $gap:1.9rem);
+      padding:1rem;
+      flex:1;
+
+      .list__dropdown {
+        @include flex($gap:1rem);
+        cursor:pointer;
+
+        .fa-angle-down {
+          font-size:1rem;
+          color:$navbar-dropdown-angle;
+          transition: .1s ease;
+        }
+
+        &:hover i {
+          color: $navbar-active-link-clr;
+        }
+      }
+
+      a {
+        font-size:1.4rem;
+        color: $navbar-link-clr;
+        cursor:pointer;
+
+        &:hover {
+          color: $navbar-active-link-clr;
+        }
+      }
+
+      a.is-active {
+        color: $navbar-active-link-clr;
+        pointer-events:none;
+      }
+    }
+
+
+    &__buttons .button {
+      &__myacc {
+        cursor:pointer;
+        background-color:$navbar-button-myacc-bg;
+        color:$navbar-button-myacc-clr;
+        font-size:1.3rem;
+        border-radius: 3px;
+        padding:1rem 1.7rem;
+        margin-left:-1.3rem;
+
+        i { font-size:1.3rem; }
+      }
+
+      &--toggle {
+        display:none;
+        cursor:pointer;
+      }
+    }
+  }
+  
+
+
+  &__brand {
+    @include flex();
+  }
+}
+/* end navbar */

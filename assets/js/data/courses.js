@@ -110,5 +110,15 @@ const courses = [
     full: false,
     proposal: true,
   },
+  {
+    id: 12,
+    title: `ذخیره سازی اطلاعات با AsyncStorage در React Native`,
+    author: "علی",
+    price: 0,
+    image: "/assets/images/courses/12.bmp",
+    students: 312,
+    full: false,
+    proposal: false,
+  },
 ];
 export default courses;

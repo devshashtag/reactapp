@@ -7,9 +7,11 @@
 // top bar 
 @import "topbar";
 
+// navbar, sidebar
+@import "navbar";
+@import "sidebar";
+
 // learning steps
-@import 'button';
-@import 'cover';
 @import 'stepLearningCard';
 @import 'sendCommentBox';
 @import 'reviewtitle';
