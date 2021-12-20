@@ -1,12 +1,12 @@
 .top-bar {
   @include flex($jcnt:left, $gap:3rem);
   background-color:$topbar-bg;
-  padding:0 2rem;
-  height:5.5rem; 
 
-  &__links {
-    @include flex($gap:2rem);
-    display:none;
+  @include breakpoint(lg) { padding:0 6rem; }
+
+  &__links { 
+    @include flex($dsp:none, $gap:2rem);
+    @include breakpoint(lg) { display:flex; }
   }
   
   &__link {
@@ -17,12 +17,34 @@
   }
 
   &__icons {
-    @include flex($gap:2rem);
+    @include flex($jcnt:left, $gap:2.3rem);
+    padding:1.37rem 2rem;
+    font-size:1.8rem;
+
+    @include breakpoint(sm) { 
+      max-width:540px; 
+      width:100%;
+      margin:0 auto;
+      font-size:1.6rem;
+      padding:1.05rem 1.6rem;
+    }
+
+    @include breakpoint(md) {
+      max-width:100%;
+      padding:1.05rem 60px; 
+    }
+
+    @include breakpoint(lg) {
+      gap:3rem;
+      font-size:1.5rem;
+      width:auto;
+      margin:0;
+      padding:0.5rem 0;
+    }
   }
 
   &__icon {
       color:$topbar-icon-fg;
-      font-size:1.5rem;
       cursor:pointer;
       &:hover {
         color:$topbar-icon-hover-fg;
@@ -34,14 +56,9 @@
     display:none;
   }
 
-  @include breakpoint(sm) { padding:0 5rem; }
-  @include breakpoint(lg) { 
-    padding:0 6rem;
-    height:3.3rem; 
-
+  @include breakpoint(lg) { padding:0 6rem; }
     &__links  { display:flex; }
-    &__icons  { gap:3rem; }
     &__search { display:block; }
-    &__perm   { display:none; }
+    &__perm   { display:none;  }
   }
 }
