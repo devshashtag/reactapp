@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # configurable variables for user
-project_name="reactapp"
-html_folder="$(pwd)/pages/"
-js_folder="$(pwd)/assets/js/pages/"
-scss_folder="$(pwd)/assets/scss/pages/"
+project_name=$(basename $(pwd))
+html_folder="../${project_name}/pages/"
+js_folder="../${project_name}/assets/js/pages/"
+scss_folder="../${project_name}/assets/scss/pages/"
 
 # colors
 nc="\e[0m"
@@ -34,7 +34,7 @@ success_color=$light_yellow
 sep_color=$light_blue
 sep_line="${sep_color}$(echo ={1..40}| tr -d '[0-9 ]')"
 
-# functions 
+# functions
 function display_sep(){ echo -e "$sep_line"; }
 
 function depth(){ grep '/' -o <<< "$1" |wc -l; }
