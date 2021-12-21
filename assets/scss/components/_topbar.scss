@@ -1,7 +1,8 @@
 .top-bar {
-  @include flex($jcnt:left, $gap:3rem);
   background-color:$topbar-bg;
+  transition:all 0.3s ease;
 
+  @include flex($jcnt:left, $gap:3rem);
   @include breakpoint(lg) { padding:0 6rem; }
 
   &__links { 
@@ -11,16 +12,15 @@
   
   &__link {
     color:$topbar-link-fg;
-    &:hover {
-      color:$topbar-link-hover-fg;
-    }
+
+    &:hover { color:$topbar-link-hover-fg; }
   }
 
   &__icons {
-    @include flex($jcnt:left, $gap:2.3rem);
     padding:1.37rem 2rem;
     font-size:1.8rem;
 
+    @include flex($jcnt:left, $gap:2.3rem);
     @include breakpoint(sm) { 
       max-width:540px; 
       width:100%;
@@ -46,6 +46,7 @@
   &__icon {
       color:$topbar-icon-fg;
       cursor:pointer;
+
       &:hover {
         color:$topbar-icon-hover-fg;
         text-shadow:0 0 15px $topbar-icon-hover-fg;
@@ -54,11 +55,11 @@
 
   &__search {
     display:none;
+
+    @include breakpoint(lg) { display:block; }
   }
 
-  @include breakpoint(lg) { padding:0 6rem; }
-    &__links  { display:flex; }
-    &__search { display:block; }
-    &__perm   { display:none;  }
+  &__perm   {
+    @include breakpoint(lg) {  display:none;  }
   }
 }
