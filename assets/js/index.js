@@ -12,6 +12,7 @@ const fullCourses = getElement(".full__content");
 const proposalCourses = getElement(".proposal__content");
 const blogsContent = getElement(".blogs__content");
 
+
 //* display items when page load
 window.addEventListener("DOMContentLoaded", function () {
   displayFullCourses();
@@ -32,3 +33,15 @@ const displayProposalCourses = () => {
 const displayNewestBlogs = () => {
   blogsContent.innerHTML = displayBlogs(blogs, 4);
 };
+
+
+//* sidebar & navbar
+const sidebarToggle = getElement(".sidebar--toggle");
+// const sidebarToggle = getElement(".sidebar")
+
+//* display sidebar
+sidebarToggle.addEventListener('click', () => {
+  sidebarToggle.classList.toggle("is-active");
+  // sidebar.classList.toggle("is-active");
+});
+
