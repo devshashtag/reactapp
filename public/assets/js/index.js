@@ -1,11 +1,10 @@
 //? global imports
-import { getElement } from "./utils.js";
+import { getElement } from "/assets/js/global/utils.js";
+import { dispalyCourses, displayBlogs } from "/assets/js/global/display.js";
 
 //? specific imports
-import courses from "./data/courses.js";
-import blogs from "./data/blogs.js";
-
-import { dispalyCourses, displayBlogs } from "./display.js";
+import courses from "/assets/js/data/courses.js";
+import blogs from "/assets/js/data/blogs.js";
 
 //* get content elements
 const fullCourses = getElement(".full__content");
@@ -18,7 +17,6 @@ window.addEventListener("DOMContentLoaded", function () {
   displayProposalCourses();
   displayNewestBlogs();
 });
-
 
 //* functions
 const displayFullCourses = () => {
