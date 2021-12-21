@@ -22,7 +22,7 @@
   <body>
     <!-- topbar -->
     <!-- start topbar -->
-    <div class="top-bar">
+    <div class="top-bar no-select">
       <ul class="top-bar__links">
         <li>
           <a class="top-bar__link" href="./pages/about-us.html">درباره ما</a>
@@ -45,30 +45,42 @@
     </div>
     <!-- end topbar -->
     <!-- start navbar -->
-    <nav class="navbar">
+    <nav class="navbar no-select">
       <div class="navbar__menu">
         <ul class="menu__list">
           <li><a class="is-active" href="/">صفحه اصلی</a></li>
           <li class="list__dropdown">
-            <a href="/pages/courses.html">دوره ها </a>
-            <i class="fa fa-angle-down"></i>
+            <div class="dropdown__header">
+              <a href="/pages/courses.html">دوره ها </a>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <ul class="dropdown__list">
+              <li><a href="/pages/learning-steps.html">راهنمای یادگیری</a></li>
+            </ul>
           </li>
           <li><a href="/pages/blog.html">بلاگ</a></li>
           <li><a href="/pages/forums.html">تالار گفتمان</a></li>
           <li><a href="https://t.me/">کانال تلگرام</a> </li>
         </ul>
 
-        <div class="menu__buttons">
-          <a class="button__myacc" href="/pages/my-account.html">
-            <i class="myacc__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
-          </a>
-          <button class="button--toggle" type="button">
-            im toggle
-          </button>
-        </div>
+        <a class="menu__account" href="/pages/my-account.html">
+          <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+        </a>
+          
       </div>
+
       <div class="navbar__brand">
-        <img src="./assets/images/navbar/brand.png" alt="reactapp brand">
+        <div class="brand__img">
+          <a href="/">
+            <img src="/assets/images/navbar/brand.png" alt="reactapp brand">
+          </a>
+        </div>
+
+        <div class="sidebar--toggle">
+          <div class="toggle__top"></div>
+          <div class="toggle__mid"></div>
+          <div class="toggle__btm"></div>
+        </div>
       </div>
     </nav>
     <!-- end navbar -->
@@ -83,7 +95,7 @@
       <!--! full courses -->
       <section class="full-courses">
         <div class="full__header">
-          <h2>
+  <h2>
             دوره های جامع
           </h2>
         </div>

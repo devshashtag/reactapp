@@ -48,8 +48,8 @@
 }
 
 // @include flex($fdir: row,$jcnt: center,$aitem:center, $gap:0);
-@mixin flex($fdir: row,$jcnt: center,$aitem:center, $fwrap:nowrap, $gap:0) {
-  display:flex;
+@mixin flex($dsp:flex, $fdir: row, $jcnt: center, $aitem:center, $fwrap:nowrap, $gap:0) {
+  display:$dsp;
   flex-direction:$fdir;
   justify-content:$jcnt;
   align-items:$aitem;
