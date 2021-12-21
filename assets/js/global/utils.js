@@ -19,4 +19,8 @@ const separate = (Number) => {
   return y + z;
 };
 
-export { getElement, separate };
+
+// toggle multiple classes for an element
+const toggleClasses = (el, ...cls) => cls.map(cl => el.classList.toggle(cl));
+
+export { getElement, separate, toggleClasses };
