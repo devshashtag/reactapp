@@ -29,22 +29,22 @@
   }
 }
 
-// @include transition(all,2s,ease-out);
-@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
-    -webkit-transition: $what $time $how;
-    -moz-transition:    $what $time $how;
-    -ms-transition:     $what $time $how;
-    -o-transition:      $what $time $how;
-    transition:         $what $time $how;
+// @include transition(transform 2s ease-out, opacity 1s ease);
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
 }
 
-// @include pseudo($width: 100px); 
-@mixin pseudo($display: block, $pos: absolute, $content: '', $width: 100%, $height: 100%){
-    content: $content;
-    display: $display;
-    position: $pos;
-    width: $width;
-    height: $height;
+// @include transform(translateX(10rem), translateY(1rem));
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-ms-transform: $args;
+	-o-transform: $args;
+	transform: $args;
 }
 
 // @include flex($fdir: row,$jcnt: center,$aitem:center, $gap:0);
