@@ -2,8 +2,8 @@
 .navbar {
   background-color:$navbar-bg;
   box-shadow:0 .2rem .2rem $navbar-box-shadow;
-  transition:all 0.3s ease;
   @include flex($fdir:row-reverse);
+  @include transition(all .5s ease);
   @include breakpoint(lg) { padding:0 6rem; }
 
   &__menu {
@@ -58,7 +58,7 @@
 
     &:hover .dropdown__list {
       opacity:1;
-      transform: translateX(1rem);
+      @include transform(translateX(1rem));
     }
   }
 
@@ -81,15 +81,17 @@
       position:absolute;
       opacity:0;
       min-width:15rem;
-      padding: .5rem 0;
+      padding:.5rem 0;
       border-radius:4px;
-      transform: translateY(2rem) translateX(1rem);
-      transition:transform .2s ease-in, opacity .2s ease-in;
       background:$navbar-dropdown-list-bg;
       box-shadow:0 0 5px $navbar-dropdown-list-shadow;
 
+      @include transform(translateY(2rem) translateX(1rem));
+      @include transition(transform .5s ease, opacity .5s ease);
+
       li {
         padding:.2rem 1rem;
+
         a {
           display:block;
           padding:.5rem 1rem;
@@ -141,22 +143,20 @@
     width: 20px;
     height: 2px;
     background-color: $sidebar-toggle-bg;
-    transition:transform .2s ease-in-out, opacity .2s ease-in-out;
+    @include transition(transform .2s ease, opacity .2s ease);
     opacity:1;
   }
 
   &.is-active {
     .toggle {
       &__top {
-        -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-        transform: rotate(-40deg) translate(-5px, 5px);    
+        @include transform(rotate(-40deg) translate(-5px, 5px));    
       }
 
       &__mid { opacity:0; }
 
       &__btm {
-        -webkit-transform: rotate(45deg) translate(-8px, -7px);
-        transform: rotate(40deg) translate(-5px, -5px);
+        @include transform(rotate(40deg) translate(-5px, -5px));
       }
     }
   }

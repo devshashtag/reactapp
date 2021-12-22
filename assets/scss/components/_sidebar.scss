@@ -7,35 +7,39 @@
   width:$sidebar-size;
   background-color: $sidebar-bg;
 
-  @include breakpoint(lg) { display:none; }
-
   @include transform(translateX(-$sidebar-size));
   @include transition(transform .5s ease, opacity .5s ease);
 
   &.is-active {
     @include transform(translateX(0));
+
+    @include breakpoint(lg) { 
+      @include transform(translateX(-$sidebar-size));
+    }
   }
+
   /* sidebar--wrap */
   &--wrap {
     @include transition(transform .5s ease);
-    
+
     &.wrap {
       @include transform(translateX($sidebar-size));
+
+      @include breakpoint(lg) {
+        @include transform(translateX(0));
+      }
+
       & .sidebar--overlay {
         pointer-events:auto;
         opacity:1;
         visibility:visible;
-      }
-    }
 
-    @include breakpoint(lg) {
-      &.wrap {
-        @include transform(translateX(0));
-        & .sidebar--overlay {
+        @include breakpoint(lg) {
           pointer-events: none;
           opacity:0;
           visibility:hidden;
         }
+
       }
     }
   }
@@ -151,5 +155,5 @@
 
 .overflow--hidden {
   overflow:hidden;
-  @include breakpoint(lg) { overflow:auto; }
+  @include breakpoint(lg) { overflow-y:auto; }
 }
