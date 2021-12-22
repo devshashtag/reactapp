@@ -1,19 +1,5 @@
-body{background-color: #eee;}
-.main{
-    padding: 2%;
-    width: 100%;
-    @include breakpoint(md){
-        max-width: 715px;
-        padding: 15px;
-    }
-}
-.reviewtitle__c__box{
-    margin-bottom: 20px;
-}
-.comment_box{
-    width: 90%;
+#comment{
     margin: auto;
-}
-.comments{
-    background-color: $white-clr;
+    max-width: 768px;
+    padding: 10px;
 }
