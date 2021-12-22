@@ -25,7 +25,7 @@
       <!-- sidebar search -->
       <div class="sidebar__search">
         <form class="search__form" role="search" method="get" action="/">
-          <input class="search-field" type="search" name="text" placeholder="ورود و اژه کلیدی...">
+          <input class="search-field" type="search" name="s" placeholder="ورود و اژه کلیدی...">
           <button class="search-submit" type="submit">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
@@ -52,35 +52,48 @@
       </nav>
     </div>
     <!-- end sidebar -->
+
     <!-- start sidebar wrap -->
     <div class="sidebar--wrap">
       <div class="sidebar--overlay"></div>
+
       <!-- start topbar -->
-      <div class="top-bar no-select">
-        <ul class="top-bar__links">
+      <div class="topbar no-select">
+        <ul class="topbar__links">
           <li>
-            <a class="top-bar__link" href="/pages/about-us.html">درباره ما</a>
+            <a class="topbar__link" href="/pages/about-us.html">درباره ما</a>
           </li>
           <li>
-            <a class="top-bar__link" href="/pages/contact.html">تماس با ما</a>
+            <a class="topbar__link" href="/pages/contact.html">تماس با ما</a>
           </li>
         </ul>
-        <div class="top-bar__icons">
-          <div class="top-bar__icon top-bar__search">
-            <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="topbar__icons">
+          <div class="topbar__icon topbar__search">
+            <i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i>
           </div>
-          <div class="top-bar__icon top-bar__bag">
+          <div class="topbar__icon topbar__bag">
             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
           </div>
-          <div class="top-bar__icon top-bar__perm">
+          <div class="topbar__icon topbar__perm">
             <i class="fas fa-user" aria-hidden="true"></i>
           </div>
         </div>
       </div>
       <!-- end topbar -->
+
       <!-- start navbar -->
       <nav class="navbar no-select">
-        <div class="navbar__menu">
+        <!-- navbar search -->
+        <div class="navbar__search">
+          <form class="search__form" role="search" method="get" action="/">
+            <input class="search-input" type="search" name="s" placeholder="جستجوی دوره، استاد، مطالب و ...">
+            <button class="search-submit" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form> 
+        </div>
+        <!-- navbar menu -->
+        <nav class="navbar__menu">
           <!-- menu navigation -->
           <ul class="menu__list">
             <li><a class="is-active" href="/">صفحه اصلی</a></li>
@@ -99,9 +112,9 @@
           </ul>
           <!-- menu button -->
           <a class="menu__account" href="/pages/my-account.html">
-          <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+            <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
           </a>
-        </div>
+        </nav>
         <!-- navbar brand -->
         <div class="navbar__brand">
           <!-- brand image -->
@@ -110,12 +123,12 @@
               <img src="/assets/images/navbar/brand.png" alt="reactapp brand">
             </a>
           </div>
-          <!-- sidebar toggle in navbar -->
-          <div class="sidebar--toggle">
+          <!-- sidebar toggle in navbar as toggle -->
+          <div class="navbar--toggle">
             <div class="toggle__top"></div>
             <div class="toggle__mid"></div>
             <div class="toggle__btm"></div>
-        </div>
+          </div>
         </div>
       </nav>
       <!-- end navbar -->

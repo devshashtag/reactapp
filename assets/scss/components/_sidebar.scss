@@ -61,11 +61,11 @@
 
   /* sidebar__search */
   &__search {
-    border-bottom: 1px solid #2c3237;
+    border-bottom: 1px solid $sidebar-search-border-clr;
     background-color: $sidebar-search-bg;
     padding:25px 20px;
     // padding-bottom:83px;
-    color: #6c757d; 
+    color: $sidebar-search-fg; 
 
     .search {
       &__form {
@@ -97,8 +97,12 @@
         bottom:0;
         padding:12px;
         font-size:18px;
-        color:#6c757d;
+        color:$sidebar-search-submit-fg;
+        cursor:pointer;
         background-color:transparent;
+        &:hover {
+          color:$sidebar-search-submit-hover-fg;
+        }
       }
     }
   }
@@ -142,7 +146,7 @@
         a {
           padding:5px 20px;
           font-size:12px;
-          border-right:1px solid #333940;
+          border-right:1px solid $sidebar-dropdown-link-border-fg;
         }
       }
 

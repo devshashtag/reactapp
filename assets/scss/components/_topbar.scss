@@ -1,6 +1,6 @@
-.top-bar {
+.topbar {
   background-color:$topbar-bg;
-  transition:all 0.3s ease;
+  @include transition(all 0.5s ease);
 
   @include flex($jcnt:left, $gap:3rem);
   @include breakpoint(lg) { padding:0 6rem; }
@@ -49,14 +49,22 @@
 
       &:hover {
         color:$topbar-icon-hover-fg;
-        text-shadow:0 0 15px $topbar-icon-hover-fg;
+        text-shadow:0 0 1.5rem $topbar-icon-hover-fg;
       }
   }
 
   &__search {
-    display:none;
+    width:28px;
+    @include flex($dsp:none);
+    @include breakpoint(lg) { display:flex; }
 
-    @include breakpoint(lg) { display:block; }
+    .fa-close { 
+      font-size:2rem;
+      color:$topbar-search-close-bg;
+      &:hover {
+        text-shadow:0 0 1.5rem $topbar-search-close-hover-bg;
+      }
+    }
   }
 
   &__perm   {
