@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch assets/scss/styles.scss assets/css/styles.css",
     "server": "python scripts/http-server.py",
-    "new_page": "bash -c 'chmod +x scripts/page_creator.sh;./scripts/page_creator.sh'"
+    "new_page": "bash -c 'chmod +x scripts/page_creator.sh; ./scripts/page_creator.sh'"
   },
   "repository": {
     "type": "git",

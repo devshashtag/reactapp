@@ -1,9 +1,9 @@
 //? global imports
-import { getElement } from "../utils.js";
+import { getElement } from "/assets/js/global/utils.js";
+import { dispalyCourses } from "/assets/js/global/display.js";
 
 //? specific imports
-import courses from "../data/courses.js";
-import { dispalyCourses } from "../display.js";
+import courses from "/assets/js/data/courses.js";
 
 //* get content element
 const couresesContent = getElement(".courses__content");
