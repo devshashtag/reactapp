@@ -1,5 +1,5 @@
 //? global imports
-import { sidebarEvents } from "/assets/js/global/sidebar.js"
+import { headerEvents } from "/assets/js/global/header.js"
 
 // sidebar 
-sidebarEvents()
+headerEvents()
