@@ -60,6 +60,9 @@ $topbar-link-hover-fg: #0ff;
 $topbar-icon-fg: #fff;
 $topbar-icon-hover-fg: #0ff;
 
+$topbar-search-close-bg: #dd0;
+$topbar-search-close-hover-bg: #aa0;
+
 //* navbar
 $navbar-bg:#fff;
 $navbar-box-shadow: #eee;
@@ -76,16 +79,27 @@ $navbar-dropdown-list-shadow: #bbb;
 $navbar-button-account-bg: $yellow-clr;
 $navbar-button-account-fg: $white-clr;
 
+$navbar-search-form-bg:#fff;
+$navbar-search-input-fg:#888;
+$navbar-search-input-bg:#fff;
+$navbar-search-submit-fg:#adb5bd;
+$navbar-search-submit-hover-fg:#000a;
 // sidebar toggle in navbar
 $sidebar-toggle-bg: $black-clr-1;
 
 
 //* sidebar
-$sidebar-size:300px;
 $sidebar-bg:#212529;
+$sidebar-size:300px;
 $sidebar-overlay-bg:#0008;
+
 $sidebar-search-bg:#212529;
+$sidebar-search-fg:#6c757d;
 $sidebar-search-field-bg:#0004;
 $sidebar-search-field-fg:#9299a0;
+$sidebar-search-submit-fg:#6c757d;
+$sidebar-search-submit-hover-fg:#ddda;
+$sidebar-search-border-clr:#2c3237;
+$sidebar-dropdown-link-border-fg:#333940;
 
 
