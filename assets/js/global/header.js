@@ -33,7 +33,7 @@ const navbarEvents = () => {
     document.body.classList.toggle("overflow--hidden");
   });
 
-  // hide sidebar when clicking sidebar--overlay
+  // hide sidebar when clicking .body--overlay
   bodyOverlay.addEventListener('click', () => {
     sidebar.classList.remove("is-active");
     navbarToggle.classList.remove("is-active");
