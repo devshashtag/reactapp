@@ -3,6 +3,7 @@
   position:relative;
   background-color:$navbar-bg;
   box-shadow:0 .2rem .2rem $navbar-box-shadow;
+  min-height:5rem;
   
   @include flex($fdir:row-reverse);
   @include transition(all .5s ease);
@@ -25,8 +26,8 @@
       a {
         padding:2rem 0;
         font-size:1.4rem;
-        color: $navbar-link-fg;
         cursor: pointer;
+        color: $navbar-link-fg;
 
         &:hover {
           color: $navbar-link-active-fg;
@@ -69,7 +70,6 @@
   /* dropdown__header, dropdown__list */
   .dropdown {
     &__header {
-      cursor:pointer;
       @include flex($gap:1rem);
 
       .fa-angle-down {
@@ -78,7 +78,13 @@
       }
 
       &:hover i {
+        cursor:pointer;
         color: $navbar-icon-hover-fg;
+      }
+
+      a.is-active {
+        color: $navbar-link-active-fg;
+        pointer-events:none;
       }
     }
 

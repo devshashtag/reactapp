@@ -1,7 +1,10 @@
 // global imports 
 import { getElement, toggleClasses } from "./utils.js";
+import { topbarTemplate, navbarTemplate, sidebarTemplate, bodyWrapperTemplate } from "/assets/js/global/display.js";
+// 
+import { route } from "/assets/js/data/route.js";
 
-let topbarEvents = () => { 
+const topbarEvents = () => { 
   // navbar toggle for sidebar
   const searchToggle = getElement(".topbar__search--toggle");
   const navbar = getElement(".navbar");
@@ -13,47 +16,68 @@ let topbarEvents = () => {
   });
 };
 
-let navbarEvents = () => {
+const navbarEvents = () => {
   // navbar toggle for sidebar
-  const sidebar        = getElement(".sidebar");
-  const sidebarWrap    = getElement(".sidebar--wrap");
-  const sidebarOverlay = getElement(".sidebar--overlay");
-  const navbarToggle   = getElement(".navbar--toggle");
+  const sidebar      = getElement(".sidebar");
+  const bodyWrapper  = getElement(".body--wrap");
+  const bodyOverlay  = getElement(".body--overlay");
+  const navbarToggle = getElement(".navbar--toggle");
 
   // navbar toggle event to toggle sidebar
   navbarToggle.addEventListener('click', () => {
     sidebar.classList.toggle("is-active");
     navbarToggle.classList.toggle("is-active");
-    sidebarWrap.classList.toggle("wrap");
+    bodyWrapper.classList.toggle("wrap");
     document.body.classList.toggle("overflow--hidden");
   });
 
   // hide sidebar when clicking sidebar--overlay
-  sidebarOverlay.addEventListener('click', () => {
+  bodyOverlay.addEventListener('click', () => {
     sidebar.classList.remove("is-active");
     navbarToggle.classList.remove("is-active");
-    sidebarWrap.classList.remove("wrap");
+    bodyWrapper.classList.remove("wrap");
     document.body.classList.remove("overflow--hidden");
   });
 }
 
-let sidebarEvents = () => {
-  // sidebar dropdown toggle for navigations
-  const DropdownToggle = getElement(".sidebar__dropdown--toggle");
-  const DropdownNav    = getElement(".sidebar__dropdown__nav");
+const sidebarEvents = () => {
+  let sidebarList = getElement(".sidebar__list");
 
-  // display dropdown
-  DropdownToggle.addEventListener('click', () => {
-    toggleClasses(DropdownToggle, "is-active", "fa-angle-left", "fa-angle-down");
-    DropdownNav.classList.toggle("is-active");
+  // if click on dropdown toggle. show dropdown list
+  sidebarList.addEventListener('click', (el) => {
+    if(el.target.classList.contains("sidebar__dropdown--toggle")){
+      let toggle = el.target;
+      const dropdownList = toggle.parentNode.parentNode.querySelector(".dropdown__list");
+      // toggle
+      toggleClasses(toggle, "is-active", "fa-angle-left", "fa-angle-down");
+      dropdownList.classList.toggle("is-active");
+    }
   });
 }
 
-let headerEvents = () => {
+
+const sidebar = sidebarTemplate(route);
+const navbar  = navbarTemplate(route);
+const topbar  = topbarTemplate();
+
+// header
+const headerInit = () => {
+  // templates
+  let htmlTemplate = `
+  ${sidebar}
+  ${bodyWrapperTemplate(`
+    ${topbar}
+    ${navbar}
+    ${document.body.innerHTML}
+  `)}`;
+  // set template
+  document.body.innerHTML = htmlTemplate;
+
+  // events
   topbarEvents();
   navbarEvents();
   sidebarEvents();
 }
 
-export { headerEvents, topbarEvents, navbarEvents, sidebarEvents}
+export { headerInit };
 
