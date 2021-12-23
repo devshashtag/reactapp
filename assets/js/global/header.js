@@ -68,13 +68,13 @@ let options = {
 // check options in route items
 function checkOptions(items) {
   for(let item of items) {
-    if(item.type === "dropdown") {
-      checkOptions(item.data);
-    } 
-    else if(item.topbar === false && baseUrl(item.url) == doc_name){
+    if(item.topbar === false && baseUrl(item.url) == doc_name){
       options.topbar = false;
       return;
     }
+    if(item.type === "dropdown") {
+      checkOptions(item.data);
+    } 
   }
 }
 
