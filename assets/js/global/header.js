@@ -57,6 +57,9 @@ const sidebarEvents = () => {
   });
 }
 
+// document name
+let doc_name = baseUrl(document.location.pathname)
+
 // header options
 let options = {
   topbar:true
@@ -68,10 +71,10 @@ function checkOptions(items) {
     if(item.type === "dropdown") {
       checkOptions(item.data);
     } 
-    else if(item.topbar === false){
+    else if(item.topbar === false && baseUrl(item.url) == doc_name){
       options.topbar = false;
+      return;
     }
-    console.log(item);
   }
 }
 
