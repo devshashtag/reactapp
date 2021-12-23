@@ -12,7 +12,8 @@ export const route = [
       { 
         url: "/pages/learning-steps.html", 
         title: "راهنمای یادگیری", 
-        type:"item"
+        type:"item",
+        topbar: false
       }
     ]
   },

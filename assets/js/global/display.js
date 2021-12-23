@@ -1,4 +1,4 @@
-import { separate } from "./utils.js";
+import { separate, baseUrl } from "./utils.js";
 
 const dispalyCourses = (data = [], type = "title") => {
   const filterItems = data.filter((item) => item[type]);
@@ -60,16 +60,10 @@ const displayBlogs = (data = [], value) => {
 
 //# header navigation templates 
 // active item
-const baseurl = (url) => {
-  let file_name = url.replace('\\','/').replace('.html','').split('/').pop();
-  file_name = file_name?file_name:'/';
-  return file_name
-}
-
-let doc_name = baseurl(document.location.pathname)
+let doc_name = baseUrl(document.location.pathname)
 
 // templates
-const linkTemplate = item => `\n<a ${baseurl(item.url).includes(doc_name)?`class="is-active" `:``}href="${item.url}">${item.title}</a>\n`;
+const linkTemplate = item => `\n<a ${baseUrl(item.url).includes(doc_name)?`class="is-active" `:``}href="${item.url}">${item.title}</a>\n`;
 const listTemplate = item => `\n<li>${linkTemplate(item)}</li>\n`;
 const dropdownTemplate = (item, angle='down', toggle_for) => {
   let icon_classes = `
