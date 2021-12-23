@@ -1,13 +1,12 @@
-.sendCommentBox {
-  max-width: 510px;
+.sendcomment {
+  margin-top: 30px;
+  width: 100%;
   color:$gray-clr-2;
   font-size: 1.3rem;
-  background-color: #f8f9fa;
+  background-color: $gray-clr-7;
   box-shadow: 0 0 5px 3px #eee;
   border: 2px solid $gray-clr-5;
   padding: 30px;
-  @include breakpoint(md){max-width: 780px;width: 100%;}
-
   form {
     height: 100%;
     @include flex($fdir:column,$aitem:flex-start,$jcnt:space-between);
@@ -16,11 +15,10 @@
       width: 100%;
       border: 1px solid $gray-clr-4;
       padding: 5px;
-      font-size: 1.5em;
     }  
   }
-
   .comment__input__box {
+    color:$gray-clr-2;
     margin: 10px;
     width: 100%;
     @include flex($fdir:column,$aitem:flex-start);
@@ -29,17 +27,14 @@
 
   &__message {
     width: 100%;
-
     .comment_describe {
-      font-size: inherit;
       margin-bottom: 5px;
     }
-
     .comment__input__box {
       @include breakpoint(md){width:100%};
     }
-
     .input{
+      resize: vertical;
       min-height: 200px;  
     }
   }
