@@ -1,0 +1,24 @@
+.steps-card {
+  background: $react-gr-clr;
+  color: $white-clr;
+  padding: 2rem 1.5rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  .card {
+    &__title {
+      margin-bottom: 1rem;
+    }
+    &__background {
+      opacity: 0.3;
+      position: absolute;
+      object-fit: contain;
+      width: 60%;
+      height: 60%;
+      left: 10%;
+      bottom: 10%;
+    }
+  }
+}

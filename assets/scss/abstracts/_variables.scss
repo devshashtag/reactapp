@@ -1,39 +1,44 @@
 //? colors
 //* used in buttons and hover effect
-$yellow-clr:#ffb606;
+$yellow-clr: #ffb606;
 
-//* used in section-title and hover effect 
-$black-clr-1:#000;
+//* used in section-title and hover effect
+$black-clr-1: #000;
 
 //* used in texts and blog-title and post-title
-$gray-clr-1:#464749;
+$gray-clr-1: #464749;
 
 //* used in icons
-$gray-clr-2:#6C757D;
+$gray-clr-2: #6c757d;
 
 //* used in course-price
-$gray-clr-3:#B0B0B0;
+$gray-clr-3: #b0b0b0;
 
 //* used in background course-icon
-$gray-clr-4:#0000005e;
+$gray-clr-4: #0000005e;
 
 //* used in blog-card
-$gray-clr-5:#ececec;
+$gray-clr-5: #ececec;
 
 //* used in breadcrumb
-$gray-clr-6:#EBEEF1;
+$gray-clr-6: #ebeef1;
 
-//* used in blog-page-background and course-page-background 
-$gray-clr-7:#F8F9FA;
+//* used in blog-page-background and course-page-background
+$gray-clr-7: #f8f9fa;
 
-//* used in general-question-background 
-$gray-clr-8:#F8F9FA;
+//* used in general-question-background
+$gray-clr-8: #f8f9fa;
+
+//* used in pagination background
+$gray-clr-9: #f0f0f1;
+
+
 
 //* used in home-page-background header-background and hover effect course-icon
-$white-clr:#fff;
+$white-clr: #fff;
 
 //* used in links
-$blue-clr-1:#3467ff;
+$blue-clr-1: #3467ff;
 
 //* used in course-page
 $green-clr:#1fbd50;
@@ -41,19 +46,69 @@ $green-clr:#1fbd50;
 $react-gr-clr:linear-gradient(180deg,#4d01df 0%,#8a2be1 100%);
 $nodeJs-gr-clr:linear-gradient(180deg,#1d7401 0%,#6e9601 100%);
 $js-gr-clr:linear-gradient(180deg,#edaf20 0%,#ed5e01 100%);
-$reactNative-gr-clr:linear-gradient(180deg,#4751ca 0%,#00a2e3 100%);
+$reactnative-gr-clr:linear-gradient(180deg,#4751ca 0%,#00a2e3 100%);
 
+//*comment
+$comment-msg-clr:#7d7e7f;
+$comment-border-clr:#e5e5e5;
+$comment-time-clr:#adb5bd;
+$comment-reply-clr:#b1bbbf;
+$comment-tag-clr:#ec406a;
+$comment-hover-clr:#1919191f;
 
 //? sizes
 //* used in main-container
-$max-width:1230px;
+$max-width: 1230px;
 
-//? top-bar
-$topbar-bg: black;
+//* top-bar
+$topbar-bg: #000;
 
-$topbar-link-fg: white;
-$topbar-link-hover-fg: cyan;
+$topbar-link-fg: #fff;
+$topbar-link-hover-fg: #0ff;
 
-$topbar-icon-fg: white;
-$topbar-icon-hover-fg: cyan;
+$topbar-icon-fg: #fff;
+$topbar-icon-hover-fg: #0ff;
+
+$topbar-search-close-bg: #dd0;
+$topbar-search-close-hover-bg: #aa0;
+
+//* navbar
+$navbar-bg:#fff;
+$navbar-box-shadow: #eee;
+
+$navbar-link-fg: $gray-clr-1;
+$navbar-link-active-fg: #000;
+
+$navbar-icon-hover-fg: #008B8B;
+
+$navbar-dropdown-angle: #aaa;
+$navbar-dropdown-list-bg: #fff;
+$navbar-dropdown-list-shadow: #bbb;
+
+$navbar-button-account-bg: $yellow-clr;
+$navbar-button-account-fg: $white-clr;
+
+$navbar-search-form-bg:#fff;
+$navbar-search-input-fg:#888;
+$navbar-search-input-bg:#fff;
+$navbar-search-submit-fg:#adb5bd;
+$navbar-search-submit-hover-fg:#000a;
+// sidebar toggle in navbar
+$sidebar-toggle-bg: $black-clr-1;
+
+
+//* sidebar
+$sidebar-bg:#212529;
+$sidebar-size:300px;
+$sidebar-overlay-bg:#0008;
+
+$sidebar-search-bg:#212529;
+$sidebar-search-fg:#6c757d;
+$sidebar-search-field-bg:#0004;
+$sidebar-search-field-fg:#9299a0;
+$sidebar-search-submit-fg:#6c757d;
+$sidebar-search-submit-hover-fg:#ddda;
+$sidebar-search-border-clr:#2c3237;
+$sidebar-dropdown-link-border-fg:#333940;
+
 

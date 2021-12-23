@@ -1,95 +1,115 @@
-.main {
-    width: 100%;
-    @include flex($fdir: column);
+#learning-steps {
+  width: 100%;
+  @include flex($fdir: column);
 
+  .steps {
     &__header {
-        @include flex();
-        width: 100%;
-        height: 293px;
-        background-image: url("../images/banners/learning_step.jpeg");
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 10px;
-
-        &__title {
-            color: $white-clr;
-        }
+      @include flex();
+      width: 100%;
+      height: 293px;
+      background-image: url("/assets/images/banners/learning_step.jpeg");
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 10px;
+      color: $white-clr;
     }
-
     &__content {
-        width: 100%;
-        max-width: 1200px;
-        padding: 1.2rem;
-
-        &__paragraph {
-            
-            text-align: justify;
-            color: $gray-clr-2;
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-
-            @include breakpoint(md){font-size: 1.1rem;}
-            &::first-letter {
-                padding-right: 1rem;
-            }
-
-        }
-
-        &__learning-step {
-         
-            @include breakpoint(xs){max-width: 510px;}
-           
-            
-            &__header {
-                padding-right: 2rem;
-                @include flex($jcnt: flex-start);
-                margin-bottom: 30px;
-
-                &__icon {
-                    color: $gray-clr-1;
-                    font-size: 2.5rem;
-                }
-                &__title {
-                    margin-right: 10px;
-                    color: $gray-clr-1;
-                    font-size: 1.4rem;
-                    @include breakpoint(md){font-size: 1.2rem;}
-                    
-                }
-                &__border {
-                    margin-right: 10px;
-                    height: 1px;
-                    flex-grow: 1;
-                    background-color: $gray-clr-5;
-                }
-            }
-            &__box {
-                
-                @include flex($fdir: column-reverse, $aitem: flex-end);
-                @include breakpoint(md){@include flex($fdir: row, $jcnt: space-between)};
-               
-
-                &__linkItem {
-                    width: 310px;
-                    margin: 2px;
-                    @include breakpoint(md){width:200px;height: 400px;}
-                    @include breakpoint(lg){width: 277.5px;height: 188px;}
-                    
-
-                    .stepLearningCard__reactnative {
-                        background: $reactNative-gr-clr;
-                    }
-                    .stepLearningCard__js {
-                        background: $js-gr-clr;
-                    }
-                    .stepLearningCard__nodejs {
-                        background: $nodeJs-gr-clr;
-                    }
-                    .stepLearningCard__react {
-                        background: $react-gr-clr;
-                    }
-                }
-            }
-        }
+      width: 100%;
+      max-width: 1200px;
+      padding: 1.2rem;
+      margin: auto;
     }
+  }
+  .content {
+    &__paragraph {
+      text-align: justify;
+      color: $gray-clr-2;
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      @include breakpoint(md) {
+        font-size: 1.1rem;
+      }
+      &::first-letter {
+        padding-right: 1rem;
+      }
+    }
+    &____section {
+      @include breakpoint(xs) {
+        max-width: 510px;
+      }
+    }
+  }
+
+  .section {
+    &__header {
+      padding-right: 2rem;
+      @include flex($jcnt: flex-start);
+      margin-bottom: 30px;
+    }
+    &__box {
+      @include flex($gap:1rem,$fdir: column-reverse);
+      @include breakpoint(sm){
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: wrap;
+      }
+      @include breakpoint(lg) {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+  .sec__header {
+    &__icon {
+      color: $gray-clr-1;
+      font-size: 2.5rem;
+    }
+    &__title {
+      margin-right: 10px;
+      color: $gray-clr-1;
+      font-size: 1.4rem;
+      @include breakpoint(md) {
+        font-size: 1.2rem;
+      }
+    }
+    &__hr {
+      margin-right: 10px;
+      height: 1px;
+      flex-grow: 1;
+      background-color: $gray-clr-5;
+    }
+  }
+  .box {
+    &__linkItem {
+      width: 90%;
+      max : {
+        width: 300px;
+        height: 188px;
+      }
+      margin: 2px;
+      @include breakpoint(sm){
+        width: 40%;
+        max-width: 310px;
+        max-height: initial;
+      }
+      @include breakpoint(lg) {
+        background: red;
+        width: 277.5px;
+
+      }
+    }
+  }
+  .steps-card {
+    &__reac {
+      background: $react-gr-clr;
+    }
+    &__nodejs {
+      background: $nodeJs-gr-clr;
+    }
+    &__reactnative {
+      background: $reactnative-gr-clr;
+    }
+    &__js {
+      background: $js-gr-clr;
+    }
+  }
 }

@@ -5,13 +5,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- styles -->
-  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
   <title>reactapp javascript</title>
 </head>
 
 <body>
-  <h1>reactapp javascript</h1>
+  <main id="comment">
+
+    <section class="comments">
+      <div class="comments__tab">
+        <div class="tabname">
+          <i class="far fa-comment-alt tabname__icon"></i>
+          <sapn class="tabname__title">نظرات</span>
+        </div>
+      </div>
+
+      <div class="comments__list">
+        <div class="comment">
+          <div class="comment__header">
+            <div class="comment__header__author">md
+              <span class="comment__header__author__tag"></span>
+            </div>
+            <time class="comment__header__time">دسامبر 7, 2021</time>
+            <button class="comment__header__reply">پاسخ</button>
+          </div>
+          <p class="comment__msg">سلام خسته نباشید
+            مشخصات سیستم پیشنهادی برای شروع دوره چیه ؟
+          </p>
+        </div>
+        <div class="comment">
+          <div class="comment__header">
+            <div class="comment__header__author">امیرعلی 
+              <span class="comment__header__author__tag"></span>
+            </div>
+            <time class="comment__header__time">دسامبر 22, 2021</time>
+            <button class="comment__header__reply">پاسخ</button>
+          </div>
+          <p class="comment__msg">
+            سلام یک سوال من می خوام ریکت نیتیو یادبگیرم می خواستم بدونم این دوره ببینم و دوره رایگان ریکت نیتیو میتونم یادبگیرم یا نه دوره جامع ریکت نیتیو ببینم بهتر یاد میگیرم؟؟؟
+            
+            <div class="comment">
+              <div class="comment__header">
+                <div class="comment__header__author">علیرضا 
+                  <span class="comment__header__author__tag">(مدیریت)</span>
+                </div>
+                <time class="comment__header__time">دسامبر 22, 2021</time>
+                <button class="comment__header__reply">پاسخ</button>
+              </div>
+              <p class="comment__msg">
+                امیر علی عزیز سلام
+                اگر هدفتون یاد گرفتن تخصصی ری اکت نیتیو هست پیشنهاد من دوره آموزش جامع ری اکت نیتیو هستش. پروژه محور هم هست و بهتون کمک میکنه. اما بعد از اون هم اگه خواستید توانایی هاتون رو تکمیل تر کنید و در کنار اون نگاهی هم به حوزه فرانت و بک اند داشته باشید این دوره رو از دست ندید.
+                هر سوال دیگه ای داشتید میتونید تو کامنت ها و پشتیبانی تلگرام مطرح کنید در موردش باهم صحبت میکنیم تا به نتیجه درست برسید.              
+              </p>
+            </div>
+          </p>
+        </div>
+        <!-- pagination -->
+        <div class="comments__pagination">
+          <a class="active" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">...</a>
+          <a href="#">6</a>
+          <a href="#"><i class="fa fa-angle-left"></i></a>
+        </div>
+        <!--! end of pagination -->
+        
+      <p>قوانین ثبت دیدگاه</p>
+        <!-- start commentCreatebox-->
+        <div class="sendcomment">
+          <form action="">
+            <div class='sendcomment__message'>
+              <p class="comment_describe">
+                نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری شده‌اند *
+              </p>
+              <div class="comment__input__box">
+                <label for="comment__msg">
+                  دیدگاه شما *
+                </label>
+                <textarea id="comment__msg" name="userMsg" class="input"></textarea>
+              </div>
+            </div>
+
+            <div class="sendcomment__information">
+              <div class="comment__input__box">
+                <label for="comment__username">نام *</label>
+                <input type="text" name="userName" id="comment__username" class="input">
+              </div>
+
+              <div class="comment__input__box">
+                <label for="comment__useremail">ایمیل *</label>
+                <input type="text" name="userEmail" id="comment__useremail" class="input">
+              </div>
+
+              <div class="comment__recaptcha">
+                <label for="comment__amIHumman">i'm not a robot</label>
+                <input type="checkbox" id="comment__amIHumman">
+              </div>
+            </div>
+
+            <button type="submit" class="btn sendcomment__submit">فرستادن دیدگاه</button>
+
+          </form>
+        </div>
+        <!-- end commentCreatebox-->
+      
+      
+      
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
