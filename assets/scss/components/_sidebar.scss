@@ -146,6 +146,7 @@
         pointer-events:auto;
         opacity:1;
         visibility:visible;
+        min-height:100vh;
 
         @include breakpoint(lg) {
           pointer-events: none;
