@@ -1,5 +1,647 @@
+body{
+    background: $gray-clr-7;
+}
+// heading
+.heading{
+    background: $gray-clr-5;
+    // padding: 3rem;
+    @include transition(all 1s ease-in-out);
+
+    h2{
+        font-weight: 100;
+        color: $black-clr-1;
+    }
+
+    ul{
+        display: flex;
+        align-items: baseline;
+        gap: 0.6rem;
+    }
+    
+    li{
+        color: $black-clr-1;
+        font-size: 1.15rem;
+
+        &:nth-child(even){
+            font-size: 0.7rem;
+        }
+    }
+
+    a{
+        color: $black-clr-1;
+        font-size: 1.15;
+        @include transition(color 0.2s ease-in-out);
+
+        &:hover{
+            color: $gray-clr-2;
+        }
+    }
+}
+
+// section .main
+.main{
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+    position: relative;
+}
+
+// main
+.main-course{
+    width: calc(100% - 27rem);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.3s ease-in-out;
+}
+.main-active{
+    width: 100%;
+}
+
+.image-course-container{
+    width: 100%;
+
+    img{
+        border-radius: 0.3rem;
+    }
+}
+
+.main-desc{
+    @include boxStyle;
+    margin-top: 2rem;
+    
+    h3{
+        color: $gray-clr-1;
+        margin: 0.8rem 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    
+    p{
+        color: $gray-clr-2;
+    }
+}
+
+.for-study{
+    @include boxStyle;
+    width: 2.5rem;
+    height: 2.8rem;
+    // height: 9rem;
+    padding: 0.5rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.6rem;
+    position: absolute;
+    top: 37.4rem;
+    right: -3.5rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover{
+        height: 9.5rem;
+    }
+
+    i{
+        font-size: 1.4rem;
+        color: $gray-clr-3;
+    }
+
+    p{
+        transform: rotate(90deg);
+        width: 6rem;
+        font-size: 1rem;
+        color: $gray-clr-3;
+    }
+}
+
+.for-study-active{
+    position: fixed;
+    top: 8.5rem;
+    right: 6.8rem;
+}
+
+.why-js-post{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #021636dc;
+    position: relative;
+    cursor: pointer;
+
+    
+    .image-js-post{
+        width: 30%;
+        height: 100%;
+    }
+
+    .post-title{
+        color: $white-clr;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .next-arrow{
+        position: absolute;
+        top: 0;
+        left: 0.5rem;
+    }
+
+    .next-arrow{
+        width: 4rem;
+        height: 100%;
+    }
+}
+
+// Frequently Asked Questions
+.frequently-questions{
+    padding: 1rem;
+
+    .question{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        i{
+            font-size: 1.3rem;
+            padding-top: 0.4rem;
+            margin-left: 0.2rem;
+            color: $gray-clr-3;
+        }
+    }
+
+    .question-box{
+        background: #e9ecef;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        margin-bottom: 0.6rem;
+        border: 0.1rem solid #dddedf;
+        border-radius: 1rem;
+        box-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.08);
+        height: 4.3rem;
+        overflow: hidden;
+    }
+
+    .questions-active{
+        height: auto;
+        overflow: none;
+    }
+
+    h4{
+        color: $gray-clr-1;
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin-bottom: 0.8rem;
+    }
+}
+
+// introductions box
+.introductions{
+    @include boxStyle;
+    background: $gray-clr-7;
+    padding-top: 0.7rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    .intro-box{
+        border-top: 0.1rem solid $gray-clr-5;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    p{
+        color: $gray-clr-1;
+        margin-bottom: 0.2rem;
+    }
+
+    span{
+        background: #65bded;
+        color: $white-clr;
+        margin-right: 0.5rem;
+        padding: 0 0.5rem;
+        font-size: 0.9rem;
+        border-radius: 0.2rem;
+    }
+
+    h5{
+        color: $gray-clr-3;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    .preview{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: $black-clr-1;
+        color: $white-clr;
+        height: 2rem;
+        padding: 1.2rem 0.8rem;
+        border-radius: 2rem;
+
+        p{
+            color: $white-clr;
+            font-size: 1rem;
+        }
+    }
+}
+
+.seasons-projects-box{
+    @include boxStyle;
+    
+    background: $gray-clr-7;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+
+    .seasons-projects-box-active{
+        margin-bottom: 1rem;
+    }
+
+    .seasons-projects{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    h4{
+        color: $gray-clr-1;
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin-bottom: 0.8rem;
+    }
+
+    i{
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: $gray-clr-3;
+        
+    }
+
+    .down-icon-active{
+        transform: rotate(180deg);
+    }
+
+    .season-info{
+        display: none;
+        
+    }
+
+    .season-info-active{
+        display: block;
+    }
+
+    .lesson-info{
+        border-top: 0.1rem solid $gray-clr-5;
+        padding: 0.8rem;
+        cursor: pointer;
+    }
+
+    p{
+        color: $gray-clr-1;
+        margin-bottom: 0.2rem;
+    }
+
+    span{
+        background: #65bded;
+        color: $white-clr;
+        margin-right: 0.5rem;
+        padding: 0 0.5rem;
+        font-size: 0.9rem;
+        border-radius: 0.2rem;
+    }
+
+    h5{
+        color: $gray-clr-3;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+}
+
+
+// aside
+// add a class to aside
+.aside-js-course{
+    width: 25rem;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.aside-active{
+    position: fixed;
+    top: -63rem;
+    left: 12rem;
+}
+.aside-for-study{
+    display: none;
+}
+
+.price-and-register{
+    width: 100%;
+    @include boxStyle;
+    position: relative;
+
+    &::before,
+    &::after{
+        content: '';
+        width: 1.1rem;
+        height: 1.1rem;
+        position: absolute;
+        top: 2.9rem;
+        background: $white-clr;
+    }
+
+    &::before{
+        right: 0.95rem;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-left: 0.1rem dashed $gray-clr-5;
+    }
+
+    &::after{
+        left: 0.95rem;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-right: 0.1rem dashed $gray-clr-5;
+    }
+}
+
+.price-course{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem dashed $gray-clr-5;
+    border-radius: 0.8rem;
+    padding-right: 1.5rem;
+    background: $gray-clr-7;
+    margin-bottom: 1rem;
+
+    p{
+        font-size: 1.2rem;
+        color: $gray-clr-2;
+    }
+    
+    .price{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        border-right: 0.1rem dashed $gray-clr-5;
+        padding: 0.6rem 1.5rem;
+        padding-right: 3.5rem;
+    
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    
+    h3{
+        color: $gray-clr-1;
+    }
+}
+
+.register-course{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $green-clr;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    position: relative;
+    cursor: pointer;
+    
+
+    &:hover{
+        background: $gray-clr-1;
+    }
+
+    a{
+        color: $white-clr;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    i{
+        position: absolute;
+        top: 1.2rem;
+        right: 1rem;
+        font-size: 1.3rem;
+        color: $white-clr;
+    }
+}
+// info-course
+.info-course{
+    @include boxStyle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+
+    .number-download{
+        padding: 1rem 2rem;
+        justify-content: center;
+        border: 0.12rem dotted $gray-clr-5;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        justify-content: space-between;
+        color: $gray-clr-1;
+
+        i{
+            font-size: 1.8rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+
+        span{
+            font-size: 1rem;
+            background: $gray-clr-6;
+            padding: 0.2rem 0.8rem 0.1rem;
+            border-radius: 0.3rem;
+        }
+    }
+
+    div{
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        padding: 0.6rem 0;
+        padding-right: 2.2rem;
+        color: $gray-clr-2;
+        border-bottom: 0.1rem dashed $gray-clr-5;
+    }
+
+    .info{
+        gap: 1rem;
+        position: relative;
+
+        i{
+            position: absolute;
+            right: 0;
+            font-size: 1.2rem;
+        }
+
+        .fa-traffic-light,
+        .fa-long-arrow-alt-down{
+            right: 0.25rem;
+        }
+    }
+
+    .progress{
+        align-items: center;
+        border: none;
+
+        .progress-animate{
+            width: 100%;
+            height: 1rem;
+            padding: 0;
+            position: absolute;
+            top: 3rem;
+            right: 0;
+            border: none;
+            background: $green-clr;
+            border-radius: 2rem;
+        }
+    }
+}
+// visit-comments-box
+.visit-comments-box,
+.visit,
+.comment{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.visit-comments-box{
+    @include boxStyle;
+    color: $gray-clr-2;
+
+    i{
+        font-size: 1.5rem;
+    }
+
+    .mid-line{
+        width: 0.05rem;
+        height: 1.5rem;
+        background: $gray-clr-3;
+        margin: 0 0.8rem;
+    }
+}
+
+// programmer of course
+.programmer-course{
+    @include boxStyle;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: $gray-clr-2;
+
+    .programmer-image{
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 50%;
+        border: 0.3rem double $gray-clr-5;
+
+        img{
+            border-radius: 50%;
+        }
+    }
+
+    h4{
+        font-size: 1.1rem;
+        color: $gray-clr-1;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+// our-instagram
+.our-instagram{
+    @include boxStyle;
+
+    .image-instagram{
+        width: 100%;
+    }
+}
+
+// share-box
+.share-box{
+    @include boxStyle;
+
+    .info-product{
+        display: flex;
+        align-items: baseline;
+        gap: 0.4rem;
+        color: $gray-clr-2;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 0.1rem dashed $gray-clr-5;
+
+        p{
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        a{
+            font-size: 0.9rem;
+            border: 0.1rem dotted $gray-clr-5;
+            padding: 0 0.5rem;
+            border-radius: 1rem;
+            color: $gray-clr-2;
+        }
+    }
+
+    .link-course{
+        font-size: 0.9rem;
+        color: $gray-clr-3;
+        border: 0.1rem solid $gray-clr-5;
+        padding: 0.2rem 0.8rem;
+        border-radius: 0.3rem;
+        box-shadow: 0 5px 40px rgba($color: #000000, $alpha: 0.08);
+        margin-bottom: 1rem;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        
+        a{
+            color: $gray-clr-3;
+            padding: 0.2rem 0.5rem 0.1rem;
+            border: 0.13rem solid $gray-clr-3;
+            border-radius: 0.2rem;
+        }
+
+        .facebook{
+            padding: 0.2rem 0.7rem 0.1rem;
+        }
+    }
+}
+
+@include breakpoint(xl){
+    .heading{
+        padding: 3rem 10rem;
+    }
+}
+
 #comment{
     margin: auto;
     max-width: 768px;
     padding: 10px;
+    // sajjad
+    position: absolute;
+    bottom: -500rem;
+    right: 0;
 }
