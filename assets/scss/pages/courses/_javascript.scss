@@ -1,13 +1,17 @@
 body{
     background: $gray-clr-7;
 }
+
+@import "typography-js";
+
+
 // heading
 .heading{
-    background: $gray-clr-5;
-    // padding: 3rem;
+    background: $gray-clr-6;
     @include transition(all 1s ease-in-out);
 
     h2{
+        font-size: 2.2rem;
         font-weight: 100;
         color: $black-clr-1;
     }
@@ -20,7 +24,7 @@ body{
     
     li{
         color: $black-clr-1;
-        font-size: 1.15rem;
+        font-size: 1.3rem;
 
         &:nth-child(even){
             font-size: 0.7rem;
@@ -42,17 +46,19 @@ body{
 .main{
     width: 100%;
     height: 100%;
+    display: flex;
+    gap: 2rem;
     margin-top: 3rem;
     position: relative;
 }
 
 // main
 .main-course{
-    width: calc(100% - 27rem);
-    position: absolute;
+    width: calc(100% - 31rem);
+    position: relative;
     top: 0;
     right: 0;
-    transition: 0.3s ease-in-out;
+    @include transition(all 0.3s ease-in-out);
 }
 .main-active{
     width: 100%;
@@ -60,9 +66,36 @@ body{
 
 .image-course-container{
     width: 100%;
+    position: relative;
 
     img{
         border-radius: 0.3rem;
+    }
+
+    .play-icon{
+        width: 7.5rem;
+        height: 7.5rem;
+        background: rgba($color: $black-clr-1, $alpha: 0.5);
+        color: $white-clr;
+        border-radius: 50%;
+        position: absolute;
+        top: 16rem;
+        right: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @include transition(0.2s ease-in-out);
+
+        i{
+            font-size: 3.5rem;
+            padding-right: 0.2rem;
+        }
+
+        &:hover{
+            background: $white-clr;
+            color: $gray-clr-2;
+        }
     }
 }
 
@@ -73,7 +106,7 @@ body{
     h3{
         color: $gray-clr-1;
         margin: 0.8rem 0;
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 500;
     }
     
@@ -86,31 +119,30 @@ body{
     @include boxStyle;
     width: 2.5rem;
     height: 2.8rem;
-    // height: 9rem;
     padding: 0.5rem 1.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.6rem;
     position: absolute;
-    top: 37.4rem;
-    right: -3.5rem;
+    top: 43.5rem;
+    right: -4rem;
     overflow: hidden;
     cursor: pointer;
 
     &:hover{
-        height: 9.5rem;
+        height: 10rem;
     }
 
     i{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: $gray-clr-3;
     }
 
     p{
         transform: rotate(90deg);
-        width: 6rem;
-        font-size: 1rem;
+        width: 8rem;
+        font-size: 1.2rem;
         color: $gray-clr-3;
     }
 }
@@ -118,7 +150,7 @@ body{
 .for-study-active{
     position: fixed;
     top: 8.5rem;
-    right: 6.8rem;
+    right: 8rem;
 }
 
 .why-js-post{
@@ -165,8 +197,8 @@ body{
         cursor: pointer;
 
         i{
-            font-size: 1.3rem;
-            padding-top: 0.4rem;
+            font-size: 1.4rem;
+            padding-top: 0.6rem;
             margin-left: 0.2rem;
             color: $gray-clr-3;
         }
@@ -180,7 +212,7 @@ body{
         border: 0.1rem solid #dddedf;
         border-radius: 1rem;
         box-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.08);
-        height: 4.3rem;
+        height: 4.8rem;
         overflow: hidden;
     }
 
@@ -191,7 +223,7 @@ body{
 
     h4{
         color: $gray-clr-1;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         font-weight: 100;
         margin-bottom: 0.8rem;
     }
@@ -201,7 +233,7 @@ body{
 .introductions{
     @include boxStyle;
     background: $gray-clr-7;
-    padding-top: 0.7rem;
+    padding-top: 0.8rem;
     padding-bottom: 0;
     margin-bottom: 0;
 
@@ -229,7 +261,7 @@ body{
 
     h5{
         color: $gray-clr-3;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 100;
     }
 
@@ -240,12 +272,12 @@ body{
         background: $black-clr-1;
         color: $white-clr;
         height: 2rem;
-        padding: 1.2rem 0.8rem;
+        padding: 1.4rem 0.8rem;
         border-radius: 2rem;
 
         p{
             color: $white-clr;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
     }
 }
@@ -270,13 +302,13 @@ body{
 
     h4{
         color: $gray-clr-1;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 100;
         margin-bottom: 0.8rem;
     }
 
     i{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-left: 0.5rem;
         margin-bottom: 0.5rem;
         color: $gray-clr-3;
@@ -327,15 +359,15 @@ body{
 // aside
 // add a class to aside
 .aside-js-course{
-    width: 25rem;
+    width: 29rem;
     min-height: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
 .aside-active{
     position: fixed;
-    top: -63rem;
+    top: -79rem;
     left: 12rem;
 }
 .aside-for-study{
@@ -353,7 +385,7 @@ body{
         width: 1.1rem;
         height: 1.1rem;
         position: absolute;
-        top: 2.9rem;
+        top: 3.2rem;
         background: $white-clr;
     }
 
@@ -378,12 +410,12 @@ body{
     align-items: center;
     border: 0.1rem dashed $gray-clr-5;
     border-radius: 0.8rem;
-    padding-right: 1.5rem;
+    padding-right: 1.8rem;
     background: $gray-clr-7;
     margin-bottom: 1rem;
 
     p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: $gray-clr-2;
     }
     
@@ -392,16 +424,17 @@ body{
         align-items: center;
         gap: 0.8rem;
         border-right: 0.1rem dashed $gray-clr-5;
-        padding: 0.6rem 1.5rem;
-        padding-right: 3.5rem;
+        padding: 0.8rem 1.5rem;
+        padding-right: 6rem;
     
         p{
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
     
     h3{
         color: $gray-clr-1;
+        font-size: 1.8rem;
     }
 }
 
@@ -412,9 +445,10 @@ body{
     align-items: center;
     background: $green-clr;
     border-radius: 0.3rem;
-    padding: 0.7rem;
+    padding: 0.8rem;
     position: relative;
     cursor: pointer;
+    @include transition(0.2s ease-in-out);
     
 
     &:hover{
@@ -423,15 +457,15 @@ body{
 
     a{
         color: $white-clr;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         font-weight: 500;
     }
 
     i{
         position: absolute;
-        top: 1.2rem;
+        top: 1.4rem;
         right: 1rem;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         color: $white-clr;
     }
 }
@@ -444,7 +478,7 @@ body{
     padding: 2rem 1.5rem;
 
     .number-download{
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
         justify-content: center;
         border: 0.12rem dotted $gray-clr-5;
         margin-bottom: 1rem;
@@ -453,15 +487,11 @@ body{
         color: $gray-clr-1;
 
         i{
-            font-size: 1.8rem;
-        }
-
-        p{
-            font-size: 1.2rem;
+            font-size: 2rem;
         }
 
         span{
-            font-size: 1rem;
+            font-size: 1.2rem;
             background: $gray-clr-6;
             padding: 0.2rem 0.8rem 0.1rem;
             border-radius: 0.3rem;
@@ -485,7 +515,7 @@ body{
         i{
             position: absolute;
             right: 0;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         .fa-traffic-light,
@@ -517,7 +547,7 @@ body{
 .comment{
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
 }
 .visit-comments-box{
     @include boxStyle;
@@ -544,8 +574,8 @@ body{
     color: $gray-clr-2;
 
     .programmer-image{
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 6.5rem;
+        height: 6.5rem;
         border-radius: 50%;
         border: 0.3rem double $gray-clr-5;
 
@@ -555,12 +585,13 @@ body{
     }
 
     h4{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
+        font-weight: 100;
         color: $gray-clr-1;
     }
 
     p{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
@@ -580,17 +611,17 @@ body{
     .info-product{
         display: flex;
         align-items: baseline;
-        gap: 0.4rem;
+        gap: 0.5rem;
         color: $gray-clr-2;
-        padding-bottom: 0.5rem;
-        margin-bottom: 0.5rem;
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.8rem;
         border-bottom: 0.1rem dashed $gray-clr-5;
 
         p{
             display: flex;
             align-items: baseline;
             gap: 0.5rem;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         a{
@@ -603,12 +634,12 @@ body{
     }
 
     .link-course{
-        font-size: 0.9rem;
+        font-size: 1rem;
         color: $gray-clr-3;
         border: 0.1rem solid $gray-clr-5;
         padding: 0.2rem 0.8rem;
         border-radius: 0.3rem;
-        box-shadow: 0 5px 40px rgba($color: #000000, $alpha: 0.08);
+        box-shadow: 0 5px 50px rgba($color: #000000, $alpha: 0.08);
         margin-bottom: 1rem;
     }
 
@@ -619,29 +650,27 @@ body{
         
         a{
             color: $gray-clr-3;
-            padding: 0.2rem 0.5rem 0.1rem;
-            border: 0.13rem solid $gray-clr-3;
+            padding: 0.3rem 0.6rem 0.1rem;
+            border: 0.15rem solid $gray-clr-3;
             border-radius: 0.2rem;
         }
 
         .facebook{
-            padding: 0.2rem 0.7rem 0.1rem;
+            padding: 0.3rem 0.85rem 0.1rem;
         }
     }
 }
 
 @include breakpoint(xl){
     .heading{
-        padding: 3rem 10rem;
+        padding: 3rem 12rem;
     }
 }
 
 #comment{
-    margin: auto;
     max-width: 768px;
     padding: 10px;
     // sajjad
-    position: absolute;
-    bottom: -500rem;
-    right: 0;
+    position: relative;
+    margin: 0;
 }

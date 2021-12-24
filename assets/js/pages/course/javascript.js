@@ -15,7 +15,7 @@ const seasonsTitles = $.querySelectorAll('.seasons-projects');
 const seasonInfo = $.querySelectorAll('.season-info');
 
 seasonsTitles.forEach(seasonsTitle => {
-    seasonsTitle.addEventListener('click', (event) => {
+    seasonsTitle.addEventListener('click', () => {
         seasonsTitle.parentElement.classList.toggle('seasons-projects-box-active');
         seasonsTitle.lastElementChild.classList.toggle('down-icon-active');
 
@@ -49,7 +49,7 @@ window.addEventListener('scroll', () => {
         forStudy.classList.remove('for-study-active');
     }
 
-    if (window.scrollY >= 1000) {
+    if (window.scrollY >= 1050) {
         aside.classList.add('aside-active');
     } else {
         aside.classList.remove('aside-active');
