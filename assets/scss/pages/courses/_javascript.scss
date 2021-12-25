@@ -1,9 +1,7 @@
-body{
+@import "responsive-js";
+.js-body{
     background: $gray-clr-7;
 }
-
-@import "typography-js";
-
 
 // heading
 .heading{
@@ -33,7 +31,7 @@ body{
 
     a{
         color: $black-clr-1;
-        font-size: 1.15;
+        font-size: 1.3;
         @include transition(color 0.2s ease-in-out);
 
         &:hover{
@@ -47,6 +45,7 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     gap: 2rem;
     margin-top: 3rem;
     position: relative;
@@ -54,10 +53,7 @@ body{
 
 // main
 .main-course{
-    width: calc(100% - 31rem);
-    position: relative;
-    top: 0;
-    right: 0;
+    width: calc(100% - 30.5rem);
     @include transition(all 0.3s ease-in-out);
 }
 .main-active{
@@ -112,14 +108,15 @@ body{
     
     p{
         color: $gray-clr-2;
+        font-size: 1.3rem;
     }
 }
 
 .for-study{
     @include boxStyle;
     width: 2.5rem;
-    height: 2.8rem;
-    padding: 0.5rem 1.3rem;
+    height: 3rem;
+    padding: 0.6rem 1.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,11 +128,11 @@ body{
     cursor: pointer;
 
     &:hover{
-        height: 10rem;
+        height: 10.5rem;
     }
 
     i{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: $gray-clr-3;
     }
 
@@ -171,7 +168,7 @@ body{
 
     .post-title{
         color: $white-clr;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: bold;
     }
 
@@ -199,7 +196,7 @@ body{
         i{
             font-size: 1.4rem;
             padding-top: 0.6rem;
-            margin-left: 0.2rem;
+            margin-left: 0.4rem;
             color: $gray-clr-3;
         }
     }
@@ -255,7 +252,7 @@ body{
         color: $white-clr;
         margin-right: 0.5rem;
         padding: 0 0.5rem;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         border-radius: 0.2rem;
     }
 
@@ -272,19 +269,19 @@ body{
         background: $black-clr-1;
         color: $white-clr;
         height: 2rem;
-        padding: 1.4rem 0.8rem;
+        padding: 1.3rem 0.8rem;
         border-radius: 2rem;
 
         p{
             color: $white-clr;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
     }
 }
 
 .seasons-projects-box{
     @include boxStyle;
-    
     background: $gray-clr-7;
     margin-bottom: 0;
     padding-bottom: 1rem;
@@ -302,17 +299,17 @@ body{
 
     h4{
         color: $gray-clr-1;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 100;
         margin-bottom: 0.8rem;
     }
 
     i{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         margin-left: 0.5rem;
         margin-bottom: 0.5rem;
         color: $gray-clr-3;
-        
+        @include transition(0.2s ease-in-out);
     }
 
     .down-icon-active{
@@ -321,7 +318,6 @@ body{
 
     .season-info{
         display: none;
-        
     }
 
     .season-info-active{
@@ -344,13 +340,13 @@ body{
         color: $white-clr;
         margin-right: 0.5rem;
         padding: 0 0.5rem;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         border-radius: 0.2rem;
     }
 
     h5{
         color: $gray-clr-3;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 100;
     }
 }
@@ -360,15 +356,11 @@ body{
 // add a class to aside
 .aside-js-course{
     width: 29rem;
-    min-height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
 }
 .aside-active{
     position: fixed;
-    top: -79rem;
-    left: 12rem;
+    top: -78.5rem;
+    left: 11.9rem;
 }
 .aside-for-study{
     display: none;
@@ -382,10 +374,10 @@ body{
     &::before,
     &::after{
         content: '';
-        width: 1.1rem;
-        height: 1.1rem;
+        width: 1.2rem;
+        height: 1.2rem;
         position: absolute;
-        top: 3.2rem;
+        top: 3.3rem;
         background: $white-clr;
     }
 
@@ -435,6 +427,7 @@ body{
     h3{
         color: $gray-clr-1;
         font-size: 1.8rem;
+        font-family: "Tanha";
     }
 }
 
@@ -449,6 +442,7 @@ body{
     position: relative;
     cursor: pointer;
     @include transition(0.2s ease-in-out);
+    box-shadow: 0 2px 5px rgba($color: $green-clr, $alpha: 0.2);
     
 
     &:hover{
@@ -465,7 +459,7 @@ body{
         position: absolute;
         top: 1.4rem;
         right: 1rem;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: $white-clr;
     }
 }
@@ -475,7 +469,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.6rem;
 
     .number-download{
         padding: 1rem 3rem;
@@ -487,14 +481,19 @@ body{
         color: $gray-clr-1;
 
         i{
-            font-size: 2rem;
+            font-size: 2.2rem;
+        }
+
+        p{
+            font-size: 1.2rem;
         }
 
         span{
             font-size: 1.2rem;
             background: $gray-clr-6;
-            padding: 0.2rem 0.8rem 0.1rem;
+            padding: 0.1rem 0.8rem 0;
             border-radius: 0.3rem;
+            font-family: "Tanha";
         }
     }
 
@@ -503,7 +502,7 @@ body{
         display: flex;
         align-items: baseline;
         padding: 0.6rem 0;
-        padding-right: 2.2rem;
+        padding-right: 2.5rem;
         color: $gray-clr-2;
         border-bottom: 0.1rem dashed $gray-clr-5;
     }
@@ -515,12 +514,16 @@ body{
         i{
             position: absolute;
             right: 0;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
         }
 
         .fa-traffic-light,
         .fa-long-arrow-alt-down{
-            right: 0.25rem;
+            right: 0.3rem;
+        }
+
+        p{
+            font-size: 1.2rem;
         }
     }
 
@@ -530,7 +533,7 @@ body{
 
         .progress-animate{
             width: 100%;
-            height: 1rem;
+            height: 0.9rem;
             padding: 0;
             position: absolute;
             top: 3rem;
@@ -554,7 +557,10 @@ body{
     color: $gray-clr-2;
 
     i{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 1.2rem;
     }
 
     .mid-line{
@@ -621,11 +627,11 @@ body{
             display: flex;
             align-items: baseline;
             gap: 0.5rem;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
         a{
-            font-size: 0.9rem;
+            font-size: 1rem;
             border: 0.1rem dotted $gray-clr-5;
             padding: 0 0.5rem;
             border-radius: 1rem;
@@ -637,10 +643,11 @@ body{
         font-size: 1rem;
         color: $gray-clr-3;
         border: 0.1rem solid $gray-clr-5;
-        padding: 0.2rem 0.8rem;
+        padding: 0.3rem 0.8rem;
         border-radius: 0.3rem;
         box-shadow: 0 5px 50px rgba($color: #000000, $alpha: 0.08);
         margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
     }
 
     .social-icons{
@@ -650,27 +657,23 @@ body{
         
         a{
             color: $gray-clr-3;
-            padding: 0.3rem 0.6rem 0.1rem;
+            padding: 0.4rem 0.7rem 0.2rem;
             border: 0.15rem solid $gray-clr-3;
             border-radius: 0.2rem;
         }
 
         .facebook{
-            padding: 0.3rem 0.85rem 0.1rem;
+            padding: 0.4rem 0.95rem 0.2rem;
         }
     }
 }
 
-@include breakpoint(xl){
-    .heading{
-        padding: 3rem 12rem;
-    }
-}
-
 #comment{
-    max-width: 768px;
+    // margin: auto;
+    // max-width: 768px;
     padding: 10px;
     // sajjad
-    position: relative;
-    margin: 0;
+    @include boxStyle;
 }
+
+

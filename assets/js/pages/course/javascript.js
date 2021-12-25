@@ -18,6 +18,7 @@ seasonsTitles.forEach(seasonsTitle => {
     seasonsTitle.addEventListener('click', () => {
         seasonsTitle.parentElement.classList.toggle('seasons-projects-box-active');
         seasonsTitle.lastElementChild.classList.toggle('down-icon-active');
+        console.log(seasonsTitle)
 
         seasonInfo.forEach(season_info => {
             if (seasonsTitle.dataset.number == season_info.dataset.number) {
@@ -34,11 +35,7 @@ const forStudy = $.querySelector('.for-study');
 
 forStudy.addEventListener('click', () => {
     main.classList.toggle('main-active');
-    if (aside.classList.contains('aside-for-study')) {
-        setTimeout((aside.classList.remove('aside-for-study')), 300);
-    } else {
-        aside.classList.toggle('aside-for-study');
-    }
+    aside.classList.toggle('aside-for-study');
 })
 
 // aside and for-study fixed

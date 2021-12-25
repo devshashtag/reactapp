@@ -1,0 +1,11 @@
+@include breakpoint(sm){
+    .heading{
+        padding: 2rem;
+    }
+}
+
+@include breakpoint(xl){
+    .heading{
+        padding: 3rem 12rem;
+    }
+}
