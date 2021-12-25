@@ -74,7 +74,7 @@ $topbar-search-close-hover-bg: #aa0;
 
 //* navbar
 $navbar-bg:#fff;
-$navbar-box-shadow: #eee;
+$navbar-box-shadow: #0002;
 
 $navbar-link-fg: $gray-clr-1;
 $navbar-link-active-fg: #000;
@@ -111,4 +111,25 @@ $sidebar-search-submit-hover-fg:#ddda;
 $sidebar-search-border-clr:#2c3237;
 $sidebar-dropdown-link-border-fg:#333940;
 
+//* lost password
+$lostpass-header-bg:$gray-clr-6;
+$lostpass-main-bg:$gray-clr-7;
+
+$lostpass-header-path-dir-fg:#141323;
+$lostpass-header-path-dir-hover-fg:#66a;
+$lostpass-header-path-dir-shadow-fg:#607f80;
+$lostpass-header-path-sep-fg:#055;
+
+$lostpass-main-wrapper-bg:#ffffff;
+$lostpass-main-wrapper-border:#e5e5e5;
+$lostpass-main-wrapper-shadow:#a8acb94d;
+
+$lostpass-form-label-fg:#6c757d;
+$lostpass-form-input-fg:#ccc;
+$lostpass-form-input-shadow:#00000012;
+$lostpass-form-input-border:#dcdcdc;
+$lostpass-form-input-icon-fg:#aaa;
+$lostpass-form-submit-bg:$yellow-clr;
+$lostpass-form-submit-fg:$white-clr;
+$lostpass-form-header-text-fg:#7d7e7f;
 
