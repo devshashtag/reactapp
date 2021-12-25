@@ -2,8 +2,7 @@
 .navbar {
   position:relative;
   background-color:$navbar-bg;
-  box-shadow:0 .2rem .2rem $navbar-box-shadow;
-  min-height:5rem;
+  box-shadow:0 0.125rem 0.25rem $navbar-box-shadow;
   
   @include flex($fdir:row-reverse);
   @include transition(all .5s ease);
@@ -115,7 +114,7 @@
   /* navbar brand */
   &__brand {
     flex:1;
-    padding:1.7rem 3rem;
+    padding:2rem 3rem;
 
     @include flex($jcnt:space-between); 
     @include transition(transform .5s ease, opacity .5s ease);
