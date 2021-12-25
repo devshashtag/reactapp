@@ -108,6 +108,14 @@ function js_template(){
 cat <<EOL >> "${js_file}"
 //* ${project_name}
 //* for: ${project_name}${html_path}
+
+// import {  } from "";
+
+//* display items when page load
+window.addEventListener("DOMContentLoaded", function () {
+  
+});
+
 EOL
   echo -e "${success_color}js file successfully created at:\n>${path_color}${js_file}${nc}" 
   display_sep
