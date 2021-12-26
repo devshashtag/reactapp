@@ -1,5 +1,16 @@
 let $ = document;
 
+// click on btn-up-page
+const btnUpPage = $.querySelector('.btn-scroll');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+        btnUpPage.classList.add('btn-scroll-active');
+    } else {
+        btnUpPage.classList.remove('btn-scroll-active');
+    }
+})
+
 // Frequently Asked Questions
 const questions = $.querySelectorAll('.question');
 
@@ -28,27 +39,29 @@ seasonsTitles.forEach(seasonsTitle => {
     });
 });
 
-// scroll window and click on forStudy
-const aside = $.querySelector('aside');
-const main = $.querySelector('main');
-const forStudy = $.querySelector('.for-study');
+// scroll window and click on studyMode
+const asideCourse = $.querySelector('.aside-course');
+const mains = $.querySelectorAll('main');
+const studyMode = $.querySelector('.study-mode');
 
-forStudy.addEventListener('click', () => {
-    main.classList.toggle('main-active');
-    aside.classList.toggle('aside-for-study');
+studyMode.addEventListener('click', () => {
+    asideCourse.classList.toggle('aside-study-mode');
+    mains.forEach(main => {
+        main.classList.toggle('main-active');
+    })
 })
 
-// aside and for-study fixed
+// aside and study-mode fixed
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 600) {
-        forStudy.classList.add('for-study-active');
+        studyMode.classList.add('study-mode-active');
     } else {
-        forStudy.classList.remove('for-study-active');
+        studyMode.classList.remove('study-mode-active');
     }
 
     if (window.scrollY >= 1050) {
-        aside.classList.add('aside-active');
+        asideCourse.classList.add('aside-active');
     } else {
-        aside.classList.remove('aside-active');
+        asideCourse.classList.remove('aside-active');
     }
 })

@@ -18,7 +18,7 @@
 <body class="js-body">
 
   <!-- heading -->
-  <div class="heading">
+  <div id="heading" class="heading">
     <h2>آموزش مقدماتی تا پیشرفته جاوا اسکریپت (javascript) – کاملا پروژه محور</h2>
     <ul>
       <li><a href="#">خانه</a></li>
@@ -33,19 +33,116 @@
     </ul>
   </div>
 
+  <!-- register for other screens -->
+  <div class="register-for-screens">
+    <a href="#">ثبت نام دوره</a>
+    <i class="far fa-credit-card"></i>
+  </div>
+
   <section class="main">
     <!-- main -->
     <main class="main-course">
       <!-- image js courses -->
       <div class="image-course-container">
         <img src="../../assets/images/courses/1.jpg" alt="آموزش پیشرفته جاوا اسکریپت">
-        <div class="play-icon">
-          <i class="fas fa-play"></i>
+        <div class="image_play-icon">
+          <div class="play-icon">
+            <i class="fas fa-play"></i>
+          </div>
         </div>
       </div>
+      <!-- aside -->
+    <aside class="aside-to-main">
+      <!-- price-and-register -->
+      <div class="price-and-register">
+        <div class="price-course">
+          <div>
+            <p>قیمت :</p>
+          </div>
+          <div class="price">
+            <h3>269,000</h3>
+            <p>تومان</p>
+          </div>
+        </div>
+        <div class="register-course">
+          <a href="#">ثبت نام دوره</a>
+          <i class="far fa-credit-card"></i>
+        </div>
+      </div>
+
+      <!-- info-course -->
+      <div class="info-course">
+        <div class="number-download">
+          <i class="fas fa-download"></i>
+          <p>تعداد خرید / دانلود : </p>
+          <span>451</span>
+        </div>
+        <div class="info">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>نوع دوره: غیرحضوری،ویدئویی</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-book-reader"></i>
+          <p>سطح دوره: مقدماتی تا پیشرفته</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-traffic-light"></i>
+          <p>پیش نیاز: html و css</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-globe"></i>
+          <p>زبان: فارسی</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-clock"></i>
+          <p>27ساعت و 21 دقیقه</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-list-alt"></i>
+          <p>206 درس</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-hdd"></i>
+          <p>4.61 گیگابایت</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-long-arrow-alt-down"></i>
+          <p>روش دریافت: دانلودی</p>
+        </div>
+        <div class="info">
+          <i class="fas fa-headset"></i>
+          <p>روش پشتیبانی: کامنت های دوره و تالارگفتمان</p>
+        </div>
+        <div class="info progress">
+          <i class="fas fa-tasks"></i>
+          <p>درصد پیشرفت دوره: %100</p>
+          <div class="progress-animate">
+
+          </div>
+        </div>
+      </div>
+      <!-- visit-comments-box -->
+      <div class="visit-comments-box">
+        <div class="visit">
+          <i class="far fa-eye"></i>
+          <p>20.58k بازدید</p>
+        </div>
+        <div class="mid-line"></div>
+        <div class="comment">
+          <i class="far fa-comments"></i>
+          <p>73 دیدگاه</p>
+        </div>
+      </div>
+      <!-- our instagram -->
+      <div class="our-instagram">
+        <div class="image-instagram">
+          <img src="../../assets/images/courses/javascript/INSAT-3.jpg" alt="Our Instagram">
+        </div>
+      </div>
+    </aside>
       <!-- main describtion -->
       <div class="main-desc">
-        <div class="for-study">
+        <div class="study-mode">
           <i class="fas fa-arrows-alt"></i>
           <p>حالت مطالعه</p>
         </div>
@@ -1915,7 +2012,7 @@
     <!-- end commentCreatebox-->
 
     </main>
-    <!-- aside -->
+    <!-- aside course -->
     <aside class="aside-course">
       <!-- price-and-register -->
       <div class="price-and-register">
@@ -1924,7 +2021,7 @@
             <p>قیمت :</p>
           </div>
           <div class="price">
-            <h3>239,000</h3>
+            <h3>269,000</h3>
             <p>تومان</p>
           </div>
         </div>
@@ -2029,8 +2126,14 @@
         </div>
       </div>
     </aside>
-    
+
   </section>
+  
+  <div class="btn-scroll">
+    <a href="#heading">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
 
   <script src="../../assets/js/pages/course/javascript.js"></script>
 </body>
