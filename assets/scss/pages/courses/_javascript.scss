@@ -575,8 +575,6 @@
     cursor: pointer;
     @include transition(0.2s ease-in-out);
     box-shadow: 0 2px 5px rgba($color: $green-clr, $alpha: 0.2);
-    position: relative;
-    
 
     &:hover{
         background: $gray-clr-1;
