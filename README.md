@@ -2,6 +2,7 @@
 reactapp.ir template 
 
 # todo
+- [] refactor pages/courses/javascript js, scss, javascript
 - [] refactor classes in all pages
 - [] reafactor js files
 - [] remove global.js if no needed
