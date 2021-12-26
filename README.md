@@ -2,6 +2,8 @@
 reactapp.ir template 
 
 # todo
+- [ ] refactor navbar, topbar, sidebar
+- [ ] add link to opbar icons
 - [ ] refactor pages/courses/javascript js, scss, javascript
 - [ ] refactor classes in all pages
 - [ ] reafactor js files
