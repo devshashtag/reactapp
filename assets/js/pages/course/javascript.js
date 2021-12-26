@@ -1,24 +1,31 @@
+import { getElement } from "/assets/js/global/utils.js";
+
 let $ = document;
 
 // click on btn-up-page
-const btnUpPage = $.querySelector('.btn-scroll');
+const btnUpPage = getElement('.btn-scroll');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 60) {
-        btnUpPage.classList.add('btn-scroll-active');
-    } else {
-        btnUpPage.classList.remove('btn-scroll-active');
-    }
-})
+  // scroll-to-top
+  if (window.scrollY > 60) {
+    btnUpPage.classList.add('btn-scroll-active');
+  } else {
+    btnUpPage.classList.remove('btn-scroll-active');
+  }
+});
 
 // Frequently Asked Questions
-const questions = $.querySelectorAll('.question');
+const questions = getElement(".frequently-questions");
 
-questions.forEach(question => {
-    question.addEventListener('click', () => {
-        question.parentElement.classList.toggle('questions-active');
-    })
-})
+questions.addEventListener('click', (el) => {
+  let elmParent = el.target.parentNode;
+
+  if(el.target.classList.contains("question"))
+    elmParent.classList.toggle('questions-active');
+
+  if(elmParent.classList.contains("question"))
+    elmParent.parentElement.classList.toggle('questions-active');
+});
 
 // Seasons and Projects
 
