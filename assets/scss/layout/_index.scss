@@ -1,2 +1,13 @@
+// main header
+@import 'main-header';
+
+// header
+//> top bar 
+@import "topbar";
+
+//> navbar, sidebar
+@import "navbar";
+@import "sidebar";
+
+// footer
 @import 'footer';
-@import 'header';
