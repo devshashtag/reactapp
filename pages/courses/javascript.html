@@ -78,45 +78,43 @@
         <!--! end of pagination -->
         
       <p>قوانین ثبت دیدگاه</p>
-        <!-- start commentCreatebox-->
+        <!-- start sendcomment-->
         <div class="sendcomment">
-          <form action="">
-            <div class='sendcomment__message'>
-              <p class="comment_describe">
+          <form action="" id="newcomment-form">
+            <div class='form__msg'>
+              <p class="msg__describe">
                 نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری شده‌اند *
               </p>
-              <div class="comment__input__box">
-                <label for="comment__msg">
+              <div class="input__wrapper">
+                <label for="msg-content">
                   دیدگاه شما *
                 </label>
-                <textarea id="comment__msg" name="userMsg" class="input"></textarea>
+                <textarea id="msg-content" name="usermsg" class="input"></textarea>
               </div>
             </div>
 
-            <div class="sendcomment__information">
-              <div class="comment__input__box">
-                <label for="comment__username">نام *</label>
-                <input type="text" name="userName" id="comment__username" class="input">
+            <div class="form__info">
+              <div class="input__wrapper">
+                <label for="info-name">نام *</label>
+                <input type="text" name="username" id="info-name" class="input">
               </div>
 
-              <div class="comment__input__box">
-                <label for="comment__useremail">ایمیل *</label>
-                <input type="text" name="userEmail" id="comment__useremail" class="input">
+              <div class="input__wrapper">
+                <label for="info-email">ایمیل *</label>
+                <input type="text" name="email" id="info-email" class="input">
               </div>
 
-              <div class="comment__recaptcha">
-                <label for="comment__amIHumman">i'm not a robot</label>
-                <input type="checkbox" id="comment__amIHumman">
+              <div class="info__captcha">
+                <label for="form-captcha">i'm not a robot</label>
+                <input type="checkbox" id="form-captcha">
               </div>
             </div>
 
-            <button type="submit" class="btn sendcomment__submit">فرستادن دیدگاه</button>
+            <button type="submit" class="btn form__submit">فرستادن دیدگاه</button>
 
           </form>
         </div>
-        <!-- end commentCreatebox-->
-      
-      
+        <!-- end sendcomment-->
       
       </div>
     </section>
