@@ -60,6 +60,13 @@ $comment-hover-clr:#1919191f;
 //* used in main-container
 $max-width: 1230px;
 
+//* main-header
+$main-header-bg:$gray-clr-6;
+$main-header-path-dir-fg:#141323;
+$main-header-path-dir-hover-fg:#66a;
+$main-header-path-dir-shadow-fg:#607f80;
+$main-header-path-sep-fg:#055;
+
 //* top-bar
 $topbar-bg: #000;
 
@@ -96,7 +103,6 @@ $navbar-search-submit-hover-fg:#000a;
 // sidebar toggle in navbar
 $sidebar-toggle-bg: $black-clr-1;
 
-
 //* sidebar
 $sidebar-bg:#212529;
 $sidebar-size:300px;
@@ -112,13 +118,7 @@ $sidebar-search-border-clr:#2c3237;
 $sidebar-dropdown-link-border-fg:#333940;
 
 //* lost password
-$lostpass-header-bg:$gray-clr-6;
 $lostpass-main-bg:$gray-clr-7;
-
-$lostpass-header-path-dir-fg:#141323;
-$lostpass-header-path-dir-hover-fg:#66a;
-$lostpass-header-path-dir-shadow-fg:#607f80;
-$lostpass-header-path-sep-fg:#055;
 
 $lostpass-main-wrapper-bg:#ffffff;
 $lostpass-main-wrapper-border:#e5e5e5;
