@@ -2,19 +2,18 @@
 reactapp.ir template 
 
 # todo
-- [] refactor pages/courses/javascript js, scss, javascript
-- [] refactor classes in all pages
-- [] reafactor js files
-- [] remove global.js if no needed
-- [] remove lost-password and javascript.html from navbar while project completed
-- [] convert transitions to mixins
-- [] convert transform and flex to mixins
-- [] create other pages
-- [] optimize template
-- [] minify js, css files with webpack
-- [] land it on github pages
-- [] export an kit-starter scss for later-use 
-
+- [ ] refactor pages/courses/javascript js, scss, javascript
+- [ ] refactor classes in all pages
+- [ ] reafactor js files
+- [ ] remove global.js if no needed
+- [ ] remove lost-password and javascript.html from navbar while project completed
+- [ ] convert transitions to mixins
+- [ ] convert transform and flex to mixins
+- [ ] create other pages
+- [ ] optimize template
+- [ ] minify js, css files with webpack
+- [ ] land it on github pages
+- [ ] export an kit-starter scss for later-use 
 
 # npm scripts
 
