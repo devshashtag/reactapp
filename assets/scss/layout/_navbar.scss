@@ -6,7 +6,7 @@
   
   @include flex($fdir:row-reverse);
   @include transition(all .5s ease);
-  @include breakpoint(lg) { padding:0 6rem; }
+  @include breakpoint(lg) { padding:0 4rem; }
 
   &__menu {
     @include transition(transform .5s ease, opacity .5s ease);
@@ -48,7 +48,6 @@
       font-size:1.2rem;
       border-radius: 3px;
       padding:1rem 1.7rem;
-      margin-left:-1.5rem;
 
       @include breakpoint(lg) { display:block; }
 
@@ -62,6 +61,7 @@
 
     &:hover .dropdown__list {
       opacity:1;
+      visibility:visible;
       @include transform(translateX(1rem));
     }
   }
@@ -90,6 +90,7 @@
     &__list {
       position:absolute;
       opacity:0;
+      visibility:hidden;
       min-width:15rem;
       padding:.5rem 0;
       border-radius:4px;
@@ -97,7 +98,7 @@
       box-shadow:0 0 5px $navbar-dropdown-list-shadow;
 
       @include transform(translateY(2rem) translateX(1rem));
-      @include transition(transform .5s ease, opacity .5s ease);
+      @include transition(transform .5s ease, opacity .5s ease, visibility .5s ease);
 
       li {
         padding:.2rem 1rem;
