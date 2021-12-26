@@ -1,4 +1,5 @@
 import { getElement } from "/assets/js/global/utils.js";
+import { headerInit } from "/assets/js/global/header.js"
 
 let $ = document;
 
@@ -12,6 +13,7 @@ window.addEventListener('scroll', () => {
   } else {
     btnUpPage.classList.remove('btn-scroll-active');
   }
+  
 });
 
 // Frequently Asked Questions
@@ -71,4 +73,12 @@ window.addEventListener('scroll', () => {
     } else {
         asideCourse.classList.remove('aside-active');
     }
-})
+});
+
+
+//* display items when page load
+window.addEventListener("DOMContentLoaded", function () {
+  // header
+  headerInit();
+});
+
