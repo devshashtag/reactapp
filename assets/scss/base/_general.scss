@@ -1,5 +1,5 @@
 body {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 img {
@@ -34,6 +34,7 @@ section {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  color: $black-clr-1;
   &:hover {
     background: $black-clr-1;
     color: $white-clr;
@@ -48,7 +49,6 @@ section {
 }
 
 %paginationLinks {
-  font-family: Tanha;
   @extend %yellowBtn;
   background: $gray-clr-9;
   color: $black-clr-1;
@@ -58,16 +58,15 @@ section {
 }
 
 .no-select {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .no-selec:focus {
-    outline: none !important;
+  outline: none !important;
 }
-
