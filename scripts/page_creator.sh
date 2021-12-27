@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # configurable variables for user
-project_name="reactapp"
-html_folder="$(pwd)/pages/"
-js_folder="$(pwd)/assets/js/pages/"
-scss_folder="$(pwd)/assets/scss/pages/"
+project_name=$(basename $(pwd))
+html_folder="../${project_name}/pages/"
+js_folder="../${project_name}/assets/js/pages/"
+scss_folder="../${project_name}/assets/scss/pages/"
 
 # colors
 nc="\e[0m"
@@ -34,21 +34,22 @@ success_color=$light_yellow
 sep_color=$light_blue
 sep_line="${sep_color}$(echo ={1..40}| tr -d '[0-9 ]')"
 
-# functions 
+# functions
 function display_sep(){ echo -e "$sep_line"; }
 
+: ' no needed for now
 function depth(){ grep '/' -o <<< "$1" |wc -l; }
 
 function back_depth(){ 
   times=$1
   seq -s../ "$times"|tr -d '[0-9]'
 }
+'
 
 function html_template(){
   html_file="$1"
   html_path="$2"
   html_name="$(basename "$html_path"|sed 's|.html *$||')"
-  depth_path="$(back_depth $(depth "$html_path"))"
   [[ ! -f "$html_file" ]] && {
 cat <<EOL >> "${html_file}"
 <!DOCTYPE html>
@@ -58,7 +59,7 @@ cat <<EOL >> "${html_file}"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- styles -->
-    <link rel="stylesheet" href="${depth_path}assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>${project_name} ${html_name}</title>
   </head>
 
@@ -66,7 +67,7 @@ cat <<EOL >> "${html_file}"
     <h1>${project_name} ${html_name}</h1>
 
     <!-- script loader -->
-    <script type="module" src="${depth_path}assets/js/index.js"></script>
+    <script type="module" src="/assets/js/index.js"></script>
   </body>
 </html>
 EOL
@@ -87,7 +88,7 @@ function scss_template(){
   [[ ! -f "$scss_file" ]] && {
 cat <<EOL >> "${scss_file}"
   //** ${project_name}
-  //*For> ${html_path}
+  //*For> ${project_name}${html_path}
 EOL
 
   echo -e "${success_color}scss file successfully created at:\n>${path_color}${scss_file}${nc}" 
@@ -106,7 +107,15 @@ function js_template(){
   [[ ! -f "$js_file" ]] && {
 cat <<EOL >> "${js_file}"
 //* ${project_name}
-//* for: ${html_path}
+//* for: ${project_name}${html_path}
+
+// import {  } from "";
+
+//* display items when page load
+window.addEventListener("DOMContentLoaded", function () {
+  
+});
+
 EOL
   echo -e "${success_color}js file successfully created at:\n>${path_color}${js_file}${nc}" 
   display_sep

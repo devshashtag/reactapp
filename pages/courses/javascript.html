@@ -5,50 +5,2101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- font awesome -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+
     <!-- styles -->
-    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>reactapp javascript</title>
   </head>
 
-  <body>
-    <!-- start commentCreatebox-->
-    <div class="sendCommentBox">
-      <form action="">
-        <div class='sendCommentBox__message'>
-          <p class="comment_describe">
-          نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری شده‌اند *
-          </p>
-          <div class="comment__input__box">
-            <label for="comment__msg">
-              دیدگاه شما *
-            </label>
-            <textarea id="comment__msg" name="userMsg" class="input"></textarea>
-          </div>
-        </div>
+  <body class="js-body">
 
-        <div class="sendCommentBox__information">
-          <div class="comment__input__box">
-            <label for="comment__username">نام *</label>
-            <input type="text" name="userName" id="comment__username" class="input">
-          </div>
-
-          <div class="comment__input__box">
-            <label for="comment__useremail">ایمیل *</label>
-            <input type="text" name="userEmail" id="comment__useremail" class="input">
-          </div>
-
-          <div class="comment__recaptcha">
-            <label for="comment__amIHumman">i'm not a robot</label>
-            <input type="checkbox" id="comment__amIHumman">
-          </div>
-
-        </div>
-
-        <button type="submit" class="btn comment__submit">فرستادن دیدگاه</button>
-
-      </form>
+    <!-- heading -->
+    <div id="heading" class="heading">
+      <h2>آموزش مقدماتی تا پیشرفته جاوا اسکریپت (javascript) – کاملا پروژه محور</h2>
+      <ul>
+        <li><a href="#">خانه</a></li>
+        <li><i class="fas fa-chevron-left"></i></li>
+        <li><a href="#">دوره ها</a></li>
+        <li><i class="fas fa-chevron-left"></i></li>
+        <li><a href="#">دوره های آموزشی</a></li>
+        <li><i class="fas fa-chevron-left"></i></li>
+        <li>
+          آموزش مقدماتی تا پیشرفته جاوا اسکریپت (javascript) – کاملا پروژه محور
+        </li>
+      </ul>
     </div>
-    <!-- end commentCreatebox-->
+
+    <!-- register for other screens -->
+    <div class="register-for-screens">
+      <a href="#">ثبت نام دوره</a>
+      <i class="far fa-credit-card"></i>
+    </div>
+
+    <section class="main">
+      <!-- main -->
+      <main class="main-course">
+        <!-- image js courses -->
+        <div class="image-course-container">
+          <img src="../../assets/images/courses/1.jpg" alt="آموزش پیشرفته جاوا اسکریپت">
+          <div class="image_play-icon">
+            <div class="play-icon">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <!-- aside -->
+        <aside class="aside-to-main">
+          <!-- price-and-register -->
+          <div class="price-and-register">
+            <div class="price-course">
+              <div>
+                <p>قیمت :</p>
+              </div>
+              <div class="price">
+                <h3>269,000</h3>
+                <p>تومان</p>
+              </div>
+            </div>
+            <div class="register-course">
+              <a href="#">ثبت نام دوره</a>
+              <i class="far fa-credit-card"></i>
+            </div>
+          </div>
+
+          <!-- info-course -->
+          <div class="info-course">
+            <div class="number-download">
+              <i class="fas fa-download"></i>
+              <p>تعداد خرید / دانلود : </p>
+              <span>451</span>
+            </div>
+            <div class="info">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>نوع دوره: غیرحضوری،ویدئویی</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-book-reader"></i>
+              <p>سطح دوره: مقدماتی تا پیشرفته</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-traffic-light"></i>
+              <p>پیش نیاز: html و css</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-globe"></i>
+              <p>زبان: فارسی</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-clock"></i>
+              <p>27ساعت و 21 دقیقه</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-list-alt"></i>
+              <p>206 درس</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-hdd"></i>
+              <p>4.61 گیگابایت</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-long-arrow-alt-down"></i>
+              <p>روش دریافت: دانلودی</p>
+            </div>
+            <div class="info">
+              <i class="fas fa-headset"></i>
+              <p>روش پشتیبانی: کامنت های دوره و تالارگفتمان</p>
+            </div>
+            <div class="info progress">
+              <i class="fas fa-tasks"></i>
+              <p>درصد پیشرفت دوره: %100</p>
+              <div class="progress-animate">
+
+              </div>
+            </div>
+          </div>
+          <!-- visit-comments-box -->
+          <div class="visit-comments-box">
+            <div class="visit">
+              <i class="far fa-eye"></i>
+              <p>20.58k بازدید</p>
+            </div>
+            <div class="mid-line"></div>
+            <div class="comment">
+              <i class="far fa-comments"></i>
+              <p>73 دیدگاه</p>
+            </div>
+          </div>
+          <!-- our instagram -->
+          <div class="our-instagram">
+            <div class="image-instagram">
+              <img src="../../assets/images/courses/javascript/INSAT-3.jpg" alt="Our Instagram">
+            </div>
+          </div>
+        </aside>
+        <!-- main describtion -->
+        <div class="main-desc">
+          <div class="study-mode">
+            <i class="fas fa-arrows-alt"></i>
+            <p>حالت مطالعه</p>
+          </div>
+          <p>آموزش مقدماتی تا پیشرفته جاوا اسکریپت(javascript) دوره ای است که در قالب آن ما تمامی مفاهیم پایه و پیشرفته
+          جاوا اسکریپت (javascript) را با استفاده از مثال ها و پروژه های واقعی و کاربردی آموزش می دهیم و یادگیری جاوا
+          اسکریپت (javascript) به نحوی خواهد بود که شما در مصاحبه های شغلی موفق و به راحتی وارد بازار کار خواهید شد.
+          </p>
+          <h3>جاوا اسکریپت چیست ؟</h3>
+          <p>
+          جاوا اسکریپت یک زبان برنامه نویسی پرکاربرد و پراستفاده در دنیاست که هر روزه در حال پیشرفت و تکامل هست و
+          کتابخانه ها و فریمورک های زیادی با این زبان نوشته شدند. کافیه شما به گیت هاب سربزنید تا ببینید چه تعداد زیاد
+          کتابخونه و پکیج توسط توسعه دهنده ها و شرکت های مختلف توسط این زبان نوشته شدند.
+          <br>
+          کمپانی های بزرگی مثل فیسبوک،گوگل،walmart و uber از جاوا اسکریپت برای ساخت برنامه های خودشون استفاده می کنند.
+          <br>
+          <br>
+          جاوا اسکریپت در سال 2019 به عنوان محبوب ترین زبان برنامه نویسی انتخاب شد و قرار داشتن در لیست محبوب ترین زبان
+          ها از سال 2012 تا 2018 نشان از پرکاربرد بودن این زبان برنامه نویسی است.
+          </p>
+          <br>
+          <!-- Why Js blog -->
+          <div class="why-js-post">
+            <div class="image-js-post">
+              <img src="../../assets/images/courses/javascript/Learn-Javascript-1-300x208.jpg" alt="why js?">
+            </div>
+            <div class="post-title">
+              چرا باید جاوا اسکریپت را یاد بگیریم؟
+            </div>
+            <div class="next-arrow">
+              <img class="next-arrow" src="../../assets/icons/next-arrow.png" alt="next-arrow">
+            </div>
+          </div>
+          <br>
+          <p>هدف اولیه از ساخت جاوا اسکریپت interactive کردن صفحات وب بود، چون صفحات وب خیلی ساده و غیرتعاملی بودند.ولی
+          شما حالا می تونید با استفاده از کتابخونه ها و فریمورک هایی مثل react ,vue ,angular ,svelte برنامه های تحت وب و
+          وب اپلیکیشن های پیشرفته بسازید.
+          </p>
+          <p>همچینین می تونید با استفاده از جاوا اسکریپت برنامه های real-time مثل چت روم ها، بازی و اپلیکیشن های موبایل
+          native بسازید.
+          </p>
+          <br>
+          <p>متوسط درآمد یک برنامه نویس جاوا اسکریپت در آمریکا سالیانه 79 هزار دلار هست که نشان از درآمد بالای برنامه
+          نویسان جاوا اسکریپت در دنیا داره.
+          </p>
+          <h3>پیش نیازهای یادگیری جاوا اسکریپت چی هستند؟</h3>
+          <p>برای یادگیری جاوا اسکریپت نیاز هست تا ابتدا مشخص کنید که قصد دارید از جاوا اسکریپت در کجا استفاده کنید؟ برای
+          ساخت بازی، ساخت اپلیکیشن موبایل یا طراحی وب سایت یا استفاده در backend یا …
+          </p>
+          <p>
+          ولی میشه گفت که Html و Css یک پیش نیاز مشترک برای همه این اهداف هست که خیلی راحت میتونید اون هارو یاد بگیرید و
+          بعد به سراغ javascript بیاید.
+          </p>
+          <h3>چرا این دوره جاوا اسکریپت ؟</h3>
+          <p>
+          در این دوره سعی کردیم از پایه ترین و اساسی ترین مفاهیم شروع و به صورت گام به گام مفاهیم پیشرفته تر رو در قالب
+          پروژه های کاربردی و واقعی بیان کنیم.
+          </p>
+          <br>
+          <p>
+          شما با تماشای این دوره متوجه خواهید شد که مفاهیمی که در درس های قبلی یاد گرفتید، در قالب مثال هایی در درس های
+          بعدی استفاده خواهند شد.
+          </p>
+          <p>
+          همچنین سعی کردیم علاوه بر بیان مفاهیم مثال هایی واقعی رو مثل ZoomEffect ,DarkmodeToggle,AutoWriter
+          ,HambergerMenu ,Notification ,Popup ,hearteain و Carousel در این دوره آموزش بدیم.
+          </p>
+          <br>
+          <p>
+          با توجه به کاربرد بسیار زیاد جاوا اسکریپت به طور حتم شما با مفاهیمی مثل this,callback function,promise,async
+          await,scope,arrow function و … در هر کتابخانه یا فریمورک جاوااسکریپتی سر و کله خواهید زد که سعی کردیم به
+          بهترین نحو این مفاهیم رو بیان کنیم.
+          </p>
+          <p>
+          پس از یادگیری مفاهیم پایه و پیشرفته به سراغ پروژه های مختلف و کاربردی که با جاوا اسکریپت پیاده سازی شده است می
+          رویم تا شما کاربرد این مفاهیم رو در پروژه های واقعی ببینید و کاربرد تمام مفاهیمی که یاد گرفته اید را ببینید.
+          </p>
+          <br>
+          <!-- Frequently Asked Questions -->
+          <h3>سوالات متداول</h3>
+          <div class="frequently-questions">
+            <!-- question 1 -->
+            <div class="question-box">
+              <div class="question">
+                <h4>یادگیری جاوا اسکریپت (javascript) چقدر طول می کشد؟</h4>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="answer">
+                <p>
+                زمان یادگیری جاوا اسکریپت یا هر زبان برنامه نویسی دیگری بستگی به میزان تلاش، هوش، تجربه و فرآیند یادگیری
+                دارد و نمی توان زمان خاصی را برای این موضوع مشخص کرد
+                </p>
+                <p>
+                اما تنها نکته ثابت این است که شما هر چقدر بیشتر تلاش و پشتکار داشته باشید و خودتون رو دگیر چالش ها و پروژه
+                های واقعی کنید،زودتر جاوا اسکریپت را یاد خواهید گرفت
+                </p>  
+              </div>
+            </div>
+            <!-- question 2 -->
+            <div class="question-box">
+              <div class="question">
+                <h4>جاوا اسکریپت (javascript) ارزش یادگیری دارد؟</h4>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="answer">
+                <p>
+                هر زبان برنامه نویسی برای یک هدفی ساخته شده و به طور حتم کاربرد دارد.اما جاوا اسکریپت(javascript) علاوه بر
+                یک هدف ، چندین هدف را می توان دنبال کرد
+                </p>
+                <p>شما با یادگیری جاوا اسکریپت می توانید</p>
+                <br>
+                <p>1.وب سایت ها و وب اپلیکیشن های بروز و مدرن با استفاده از کتابخانه ها و فریمورک هایی مثل
+                React و Vue و Angular بسازید</p>
+                <p>2.با استفاده از فریمورک هایی مثل React Native می توانید تنها با استفاده از جاوا اسکریپت و
+                یکبار کد زدن اپلیکیشن native برای Android و IOS بسازید</p>
+                <p>3.با استفاده از electron اپلیکیشن های دسکتاپ بسازید</p>
+                <br>
+                <p>4.بازی بسازید</p>
+                <p>5.با استفاده از کتابخانه TensorFlow در زمینه هوش مصنوعی فعالیت کنید</p>
+                <br>
+                <p>6.با استفاده از Node js سمت سرور کد بزنید.</p>
+                <br>
+                <p>7.و….</p>
+                <br>
+                <p>همه این موارد به خوبی نشان می دهد که یادگیری جاوا اسکریپت ارزش دارد</p>
+              </div>
+            </div>
+            <!-- question 3 -->
+            <div class="question-box">
+              <div class="question">
+                <h4>آیا آموزش جاوا اسکریپت reactapp.ir کافی است؟</h4>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="answer">
+                <p>ما سعی کرده ایم آموزش را به صورت گام به گام از مفاهیم پایه و پیشرفته جاوا اسکریپت شروع و
+                در ادامه از همین مفاهیم در پروژه های کاربردی و واقعی استفاده کنیم تا شما درک کنید که این مفاهیم چه کاربرد
+                هایی دارند و در چه جاهایی مورد استفاده قرار می گیرند
+                </p>
+                <p>پس شما می توانید پس از گذراندن این دوره می توانید به راحتی پروژه های مختلف جاوا اسکریپتی
+                را پیاده سازی کنید و سمت هر کتابخانه یا فریمورکی که بر پایه جاوا اسکریپت است با خیال راحت قدم بردارید
+                </p>
+              </div>
+            </div>
+            <!-- question 4 -->
+            <div class="question-box">
+              <div class="question">
+                <h4>پروژه هایی که در این دوره آموزش داده می شود، کاربردی است؟</h4>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="answer">
+                <p>
+                تمامی پروژه ها و بازی هایی که در این آموزش داده می شود، شما می توانید نمونه های آن را در دنیای واقعی
+                ببینید
+                از طرفی علاوه بر پروژه ها، یک سری بازی نیز در این دوره پیاده سازی می شود که نمونه این بازی ها رو شما در
+                store های مختلف دیده اید
+                </p>
+                <p>
+                هدف از پیاده سازی و آموزش این بازی ها این است که شما به قدرت جاوا اسکریپت پی ببرید و ذهنی آماده برای پیاده
+                سازی هر چیزی با جاوا اسکریپت را داشته باشید
+                </p>
+                <p>
+                پیشنهاد می کنم حتما ویدئو مربوط به پیش نمایش پروژه ها را ببینید
+                </p>
+              </div>
+            </div>
+            <!-- question 5 -->
+            <div class="question-box">
+              <div class="question">
+                <h4>این دوره مناسب چه افرادی است؟</h4>
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="answer">
+                <p>چون در این دوره ما از پایه ترین مفاهیم شروع و در ادامه مفاهیم پیشرفته را بیان می کنیم و
+                پروژه های مختلفی را پیاده سازی می کنیم
+                </p>
+                <p>
+                این دوره برای افرادی که مبتدی هستند، یا آشنایی کم یا متوسطی از جاوا اسکریپت دارند،مناسب است
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Introductions box -->
+          <div class="introductions">
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی دوره <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">جاوا اسکریپت چیست و چه تفاوتی با Ecmascript دارد <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی مینی پروژه ها <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه ارتباط با سرور <span>ویدئو</span></p>
+                <h5>3 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه دفترچه تلفن <span>ویدئو</span></p>
+                <h5>2 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه پیاده سازی وب سایت آموزشی مشابه reactapp.ir <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه پیاده سازی بازی tic-tac-toe <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه پیاده سازی بازی حافظه (memory game) <span>ویدئو</span></p>
+                <h5>2 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه پیاده سازی بازی مین روب (minsweeper) <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه پیاده سازی بازی 2048 <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه پیاده سازی بازی snake <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه قیمت لحظه ای ارز دیجیتال <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه وب سایت هواشناسی <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه ساخت رمز (password-generator) <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+            <div class="intro-box">
+              <div class="intro-desc">
+                <p class="intro-title">معرفی پروژه Quiz App <span>ویدئو</span></p>
+                <h5>1 دقیقه</h5>
+              </div>
+              <div class="preview">
+                <i class="fas fa-play-circle"></i>
+                <p>پیش نمایش</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seasons and Projects -->
+          <!-- Season 1 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="1">
+              <h4>فصل اول : مفاهیم پایه</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="1">
+              <div class="lesson-info">
+                <p class="lesson-title">02-نوشتن Hello World با جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>2 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Season 2 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="2">
+              <h4>فصل دوم : مینی پروژه ها</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="2">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">23- fade in و fade out عکس <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">24- expand و shrink عکس <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">25- پروژه zoomEffect <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">26- پروژه autowriter <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">27- پروژه background changer <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">28- پروژه dark mode toggle <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">29- پروژه pop up <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">30- پروژه ایجاد notification <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">31- پروژه heart rain <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">32- پروژه hamburger menu <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">33- پروژه carousel <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Season 3 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="3">
+              <h4>فصل سوم: مفاهیم پیشرفته</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="3">
+              <div class="lesson-info">
+                <p class="lesson-title">34- گرفتن مقادیر input ها - پارت یک <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">35- گرفتن مقادیر input ها - پارت دو <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">36-اعتبار سنجی فرم <span>ویدئو</span></p>
+                <h5>17 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">37-regex چیست <span>ویدئو</span></p>
+                <h5>15 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">38- ایجاد الگو regex برای ایمیل <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">39- primitives-and-refrence-types <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">40- مدیریت کردن error ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">41- IIFE</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">42- closure <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">43- getter and setter <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">44- strict mode <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">45- hiosting <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">46- callback function</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">47- promise <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">48- async await <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">49- arrow function <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">50- arrow function و this <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">51- call apply bind  <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">52-OOP <span>ویدئو</span></p>
+                <h5>20 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Season 4 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="4">
+              <h4>فصل چهارم : ارتباط با سرور</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="4">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Season 5 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="5">
+              <h4>فصل پنجم : method های آرایه</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="5">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 1 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="6">
+              <h4>پروژه دفترچه تلفن</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="6">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="7">
+              <h4>پروژه وب سایت آموزشی</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="7">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="8">
+              <h4>بازی tic-tac-toe</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="8">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 4 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="9">
+              <h4>بازی حافظه (memory game)</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="9">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 5 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="10">
+              <h4>بازی مین روب (minesweeper)</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="10">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 6 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="11">
+              <h4>بازی 2048</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="11">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 7 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="12">
+              <h4>بازی snake</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="12">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 8 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="13">
+              <h4>قیمت لحظه ای ارز دیجیتال</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="13">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 9 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="14">
+              <h4>وب سایت هواشناسی</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="14">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 10 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="15">
+              <h4>اپلیکیشن ساخت رمز</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="15">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+          <!-- project 11 -->
+          <div class="seasons-projects-box">
+            <div class="seasons-projects" data-number="16">
+              <h4>ساخت Quiz App</h4>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="season-info" data-number="16">
+              <div class="lesson-info">
+                <p class="lesson-title">22- کار با timing event ها <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">03-کدهای جاوا اسکریپت در کجا قرار می گیرند <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">04-statements و expression در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">05-تعریف متغیر و تفاوت let و var و const <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">06-عملیات های ریاضی و coercion <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">07-if statement <span>ویدئو</span></p>
+                <h5>9 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">08-switch case <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">09-for loop <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">10-while and do while <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">11-توابع و pure function <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">12-scope <span>ویدئو</span></p>
+                <h5>12 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">13- آرایه ها <span>ویدئو</span></p>
+                <h5>6 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">14- Object <span>ویدئو</span></p>
+                <h5>10 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">15- تفاوت بین for in و for of <span>ویدئو</span></p>
+                <h5>4 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">16- this در جاوا اسکریپت <span>ویدئو</span></p>
+                <h5>11 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">17- factory function <span>ویدئو</span></p>
+                <h5>7 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">18- constructor function <span>ویدئو</span></p>
+                <h5>5 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">19- dom چیست  <span>ویدئو</span></p>
+                <h5>8 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">20- کار با dom <span>ویدئو</span></p>
+                <h5>16 دقیقه</h5>
+              </div>
+              <div class="lesson-info">
+                <p class="lesson-title">21- ایجاد todo list <span>ویدئو</span></p>
+                <h5>13 دقیقه</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- start comment -->
+        <div id="comment">
+
+          <section class="comments">
+            <div class="comments__tab">
+              <div class="tabname">
+                <i class="far fa-comment-alt tabname__icon"></i>
+                <sapn class="tabname__title">نظرات</span>
+              </div>
+            </div>
+
+            <div class="comments__list">
+              <div class="comment">
+                <div class="comment__header">
+                  <div class="comment__header__author">md
+                    <span class="comment__header__author__tag"></span>
+                  </div>
+                  <time class="comment__header__time">دسامبر 7, 2021</time>
+                  <button class="comment__header__reply">پاسخ</button>
+                </div>
+                <p class="comment__msg">سلام خسته نباشید
+                مشخصات سیستم پیشنهادی برای شروع دوره چیه ؟
+                </p>
+              </div>
+              <div class="comment">
+                <div class="comment__header">
+                  <div class="comment__header__author">امیرعلی 
+                    <span class="comment__header__author__tag"></span>
+                  </div>
+                  <time class="comment__header__time">دسامبر 22, 2021</time>
+                  <button class="comment__header__reply">پاسخ</button>
+                </div>
+                <p class="comment__msg">
+                سلام یک سوال من می خوام ریکت نیتیو یادبگیرم می خواستم بدونم این دوره ببینم و دوره رایگان ریکت نیتیو میتونم یادبگیرم یا نه دوره جامع ریکت نیتیو ببینم بهتر یاد میگیرم؟؟؟
+
+                <div class="comment">
+                  <div class="comment__header">
+                    <div class="comment__header__author">علیرضا 
+                      <span class="comment__header__author__tag">(مدیریت)</span>
+                    </div>
+                    <time class="comment__header__time">دسامبر 22, 2021</time>
+                    <button class="comment__header__reply">پاسخ</button>
+                  </div>
+                  <p class="comment__msg">
+                  امیر علی عزیز سلام
+                  اگر هدفتون یاد گرفتن تخصصی ری اکت نیتیو هست پیشنهاد من دوره آموزش جامع ری اکت نیتیو هستش. پروژه محور هم هست و بهتون کمک میکنه. اما بعد از اون هم اگه خواستید توانایی هاتون رو تکمیل تر کنید و در کنار اون نگاهی هم به حوزه فرانت و بک اند داشته باشید این دوره رو از دست ندید.
+                  هر سوال دیگه ای داشتید میتونید تو کامنت ها و پشتیبانی تلگرام مطرح کنید در موردش باهم صحبت میکنیم تا به نتیجه درست برسید.              
+                  </p>
+                </div>
+                </p>
+              </div>
+              <!-- pagination -->
+              <div class="comments__pagination">
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">...</a>
+                <a href="#">6</a>
+                <a href="#"><i class="fa fa-angle-left"></i></a>
+              </div>
+              <!--! end of pagination -->
+
+              <p>قوانین ثبت دیدگاه</p>
+              <!-- start commentCreatebox-->
+              <div class="sendcomment">
+                <form action="">
+                  <div class='sendcomment__message'>
+                    <p class="comment_describe">
+                    نشانی ایمیل شما منتشر نخواهد شد. بخش‌های موردنیاز علامت‌گذاری شده‌اند *
+                    </p>
+                    <div class="comment__input__box">
+                      <label for="comment__msg">
+                        دیدگاه شما *
+                      </label>
+                      <textarea id="comment__msg" name="userMsg" class="input"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="sendcomment__information">
+                    <div class="comment__input__box">
+                      <label for="comment__username">نام *</label>
+                      <input type="text" name="userName" id="comment__username" class="input">
+                    </div>
+
+                    <div class="comment__input__box">
+                      <label for="comment__useremail">ایمیل *</label>
+                      <input type="text" name="userEmail" id="comment__useremail" class="input">
+                    </div>
+
+                    <div class="comment__recaptcha">
+                      <label for="comment__amIHumman">i'm not a robot</label>
+                      <input type="checkbox" id="comment__amIHumman">
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn sendcomment__submit">فرستادن دیدگاه</button>
+
+                </form>
+              </div>
+              <!-- end commentCreatebox-->
+            </div>
+          </section>
+        </div>
+        <!-- end comment -->
+      </main>
+      <!-- aside course -->
+      <aside class="aside-course">
+        <!-- price-and-register -->
+        <div class="price-and-register">
+          <div class="price-course">
+            <div>
+              <p>قیمت :</p>
+            </div>
+            <div class="price">
+              <h3>269,000</h3>
+              <p>تومان</p>
+            </div>
+          </div>
+          <div class="register-course">
+            <a href="#">ثبت نام دوره</a>
+            <i class="far fa-credit-card"></i>
+          </div>
+        </div>
+
+        <!-- info-course -->
+        <div class="info-course">
+          <div class="number-download">
+            <i class="fas fa-download"></i>
+            <p>تعداد خرید / دانلود : </p>
+            <span>451</span>
+          </div>
+          <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>نوع دوره: غیرحضوری،ویدئویی</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-book-reader"></i>
+            <p>سطح دوره: مقدماتی تا پیشرفته</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-traffic-light"></i>
+            <p>پیش نیاز: html و css</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-globe"></i>
+            <p>زبان: فارسی</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-clock"></i>
+            <p>27ساعت و 21 دقیقه</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-list-alt"></i>
+            <p>206 درس</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-hdd"></i>
+            <p>4.61 گیگابایت</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-long-arrow-alt-down"></i>
+            <p>روش دریافت: دانلودی</p>
+          </div>
+          <div class="info">
+            <i class="fas fa-headset"></i>
+            <p>روش پشتیبانی: کامنت های دوره و تالارگفتمان</p>
+          </div>
+          <div class="info progress">
+            <i class="fas fa-tasks"></i>
+            <p>درصد پیشرفت دوره: %100</p>
+            <div class="progress-animate">
+
+            </div>
+          </div>
+        </div>
+        <!-- visit-comments-box -->
+        <div class="visit-comments-box">
+          <div class="visit">
+            <i class="far fa-eye"></i>
+            <p>20.58k بازدید</p>
+          </div>
+          <div class="mid-line"></div>
+          <div class="comment">
+            <i class="far fa-comments"></i>
+            <p>73 دیدگاه</p>
+          </div>
+        </div>
+        <!-- programmer-course -->
+        <div class="programmer-course">
+          <div class="programmer-image">
+            <img src="../../assets/images/courses/javascript/Mahdi-Hasanzadeh-e1611826674339-120x120.jpeg" alt="مهدی">
+          </div>
+          <div class="programmer-desc">
+            <h4>مهدی</h4>
+            <p>برنامه نویس front-end</p>
+          </div>
+        </div>
+        <!-- our instagram -->
+        <div class="our-instagram">
+          <div class="image-instagram">
+            <img src="../../assets/images/courses/javascript/INSAT-3.jpg" alt="Our Instagram">
+          </div>
+        </div>
+        <!-- share box -->
+        <div class="share-box">
+          <div class="info-product">
+            <i class="fas fa-list-ul"></i>
+            <p>دسته: <a href="#">دوره های آموزشی</a>، <a href="#">دوره های ویژه</a></p>
+          </div>
+          <div class="link-course">
+            https://reactapp.ir/?p=53293
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-paper-plane"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+
+    <div class="btn-scroll">
+      <a href="#heading"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!-- scripts -->
+    <script type="module" src="/assets/js/pages/course/javascript.js"></script>
   </body>
 
 </html>
