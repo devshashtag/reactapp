@@ -7,7 +7,7 @@
   box-shadow: 0 0 5px 3px #eee;
   border: 2px solid $gray-clr-5;
   padding: 30px;
-  #newcomment-form {
+  .newcomment-form {
     height: 100%;
     @include flex($fdir: column, $aitem: flex-start, $jcnt: space-between);
     .input {
@@ -26,7 +26,7 @@
       width: 45%;
     }
   }
-  #newcomment-form {
+  .newcomment-form {
     .form {
       &__msg {
         width: 100%;
@@ -51,6 +51,12 @@
           flex-direction: row;
           flex-wrap: wrap;
         }
+      }
+      &__submit{
+        @extend %yellowBtn;
+        cursor: pointer;
+        padding: 10px 17px;
+        font-family: inherit;
       }
     }
   }
