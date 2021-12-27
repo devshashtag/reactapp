@@ -67,13 +67,24 @@
   }
   .box {
     &__linkItem {
-      transition: all 1s;
+      @include transition(all 1s);
       width: 80%;
       min-height: 20vh;
-      @include breakpoint(xs){min-width: 260px;max-width: 300px;}
-      @include breakpoint(sm){max-width: 400px;min-height: 25vh}
-      @include breakpoint(md){max-width: initial;width: 90%;};
-      @include breakpoint(lg){width: 100%;}
+      @include breakpoint(xs) {
+        min-width: 260px;
+        max-width: 300px;
+      }
+      @include breakpoint(sm) {
+        max-width: 400px;
+        min-height: 25vh;
+      }
+      @include breakpoint(md) {
+        max-width: initial;
+        width: 90%;
+      }
+      @include breakpoint(lg) {
+        width: 100%;
+      }
     }
   }
   .steps-card {
