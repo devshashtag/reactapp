@@ -1,59 +1,113 @@
 // global imports 
-import { getElement, toggleClasses } from "./utils.js";
+import { getElement, toggleClasses, baseUrl } from "./utils.js";
+import { topbarTemplate, navbarTemplate, 
+         sidebarTemplate, bodyWrapperTemplate } from "/assets/js/global/display.js";
 
-let topbarEvents = () => { 
-  // navbar toggle for sidebar
+// navigation urls 
+import { route } from "/assets/js/data/route.js";
+
+const topbarEvents = () => { 
+  // topbar search toggle
   const searchToggle = getElement(".topbar__search--toggle");
   const navbar = getElement(".navbar");
 
-  // display search form in navbar
+  // display search-form in navbar
   searchToggle.addEventListener('click', () => {
     toggleClasses(searchToggle, "fa-search", "fa-close");
     navbar.classList.toggle("search--active");
   });
 };
 
-let navbarEvents = () => {
+const navbarEvents = () => {
   // navbar toggle for sidebar
-  const sidebar        = getElement(".sidebar");
-  const sidebarWrap    = getElement(".sidebar--wrap");
-  const sidebarOverlay = getElement(".sidebar--overlay");
-  const navbarToggle   = getElement(".navbar--toggle");
+  const sidebar      = getElement(".sidebar");
+  const bodyWrapper  = getElement(".body--wrap");
+  const bodyOverlay  = getElement(".body--overlay");
+  const navbarToggle = getElement(".navbar--toggle");
 
-  // navbar toggle event to toggle sidebar
+  // display sidebar
   navbarToggle.addEventListener('click', () => {
     sidebar.classList.toggle("is-active");
     navbarToggle.classList.toggle("is-active");
-    sidebarWrap.classList.toggle("wrap");
+    bodyWrapper.classList.toggle("wrap");
     document.body.classList.toggle("overflow--hidden");
   });
 
-  // hide sidebar when clicking sidebar--overlay
-  sidebarOverlay.addEventListener('click', () => {
+  // hide sidebar when clicking .body--overlay
+  bodyOverlay.addEventListener('click', () => {
     sidebar.classList.remove("is-active");
     navbarToggle.classList.remove("is-active");
-    sidebarWrap.classList.remove("wrap");
+    bodyWrapper.classList.remove("wrap");
     document.body.classList.remove("overflow--hidden");
   });
 }
 
-let sidebarEvents = () => {
-  // sidebar dropdown toggle for navigations
-  const DropdownToggle = getElement(".sidebar__dropdown--toggle");
-  const DropdownNav    = getElement(".sidebar__dropdown__nav");
-
-  // display dropdown
-  DropdownToggle.addEventListener('click', () => {
-    toggleClasses(DropdownToggle, "is-active", "fa-angle-left", "fa-angle-down");
-    DropdownNav.classList.toggle("is-active");
+const sidebarEvents = () => {
+  // check clicking on sidebar__list 
+  let sidebarList = getElement(".sidebar__list");
+  // if click on dropdown toggle. show dropdown__list
+  sidebarList.addEventListener('click', (el) => {
+    if(el.target.classList.contains("sidebar__dropdown--toggle")){
+      let toggle = el.target;
+      const dropdownList = toggle.parentNode.parentNode.querySelector(".dropdown__list");
+      // display dropdown__list
+      toggleClasses(toggle, "is-active", "fa-angle-left", "fa-angle-down");
+      dropdownList.classList.toggle("is-active");
+    }
   });
 }
 
-let headerEvents = () => {
-  topbarEvents();
+// document name
+let doc_name = baseUrl(document.location.pathname)
+
+// header options
+let options = {
+  topbar:true
+}
+
+// check options in route items
+function checkOptions(items) {
+  for(let item of items) {
+    if(item.topbar === false && baseUrl(item.url) == doc_name){
+      options.topbar = false;
+      return;
+    }
+    if(item.type === "dropdown") {
+      checkOptions(item.data);
+    } 
+  }
+}
+
+// check if topbar disabled in routes
+checkOptions(route);
+
+// create templates before pages loads
+const sidebar = sidebarTemplate(route);
+const navbar  = navbarTemplate(route);
+
+const topbar  = options.topbar? topbarTemplate():'';
+
+// header
+const headerInit = () => {
+  // html template
+  let htmlTemplate = `
+  ${sidebar}
+  ${bodyWrapperTemplate(`
+    ${topbar}
+    ${navbar}
+    ${document.body.innerHTML}
+  `)}`;
+
+  // set template
+  document.body.innerHTML = htmlTemplate;
+
+  // events
+  if (options.topbar) {
+    topbarEvents();
+  }
   navbarEvents();
   sidebarEvents();
 }
 
-export { headerEvents, topbarEvents, navbarEvents, sidebarEvents}
+export { headerInit };
 

@@ -20,7 +20,6 @@
 
   &__list {
     padding: 28px;
-    font-family: Samim;
     @include flex($fdir: column, $aitem: flex-start);
   }
   .comment {

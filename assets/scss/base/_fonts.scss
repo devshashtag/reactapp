@@ -1,39 +1,85 @@
 @font-face {
-  font-family: Samim;
-  src: url('/assets/fonts/Samim.eot');
-  src: url('/assets/fonts/Samim.eot?#iefix') format('embedded-opentype'), 
-       url('/assets/fonts/Samim.woff2') format('woff2'),
-       url('/assets/fonts/Samim.woff') format('woff'),
-       url('/assets/fonts/Samim.ttf') format('truetype');
-  font-weight: normal;
+  font-display: swap;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/iransans/eot/iransans-web-black.eot');
+  src: url('/assets/fonts/iransans/woff2/iransans-web-black.woff2') format('woff2'),
+       url('/assets/fonts/iransans/woff/iransans-web-black.woff') format('woff'),
+       url('/assets/fonts/iransans/ttf/iransans-web-black.ttf') format('truetype')
 }
 
 @font-face {
-  font-family: Samim;
-  src: url('/assets/fonts/Samim-Bold.eot');
-  src: url('/assets/fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/Samim-Bold.woff2') format('woff2'),
-       url('/assets/fonts/Samim-Bold.woff') format('woff'),
-       url('/assets/fonts/Samim-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-display: swap;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/iransans/eot/iransans-web-medium.eot');
+  src: url('/assets/fonts/iransans/woff2/iransans-web-medium.woff2') format('woff2'),
+       url('/assets/fonts/iransans/woff/iransans-web-medium.woff') format('woff'),
+       url('/assets/fonts/iransans/ttf/iransans-web-medium.ttf') format('truetype')
 }
 
 @font-face {
-  font-family: Samim;
-  src: url('/assets/fonts/Samim-Medium.eot');
-  src: url('/assets/fonts/Samim-Medium.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/Samim-Medium.woff2') format('woff2'),
-       url('/assets/fonts/Samim-Medium.woff') format('woff'),
-       url('/assets/fonts/Samim-Medium.ttf') format('truetype');
-  font-weight: 500;
+  font-display: swap;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/iransans/eot/iransans-web-light.eot');
+  src: url('/assets/fonts/iransans/woff2/iransans-web-light.woff2') format('woff2'),
+       url('/assets/fonts/iransans/woff/iransans-web-light.woff') format('woff'),
+       url('/assets/fonts/iransans/ttf/iransans-web-light.ttf') format('truetype')
 }
 
 @font-face {
-  font-family: Tanha;
-  src: url('/assets/fonts/Tanha-FD.eot');
-  src: url('/assets/fonts/Tanha-FD.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/Tanha-FD.woff2') format('woff2'),
-       url('/assets/fonts/Tanha-FD.woff') format('woff'),
-       url('/assets/fonts/Tanha-FD.ttf') format('truetype');
-  font-weight: normal;
+  font-display: swap;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url('/assets/fonts/iransans/eot/iransans-web-ultralight.eot');
+  src: url('/assets/fonts/iransans/woff2/iransans-web-ultralight.woff2') format('woff2'),
+       url('/assets/fonts/iransans/woff/iransans-web-ultralight.woff') format('woff'),
+       url('/assets/fonts/iransans/ttf/iransans-web-ultralight.ttf') format('truetype')
 }
+
+@font-face {
+  font-display: swap;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/iransans/eot/iransans-web.eot');
+  src: url('/assets/fonts/iransans/woff2/iransans-web.woff2') format('woff2'),
+       url('/assets/fonts/iransans/woff/iransans-web.woff') format('woff'),
+       url('/assets/fonts/iransans/ttf/iransans-web.ttf') format('truetype')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: yekan;
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/yekan/eot/iran-yekan-web-bold.eot');
+  src: url('/assets/fonts/yekan/woff/iran-yekan-web-bold.woff') format('woff'),
+       url('/assets/fonts/yekan/ttf/iran-yekan-web-bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: yekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/yekan/eot/iran-yekan-web-light.eot');
+  src: url('/assets/fonts/yekan/woff/iran-yekan-web-light.woff') format('woff'),
+       url('/assets/fonts/yekan/ttf/iran-yekan-web-light.ttf') format('truetype')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: yekan;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/yekan/eot/iran-yekan-web-regular.eot');
+  src: url('/assets/fonts/yekan/woff/iran-yekan-web-regular.woff') format('woff'),
+       url('/assets/fonts/yekan/ttf/iran-yekan-web-regular.ttf') format('truetype')
+}
+

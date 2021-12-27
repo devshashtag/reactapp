@@ -1,15 +1,15 @@
+// global
 @import "button";
 @import "cover";
+@import 'main-header';
+
+// courses 
 @import "course-card";
+
+// blog
 @import "blog-card";
+
 @import "banners";
-
-// top bar 
-@import "topbar";
-
-// navbar, sidebar
-@import "navbar";
-@import "sidebar";
 
 // learning steps
 @import 'steps-card';
