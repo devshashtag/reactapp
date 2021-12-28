@@ -62,11 +62,14 @@ const displayBlogs = (data = [], value) => {
 let doc_name = baseUrl(document.location.pathname);
 
 // templates
+// url template
 const linkTemplate = (item) =>
   `\n<a ${
     baseUrl(item.url).includes(doc_name) ? `class="is-active" ` : ``
   }href="${item.url}">${item.title}</a>\n`;
+// list item template
 const listTemplate = (item) => `\n<li>${linkTemplate(item)}</li>\n`;
+// list dropdown template
 const dropdownTemplate = (item, angle = "down", toggle_for) => {
   let icon_classes = `
     ${toggle_for ? `${toggle_for}__dropdown--toggle ` : ``}
