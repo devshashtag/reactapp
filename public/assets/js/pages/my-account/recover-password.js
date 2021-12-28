@@ -1,9 +1,9 @@
-//? global imports
+//* ReactApp
+//* for: ReactApp/pages/my-account/lost-password.html
 import { headerInit } from "/assets/js/global/header.js";
 
-//? specific imports
 
-
+//* display items when page load
 window.addEventListener("DOMContentLoaded", function () {
 
   headerInit(); // header

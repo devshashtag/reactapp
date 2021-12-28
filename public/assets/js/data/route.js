@@ -31,5 +31,27 @@ export const route = [
     url: "#tel", 
     title: "کانال تلگرام", 
     type:"item"
-  }
+  },
+  { 
+    url: "#!", 
+    title: "صفحات بی ادرس", 
+    type:"dropdown",
+    data: [ 
+      { 
+        url: "/pages/my-account.html", 
+        title: "حساب من", 
+        type:"item"
+      },
+      { 
+        url: "/pages/my-account/recover-password.html", 
+        title: "بازیابی رمز عبور", 
+        type:"item"
+      },
+      { 
+        url: "/pages/courses/javascript.html", 
+        title: "آموزش جاوااسکریپت", 
+        type:"item"
+      }
+    ]
+  },
 ]
