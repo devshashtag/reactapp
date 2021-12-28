@@ -6,6 +6,7 @@ reactapp.ir template
 - [ ] define global colors
 - [ ] convert all colors global colors
 - [ ] add link to opbar icons
+- [ ] scroll to top in pages/courses/javascript.html
 - [ ] refactor pages/courses/javascript js, scss, javascript
 - [ ] refactor classes in all pages
 - [ ] reafactor js files
