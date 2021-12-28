@@ -801,6 +801,7 @@ section {
   position: relative;
   background-color: #fff;
   box-shadow: 0 0.125rem 0.25rem #0002;
+  z-index: 9;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -998,7 +999,6 @@ section {
   right: 0;
   bottom: 0;
   height: 100%;
-  z-index: 10;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
@@ -1122,6 +1122,7 @@ section {
   overflow: auto;
   width: 300px;
   background-color: #212529;
+  z-index: 10;
   -webkit-transform: translateX(-300px);
   -moz-transform: translateX(-300px);
   -ms-transform: translateX(-300px);
@@ -1779,7 +1780,7 @@ section {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 1001;
+  z-index: 9;
 }
 @media (max-width: 576px) {
   .register-for-screens {
@@ -2414,7 +2415,6 @@ section {
   background-color: #f8f9fa;
   padding: 12rem 1rem 5rem;
   max-width: 100%;
-  z-index: -1;
 }
 @media (min-width: 1200px) {
   .my-account__content {
