@@ -8,11 +8,8 @@
       margin:0 auto;
       max-width:45rem;
 
-      @include breakpoint(sm){ max-width:45rem; }
-
-      @include breakpoint(md) {
-        max-width:95%;
-      }
+      @include breakpoint(sm) { max-width:45rem; }
+      @include breakpoint(md) { max-width:95%;   }
     }
 
     &__title { 
