@@ -5,7 +5,6 @@ reactapp.ir template
 ## global todo
 - [ ] define global colors
 - [ ] convert all colors to global colors
-- [ ] refactor pages/courses/javascript js, scss, javascript
 - [ ] refactor classes, scss files
 - [ ] reafactor js files
 - [ ] reafactor html files
@@ -25,6 +24,9 @@ reactapp.ir template
 - [ ] export an kit-starter scss for later-use 
 
 ## sajjad todo
+- [ ]  pages/courses/javascript refactor html 
+- [ ]  pages/courses/javascript refactor scss 
+- [ ]  pages/courses/javascript refactor js
 
 ## david todo
 - [x] fix comment section in pages/courses/javascript js
