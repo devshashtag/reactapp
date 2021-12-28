@@ -1,50 +1,63 @@
 .sendcomment {
   margin-top: 30px;
   width: 100%;
-  color:$gray-clr-2;
+  color: $gray-clr-2;
   font-size: 1.3rem;
   background-color: $gray-clr-7;
   box-shadow: 0 0 5px 3px #eee;
   border: 2px solid $gray-clr-5;
   padding: 30px;
-  form {
+  .newcomment-form {
     height: 100%;
-    @include flex($fdir:column,$aitem:flex-start,$jcnt:space-between);
+    @include flex($fdir: column, $aitem: flex-start, $jcnt: space-between);
     .input {
       display: inline-block;
       width: 100%;
       border: 1px solid $gray-clr-4;
       padding: 5px;
-    }  
+    }
   }
-  .comment__input__box {
-    color:$gray-clr-2;
+  .input__wrapper {
+    color: $gray-clr-2;
     margin: 10px;
     width: 100%;
-    @include flex($fdir:column,$aitem:flex-start);
-    @include breakpoint(md){width: 45%;}
-  }
-
-  &__message {
-    width: 100%;
-    .comment_describe {
-      margin-bottom: 5px;
-    }
-    .comment__input__box {
-      @include breakpoint(md){width:100%};
-    }
-    .input{
-      resize: vertical;
-      min-height: 200px;  
-    }
-  }
-
-  &__information {
-    width: 100%;
-    @include flex($fdir:column);
+    @include flex($fdir: column, $aitem: flex-start);
     @include breakpoint(md) {
-      flex-direction:row;
-      flex-wrap: wrap;
+      width: 45%;
+    }
+  }
+  .newcomment-form {
+    .form {
+      &__msg {
+        width: 100%;
+        .msg_describe {
+          margin-bottom: 5px;
+        }
+        .input__wrapper {
+          @include breakpoint(md) {
+            width: 100%;
+          }
+        }
+        .input {
+          resize: vertical;
+          min-height: 200px;
+        }
+      }
+
+      &__info {
+        width: 100%;
+        @include flex($fdir: column);
+        @include breakpoint(md) {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+      &__submit{
+        @extend %yellowBtn;
+        cursor: pointer;
+        padding: 10px 17px;
+        font-family: inherit;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-#learning-steps {
+.learning-steps {
   width: 100%;
   @include flex($fdir: column);
 
@@ -33,29 +33,16 @@
         padding-right: 1rem;
       }
     }
-    &____section {
-      @include breakpoint(xs) {
-        max-width: 510px;
-      }
-    }
   }
 
   .section {
     &__header {
       padding-right: 2rem;
-      @include flex($jcnt: flex-start);
       margin-bottom: 30px;
+      @include flex($jcnt: flex-start);
     }
     &__box {
-      @include flex($gap:1rem,$fdir: column-reverse);
-      @include breakpoint(sm){
-        flex-direction: row;
-        align-items: stretch;
-        flex-wrap: wrap;
-      }
-      @include breakpoint(lg) {
-        flex-wrap: nowrap;
-      }
+      @extend %card-container;
     }
   }
   .sec__header {
@@ -80,21 +67,23 @@
   }
   .box {
     &__linkItem {
-      width: 90%;
-      max : {
-        width: 300px;
-        height: 188px;
+      @include transition(all 1s);
+      width: 80%;
+      min-height: 20vh;
+      @include breakpoint(xs) {
+        min-width: 260px;
+        max-width: 300px;
       }
-      margin: 2px;
-      @include breakpoint(sm){
-        width: 40%;
-        max-width: 310px;
-        max-height: initial;
+      @include breakpoint(sm) {
+        max-width: 400px;
+        min-height: 25vh;
+      }
+      @include breakpoint(md) {
+        max-width: initial;
+        width: 90%;
       }
       @include breakpoint(lg) {
-        background: red;
-        width: 277.5px;
-
+        width: 100%;
       }
     }
   }

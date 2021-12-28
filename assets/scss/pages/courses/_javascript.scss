@@ -675,6 +675,11 @@
         }
     }
 }
+
+//by david
+.aside-to-main{
+
+    
 // visit-comments-box
 .visit-comments-box,
 .visit,
@@ -682,6 +687,7 @@
     display: flex;
     justify-content: center;
     gap: 0.8rem;
+}
 }
 .visit-comments-box{
     @include boxStyle;
@@ -799,9 +805,7 @@
     }
 }
 
-#comment{
-    // margin: auto;
-    // max-width: 768px;
+.comment-box{
     padding: 10px;
     // sajjad
     @include boxStyle;
