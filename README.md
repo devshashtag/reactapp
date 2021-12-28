@@ -3,6 +3,8 @@ reactapp.ir template
 
 # todo
 - [ ] refactor navbar, topbar, sidebar
+- [ ] define global colors
+- [ ] convert all colors global colors
 - [ ] add link to opbar icons
 - [ ] refactor pages/courses/javascript js, scss, javascript
 - [ ] refactor classes in all pages
