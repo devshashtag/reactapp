@@ -17,6 +17,12 @@ $gray-clr-3: #b0b0b0;
 //* used in background course-icon
 $gray-clr-4: #0000005e;
 
+//* used in form-texts and borders
+$gray-clr-mid:#dedede;
+
+//* used in form changer 
+$gray-clr-trans-mid:#dedede55;
+
 //* used in blog-card
 $gray-clr-5: #ececec;
 
@@ -33,15 +39,20 @@ $gray-clr-8: #f8f9fa;
 $gray-clr-9: #f0f0f1;
 
 
-
 //* used in home-page-background header-background and hover effect course-icon
 $white-clr: #fff;
 
+//* used in icon bg
+$white-clr-trans-7:#fff3;
+
 //* used in links
 $blue-clr-1: #3467ff;
+$blue-clr-2: #1839c0;
 
 //* used in course-page
 $green-clr:#1fbd50;
+//* used in main-heading separator
+$green-clr-1:#055;
 
 $react-gr-clr:linear-gradient(180deg,#4d01df 0%,#8a2be1 100%);
 $nodeJs-gr-clr:linear-gradient(180deg,#1d7401 0%,#6e9601 100%);
@@ -59,6 +70,8 @@ $comment-hover-clr:#1919191f;
 //? sizes
 //* used in main-container
 $max-width: 1230px;
+//* my-account top-bottom logo padding
+$account-logo-padding: 12rem;
 
 //* main-header
 $main-header-bg:$gray-clr-6;
@@ -116,6 +129,7 @@ $sidebar-search-submit-fg:#6c757d;
 $sidebar-search-submit-hover-fg:#ddda;
 $sidebar-search-border-clr:#2c3237;
 $sidebar-dropdown-link-border-fg:#333940;
+
 
 //* recover- password
 $recover-pass-main-bg:$gray-clr-7;
