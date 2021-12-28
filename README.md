@@ -1,5 +1,3 @@
 # info                      
-reactapp.ir template 
+reactapp.ir template backend
 
-# todo 
- - [ ] 
