@@ -4,15 +4,16 @@ reactapp.ir template
 # todo
 - [ ] refactor navbar, topbar, sidebar
 - [ ] define global colors
-- [ ] convert all colors global colors
-- [ ] add link to opbar icons
+- [ ] convert all colors to global colors
+- [ ] add link to topbar icons
 - [x] fix comment section in pages/courses/javascript js
 - [x] scroll to top in pages/courses/javascript.html
 - [ ] refactor pages/courses/javascript js, scss, javascript
 - [ ] refactor classes in all pages
 - [ ] reafactor js files
-- [ ] remove global.js if no needed
-- [ ] remove lost-password and javascript.html from navbar while project completed
+- [ ] reafactor html files
+- [ ] remove global.js if not used
+- [ ] remove lost-password, javascript.html, my-account.html from navbar while project completed
 - [ ] convert transitions to mixins
 - [ ] convert transform and flex to mixins
 - [ ] create other pages
