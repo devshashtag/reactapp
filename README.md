@@ -2,25 +2,37 @@
 reactapp.ir template 
 
 # todo
-- [ ] refactor navbar, topbar, sidebar
+## global todo
 - [ ] define global colors
 - [ ] convert all colors to global colors
-- [ ] add link to topbar icons
-- [x] fix comment section in pages/courses/javascript js
-- [x] scroll to top in pages/courses/javascript.html
 - [ ] refactor pages/courses/javascript js, scss, javascript
-- [ ] refactor classes in all pages
+- [ ] refactor classes, scss files
 - [ ] reafactor js files
 - [ ] reafactor html files
+- [ ] convert transitions, transform, flex to mixin ones
+- [ ] optimize template
+- [ ] create other pages
+
+## devshashtag todo
+- [x] scroll to top in pages/courses/javascript.html
+- [ ] complete pages/terms.html, pages/contact.html 
+- [ ] refactor navbar, topbar, sidebar
+- [ ] add link to topbar icons
 - [ ] remove global.js if not used
 - [ ] remove lost-password, javascript.html, my-account.html from navbar while project completed
-- [ ] convert transitions to mixins
-- [ ] convert transform and flex to mixins
-- [ ] create other pages
-- [ ] optimize template
-- [ ] minify js, css files with webpack
 - [ ] land it on github pages
+- [ ] minify js, css files with webpack
 - [ ] export an kit-starter scss for later-use 
+
+## sajjad todo
+
+## david todo
+- [x] fix comment section in pages/courses/javascript js
+
+## kamal-h todo
+
+## ansari todo
+
 
 # npm scripts
 
