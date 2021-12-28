@@ -38,6 +38,11 @@ export const route = [
     type:"dropdown",
     data: [ 
       { 
+        url: "/pages/my-account.html", 
+        title: "حساب من", 
+        type:"item"
+      },
+      { 
         url: "/pages/my-account/recover-password.html", 
         title: "بازیابی رمز عبور", 
         type:"item"
