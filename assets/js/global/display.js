@@ -9,8 +9,8 @@ const dispalyCourses = (data = [], type = "title") => {
   <div class="course__header">
     <img src='${item.image}' alt='${item.title}' />
     <div class='header__icon' >
-    <i class="fas fa-play "></i>
-    <i class="fas fa-user  "></i>
+    <i class="fas fa-play"></i>
+    <i class="fas fa-user-plus"></i>
     </div>
   </div>
   <div class="course__content">
@@ -55,20 +55,22 @@ const displayBlogs = (data = [], value) => {
   return displayItmes;
 };
 
-
 // header templates
 
-//# header navigation templates 
+//# header navigation templates
 // active item
-let doc_name = baseUrl(document.location.pathname)
+let doc_name = baseUrl(document.location.pathname);
 
 // templates
-const linkTemplate = item => `\n<a ${baseUrl(item.url).includes(doc_name)?`class="is-active" `:``}href="${item.url}">${item.title}</a>\n`;
-const listTemplate = item => `\n<li>${linkTemplate(item)}</li>\n`;
-const dropdownTemplate = (item, angle='down', toggle_for) => {
+const linkTemplate = (item) =>
+  `\n<a ${
+    baseUrl(item.url).includes(doc_name) ? `class="is-active" ` : ``
+  }href="${item.url}">${item.title}</a>\n`;
+const listTemplate = (item) => `\n<li>${linkTemplate(item)}</li>\n`;
+const dropdownTemplate = (item, angle = "down", toggle_for) => {
   let icon_classes = `
-    ${toggle_for?`${toggle_for}__dropdown--toggle `:``}
-    fa fa-angle-${angle === `down`?`down`:`left`}
+    ${toggle_for ? `${toggle_for}__dropdown--toggle ` : ``}
+    fa fa-angle-${angle === `down` ? `down` : `left`}
   `;
 
   let dropdown = `
@@ -79,13 +81,13 @@ const dropdownTemplate = (item, angle='down', toggle_for) => {
         <i class="${icon_classes}"></i>
       </div>
       <ul class="dropdown__list">
-        ${item.data.map(listTemplate).join('')}
+        ${item.data.map(listTemplate).join("")}
       </ul>
     </li>
   `;
 
   return dropdown;
-}
+};
 
 const topbarTemplate = () => {
   const topbar = `
@@ -115,8 +117,7 @@ const topbarTemplate = () => {
   `;
 
   return topbar;
-}
-
+};
 
 const navbarTemplate = (route) => {
   const navbar = `
@@ -135,9 +136,13 @@ const navbarTemplate = (route) => {
     <nav class="navbar__menu">
       <!-- menu list -->
       <ul class="menu__list">
-        ${route.map(item => {
-          return ((item.type == 'dropdown') ? dropdownTemplate(item) : listTemplate(item));
-        }).join('')}
+        ${route
+          .map((item) => {
+            return item.type == "dropdown"
+              ? dropdownTemplate(item)
+              : listTemplate(item);
+          })
+          .join("")}
       </ul>
       <!-- menu button -->
       <a class="menu__account" href="/pages/my-account.html">
@@ -163,8 +168,8 @@ const navbarTemplate = (route) => {
   <!-- end navbar -->
   `;
 
-  return navbar; 
-}
+  return navbar;
+};
 
 const sidebarTemplate = (route) => {
   const sidebar = `
@@ -183,19 +188,23 @@ const sidebarTemplate = (route) => {
       <!-- sidebar navigation -->
       <nav class="sidebar__nav">
         <ul class="sidebar__list">
-          ${route.map(item => {
-            return ((item.type == 'dropdown') ? dropdownTemplate(item, 'left', 'sidebar') : listTemplate(item));
-          }).join('')}
+          ${route
+            .map((item) => {
+              return item.type == "dropdown"
+                ? dropdownTemplate(item, "left", "sidebar")
+                : listTemplate(item);
+            })
+            .join("")}
         </ul>
       </nav>
     </div>
     <!-- end sidebar -->
   `;
 
-  return sidebar; 
-}
+  return sidebar;
+};
 
-const bodyWrapperTemplate = ( template ) => {
+const bodyWrapperTemplate = (template) => {
   const bodyWrapper = `
     <!-- start body wrapper -->
     <div class="body--wrap">
@@ -207,13 +216,16 @@ const bodyWrapperTemplate = ( template ) => {
     `;
 
   return bodyWrapper;
-}
+};
 
-export { 
+export {
   // courses
-  dispalyCourses, 
+  dispalyCourses,
   // blog
   displayBlogs,
   // header
-  topbarTemplate, navbarTemplate, sidebarTemplate, bodyWrapperTemplate
+  topbarTemplate,
+  navbarTemplate,
+  sidebarTemplate,
+  bodyWrapperTemplate,
 };
