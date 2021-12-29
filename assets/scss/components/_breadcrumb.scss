@@ -1,0 +1,61 @@
+// * breadcrumb 
+.breadcrumb { 
+  background-color:$gray-clr-6;
+  
+  &__wrapper {
+    max-width:1230px;
+    margin:0 auto;
+    padding:3.5rem 3rem;
+
+    @include flex($fdir:column, $aitem:flex-start, $gap:1rem);
+    @include breakpoint(xs){ padding:3.5rem 1rem; }
+    @include breakpoint(xl){ padding:3.5rem 0; }
+
+    h1 {
+      font-size:1.5rem;
+      font-weight:400;
+      @include breakpoint(sm){ font-size:1.6rem;}
+      @include breakpoint(md){ font-size:1.8rem; }
+      @include breakpoint(lg){ font-size:2rem;   font-weight:500;}
+    }
+  }
+
+  &__list {
+    @include flex($jcnt:right, $fwrap:wrap, $gap:.7rem);
+
+    li {
+      @include flex($gap:.7rem);
+
+      &:last-child,
+      a {
+        cursor:pointer;
+        font-size:1.2rem;
+        font-weight:200;
+        color:$black-clr-1;
+
+        @include breakpoint(sm){ font-size:1.3rem; }
+        @include breakpoint(md){ font-size:1.4rem; }
+
+        &:hover {
+          color:$blue-clr-2;
+          text-shadow:0 0 2rem $blue-clr-2;
+        }
+      }
+
+      &:not(:last-child)::after {
+        display:inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f053";
+        font-size:1.2rem;
+        color:$green-clr-1;
+
+        @include breakpoint(sm){ font-size:1.4rem; }
+        @include breakpoint(md){ font-size:1.5rem; }
+      }
+      
+      &:last-child { pointer-events:none; }
+    }
+  }
+}
+
