@@ -18,7 +18,7 @@ reactapp.ir template
 - [ ] create footer template in display.js
 - [ ] add footer with js
 - [ ] add footer to all pages
-- [ ] complete pages/terms.html main
+- [x] complete pages/terms.html main
 - [ ] complete pages/contact.html main
 - [ ] refactor navbar, topbar, sidebar classes
 - [ ] add link to topbar icons
