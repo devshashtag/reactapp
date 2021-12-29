@@ -13,6 +13,7 @@
       margin-bottom: 10px;
       color: $white-clr;
     }
+
     &__content {
       width: 100%;
       max-width: 1200px;
@@ -20,15 +21,15 @@
       margin: auto;
     }
   }
+
   .content {
     &__paragraph {
       text-align: justify;
       color: $gray-clr-2;
       font-size: 1.3rem;
       margin-bottom: 40px;
-      @include breakpoint(md) {
-        font-size: 1.1rem;
-      }
+
+      @include breakpoint(md) { font-size: 1.1rem; }
     }
   }
 
@@ -36,20 +37,23 @@
     &__header {
       padding-right: 2rem;
       margin-bottom: 30px;
+
       @include flex($jcnt: flex-start);
+
       .header {
         &__icon {
           color: $gray-clr-1;
           font-size: 2.5rem;
         }
+
         &__title {
           margin-right: 10px;
           color: $gray-clr-1;
           font-size: 1.4rem;
-          @include breakpoint(md) {
-            font-size: 1.2rem;
-          }
+
+          @include breakpoint(md) { font-size: 1.2rem; }
         }
+
         &__hr {
           margin-right: 10px;
           height: 1px;
@@ -58,34 +62,37 @@
         }
       }
     }
-    &__box {
-      @extend %card-container;
-    }
+
+    &__box { @extend %card-container; }
   }
 
   .box {
     &__linkitem {
-      @include transition(all 1s);
       width: 260px;
       height: 260px;
+
+      @include transition(all 1s);
 
       @include breakpoint(sm) {
         width: 80%;
         max-width: 400px;
         min-height: 400px;
       }
+
       @include breakpoint(md) {
         max-width: initial;
         width: 90%;
         min-height: 42vw;
       }
+
       @include breakpoint(lg) {
         width: 100%;
 
-        min-height: 219px;
         height: 22.6vw;
+        min-height: 219px;
         max-height: 270px;
       }
+
       @include breakpoint(xl) {
         max-height: initial;
         width: 100%;
@@ -93,6 +100,7 @@
       }
     }
   }
+
   .guid-card {
     background: $react-gr-clr;
     padding: 2rem 1.5rem;
@@ -101,14 +109,18 @@
     position: relative;
     pointer-events: none;
     @extend .no-select;
+
     @include flex($fdir: column, $jcnt: space-around, $aitem: center);
+
     @include breakpoint(lg) {
       justify-content: space-around;
       padding: 0.5rem 1rem;
     }
+
     @include breakpoint(xl) {
       padding: 2rem 1.5rem;
     }
+
     .card {
       &-image {
         width: 150px;
@@ -119,6 +131,7 @@
           margin-bottom: 0.5rem;
         }
       }
+
       &-content {
         height: 40%;
         @include flex($fdir: column, $jcnt: space-around, $aitem: flex-start);
@@ -127,6 +140,7 @@
           height: initial;
         }
       }
+
       &-title {
         width: 100%;
         color: $white-clr;
@@ -135,7 +149,9 @@
         -webkit-line-clamp: 1;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-size:1.4rem;
       }
+
       &-description {
         width: 100%;
         text-align: justify;
@@ -145,6 +161,7 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
         overflow: hidden;
+        font-size:1.3rem;
         text-overflow: ellipsis;
       }
     }
@@ -153,12 +170,15 @@
     &__reac {
       background: $react-gr-clr;
     }
+
     &__nodejs {
       background: $nodeJs-gr-clr;
     }
+
     &__reactnative {
       background: $reactnative-gr-clr;
     }
+
     &__js {
       background: $js-gr-clr;
     }
