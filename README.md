@@ -4,7 +4,7 @@ reactapp.ir template
 # todo
 ## global todo
 - [ ] define global colors
-- [ ] convert all colors to global colors
+- [ ] remove all colors and use global colors [ each pages 2 extra color ]
 - [ ] refactor pages/courses/javascript js, scss, javascript
 - [ ] refactor classes, scss files
 - [ ] reafactor js files
@@ -15,23 +15,45 @@ reactapp.ir template
 
 ## devshashtag todo
 - [x] scroll to top in pages/courses/javascript.html
+- [ ] \_variables change colors order and sizes
+- [ ] create footer template 
+- [ ] add footer with js
+- [ ] add footer to all pages
 - [ ] complete pages/terms.html, pages/contact.html 
-- [ ] refactor navbar, topbar, sidebar
+- [ ] refactor navbar, topbar, sidebar classes
 - [ ] add link to topbar icons
 - [ ] remove global.js if not used
+- [ ] check firefox issue on search-bar in navbar letter-spacing
 - [ ] remove lost-password, javascript.html, my-account.html from navbar while project completed
 - [ ] land it on github pages
 - [ ] minify js, css files with webpack
 - [ ] export an kit-starter scss for later-use 
 
 ## sajjad todo
+- [ ] use root selector for styles
+- [ ] create side-menu component
+- [ ] change .main, .comment class 
 
 ## david todo
 - [x] fix comment section in pages/courses/javascript js
+- [ ] fix size of each cart in learning-steps
+- [ ] fix send-comment section border and box-shadow
+- [ ] remove extra padding from send-comment
 
 ## kamal-h todo
+- [ ] fix cart fonts 
+- [ ] fix cursor pointer in carts
+- [ ] fix cursor pointer in posts
+- [ ] add urls for each cart
+- [ ] add cursor pointer for search button in pages/blog.html
 
 ## ansari todo
+- [ ] use root selector for styles
+- [ ] change .main class 
+- [ ] fix forums size and add margin or padding into main content
+- [ ] fix footer responsive
+- [ ] change table heading color to lighter gray
+- [ ] remove footer extra padding
 
 
 # npm scripts
