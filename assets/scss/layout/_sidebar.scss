@@ -84,14 +84,21 @@
       &__header {
         position:relative;
         i {
+          @include flex();
           position:absolute;
           cursor:pointer;
-          font-size:8px;
+          font-size:1.2rem;
+
           color:white;
           left:0;
           top:0;
           bottom:0;
-          width:25px;
+          width:5rem;
+
+          &.fa-angle-down {
+            font-size:1.4rem;
+            color:$yellow-clr;
+          }
         }
       }
 
