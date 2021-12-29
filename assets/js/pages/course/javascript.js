@@ -9,18 +9,6 @@ window.addEventListener("DOMContentLoaded", function () {
   // header
   headerInit();
 
-  window.addEventListener('scroll', () => {
-    // click on btn-up-page
-    const btnUpPage = getElement('.btn-scroll');
-
-    // scroll-to-top
-    if (window.scrollY > 60) {
-      btnUpPage.classList.add('btn-scroll-active');
-    } else {
-      btnUpPage.classList.remove('btn-scroll-active');
-    }
-
-  });
 
   // Frequently Asked Questions
   const questions = getElement(".frequently-questions");
@@ -53,10 +41,13 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // click on btn-up-page
+  const btnUpPage = getElement('.btn-scroll');
   // scroll window and click on studyMode
   const asideCourse = $.querySelector('.aside-course');
   const mains = $.querySelectorAll('main');
   const studyMode = $.querySelector('.study-mode');
+
 
   studyMode.addEventListener('click', () => {
     asideCourse.classList.toggle('aside-study-mode');
@@ -67,6 +58,13 @@ window.addEventListener("DOMContentLoaded", function () {
 
   // aside and study-mode fixed
   window.addEventListener('scroll', () => {
+    // scroll-to-top
+    if (window.scrollY > 60) {
+      btnUpPage.classList.add('btn-scroll-active');
+    } else {
+      btnUpPage.classList.remove('btn-scroll-active');
+    }
+
     if (window.scrollY >= 600) {
       studyMode.classList.add('study-mode-active');
     } else {
@@ -79,6 +77,5 @@ window.addEventListener("DOMContentLoaded", function () {
       asideCourse.classList.remove('aside-active');
     }
   });
-
 });
 

@@ -1,5 +1,5 @@
 body {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 img {
@@ -34,6 +34,7 @@ section {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  color: $black-clr-1;
   &:hover {
     background: $black-clr-1;
     color: $white-clr;
@@ -48,7 +49,6 @@ section {
 }
 
 %paginationLinks {
-  font-family: Tanha;
   @extend %yellowBtn;
   background: $gray-clr-9;
   color: $black-clr-1;
@@ -57,17 +57,46 @@ section {
   margin-left: 0.5rem;
 }
 
+%formInputIcon {
+  color:$gray-clr-4;
+  position:absolute;
+  bottom:0;
+  left:0;
+  top:0;
+  width:4rem;
+  font-size:1.7rem;
+
+  @include flex();
+}
+
+%formInputText {
+  width:100%;
+  border: 1px solid $gray-clr-mid;
+  padding:.6rem 1rem;
+  padding-left:3.5rem;
+  border-radius:2px;
+  font-size:1.6rem;
+  font-family: inherit;
+  line-height: inherit;
+  @include transition(box-shadow .3s ease);
+
+  &::placeholder { color: $gray-clr-3; opacity: 1; }
+
+  &:focus {
+    box-shadow: 0 0 10px $gray-clr-5;
+  }
+}
+
 .no-select {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .no-selec:focus {
-    outline: none !important;
+  outline: none !important;
 }
-

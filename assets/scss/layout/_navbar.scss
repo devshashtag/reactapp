@@ -3,7 +3,8 @@
   position:relative;
   background-color:$navbar-bg;
   box-shadow:0 0.125rem 0.25rem $navbar-box-shadow;
-  
+  z-index:9;
+
   @include flex($fdir:row-reverse);
   @include transition(all .5s ease);
   @include breakpoint(lg) { padding:0 4rem; }
@@ -151,7 +152,6 @@
     right:0;
     bottom:0;
     height:100%;
-    z-index:10;
     opacity:0;
     visibility: hidden;
 

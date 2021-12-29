@@ -6,6 +6,7 @@
   overflow:auto;
   width:$sidebar-size;
   background-color: $sidebar-bg;
+  z-index:10;
 
   @include transform(translateX(-$sidebar-size));
   @include transition(transform .5s ease, opacity .5s ease);
