@@ -103,7 +103,11 @@
     @extend .no-select;
     @include flex($fdir: column, $jcnt: space-around, $aitem: center);
     @include breakpoint(lg) {
-      justify-content: space-between;
+      justify-content: space-around;
+      padding: 0.5rem 1rem;
+    }
+    @include breakpoint(xl) {
+      padding: 2rem 1.5rem;
     }
     .card {
       &-image {
@@ -112,7 +116,7 @@
         @include breakpoint(lg) {
           width: 100px;
           height: 100px;
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         }
       }
       &-content {

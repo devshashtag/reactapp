@@ -808,7 +808,11 @@
 .comment-box{
     padding: 10px;
     // sajjad
-    @include boxStyle;
+    background: #fff;
+    border: 0.1rem solid $gray-clr-5;
+    border-radius: 0.3rem;
+    padding: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 
