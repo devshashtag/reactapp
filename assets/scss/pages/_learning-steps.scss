@@ -81,6 +81,7 @@
       }
       @include breakpoint(lg) {
         width: 100%;
+
         min-height: 219px;
         height: 22.6vw;
         max-height: 270px;
@@ -102,20 +103,16 @@
     @extend .no-select;
     @include flex($fdir: column, $jcnt: space-around, $aitem: center);
     @include breakpoint(lg) {
-      justify-content: flex-start;
+      justify-content: space-between;
     }
     .card {
       &-image {
         width: 150px;
         height: 150px;
         @include breakpoint(lg) {
-          opacity: 0.3;
-          position: absolute;
-          object-fit: contain;
-          width: 60%;
-          height: 60%;
-          left: 10%;
-          bottom: 10%;
+          width: 100px;
+          height: 100px;
+          margin-bottom: 1rem;
         }
       }
       &-content {
@@ -129,18 +126,21 @@
       &-title {
         width: 100%;
         color: $white-clr;
-        @include breakpoint(lg) {
-          margin-bottom: 1rem;
-        }
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       &-description {
         width: 100%;
         text-align: justify;
+        line-height: 1.5rem;
         color: $white-clr;
-        overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
         text-overflow: ellipsis;
       }
     }
