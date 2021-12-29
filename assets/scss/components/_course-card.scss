@@ -1,6 +1,6 @@
-.course {
+.course-card {
   overflow: hidden;
-  border: 0.1rem solid $gray-clr-3;
+  border: 0.1rem solid $gray-clr-10;
   border-radius: 1rem;
   width: min(40rem, 100%);
   transform: translateY(0);
@@ -17,13 +17,13 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 1.5rem;
-    min-height: 12rem;
+    min-height: 11rem;
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
-    border-top: 0.1rem solid $gray-clr-3;
+    border-top: 0.1rem solid $gray-clr-10;
     padding: 1rem 2rem;
   }
 
@@ -34,7 +34,7 @@
   }
 
   span {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: $gray-clr-2;
   }
   .header {
@@ -46,6 +46,7 @@
       flex-direction: column;
       gap: 0.5rem;
       i {
+        cursor: pointer;
         background: $gray-clr-4;
         color: $white-clr;
         border-radius: 50%;
@@ -60,7 +61,7 @@
         padding: 1.5rem;
         @include breakpoint("lg") {
           font-size: 2.2rem;
-          padding:0.8rem;
+          padding: 0.8rem;
         }
       }
       .fa-user-plus {
@@ -76,17 +77,23 @@
 
   .content {
     &__title {
-      color: $gray-clr-2;
-      transition: 0.3s;
-      font-weight: 300;
-      &:hover {
+      a {
+        transition: 0.3s;
         color: $gray-clr-1;
+        font-weight: 300;
+        font-size: 1.5rem;
+        &:hover {
+          color: $black-clr-1;
+        }
       }
     }
     &__author {
       align-self: flex-end;
       display: flex;
       align-items: center;
+      a {
+        color: $gray-clr-2;
+      }
     }
   }
 }

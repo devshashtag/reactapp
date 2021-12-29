@@ -48,6 +48,7 @@
       background: transparent;
       padding: 0.7rem;
       margin-right: 0.5rem;
+      cursor: pointer;
       svg {
         width: 25px;
         height: 25px;
@@ -94,6 +95,7 @@
         background: transparent;
         font-size: 1.5rem;
         color: $gray-clr-4;
+        cursor: pointer;
       }
     }
     
