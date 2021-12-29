@@ -64,10 +64,11 @@
   }
 
   .box {
-    &__linkItem {
+    &__linkitem {
       @include transition(all 1s);
       width: 260px;
       height: 260px;
+
       @include breakpoint(sm) {
         width: 80%;
         max-width: 400px;
@@ -85,8 +86,62 @@
         max-height: 270px;
       }
       @include breakpoint(xl) {
+        max-height: initial;
         width: 100%;
-        height: 274.8;
+        height: 274.8px;
+      }
+    }
+  }
+  .guid-card {
+    background: $react-gr-clr;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+    @extend .no-select;
+    @include flex($fdir: column, $jcnt: space-around, $aitem: center);
+    @include breakpoint(lg) {
+      justify-content: flex-start;
+    }
+    .card {
+      &-image {
+        width: 150px;
+        height: 150px;
+        @include breakpoint(lg) {
+          opacity: 0.3;
+          position: absolute;
+          object-fit: contain;
+          width: 60%;
+          height: 60%;
+          left: 10%;
+          bottom: 10%;
+        }
+      }
+      &-content {
+        height: 40%;
+        @include flex($fdir: column, $jcnt: space-around, $aitem: flex-start);
+        @include breakpoint(md) {
+          justify-content: flex-start;
+          height: initial;
+        }
+      }
+      &-title {
+        width: 100%;
+        color: $white-clr;
+        @include breakpoint(lg) {
+          margin-bottom: 1rem;
+        }
+      }
+      &-description {
+        width: 100%;
+        text-align: justify;
+        color: $white-clr;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
       }
     }
   }
