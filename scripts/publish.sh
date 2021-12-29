@@ -26,6 +26,7 @@ fandogh source run
 
 git add .
 git commit -m "template updated"
+git push origin node
 git checkout dev
 
 
