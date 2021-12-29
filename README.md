@@ -4,7 +4,7 @@ reactapp.ir template
 # todo
 ## global todo
 - [ ] define global colors
-- [ ] convert all colors to global colors
+- [ ] remove all colors and use global colors [ each page 2 extra color ]
 - [ ] refactor classes, scss files
 - [ ] reafactor js files
 - [ ] reafactor html files
@@ -14,26 +14,60 @@ reactapp.ir template
 
 ## devshashtag todo
 - [x] scroll to top in pages/courses/javascript.html
-- [ ] complete pages/terms.html, pages/contact.html 
-- [ ] refactor navbar, topbar, sidebar
+- [ ] \_variables change colors order and sizes
+- [ ] create footer template in display.js
+- [ ] add footer with js
+- [ ] add footer to all pages
+- [ ] complete pages/terms.html main
+- [ ] complete pages/contact.html main
+- [ ] refactor navbar, topbar, sidebar classes
 - [ ] add link to topbar icons
 - [ ] remove global.js if not used
+- [ ] check firefox issue on search-bar in navbar letter-spacing
 - [ ] remove lost-password, javascript.html, my-account.html from navbar while project completed
 - [ ] land it on github pages
 - [ ] minify js, css files with webpack
 - [ ] export an kit-starter scss for later-use 
+- [ ] format/reafactor all html files
+- [ ] format/reafactor all scss files
+- [ ] format/reafactor all js files
 
 ## sajjad todo
-- [ ]  pages/courses/javascript refactor html 
-- [ ]  pages/courses/javascript refactor scss 
-- [ ]  pages/courses/javascript refactor js
+- [ ] use root selector for styles
+- [ ] create side-menu component
+- [ ] change .main, .comment class 
+- [ ] format html 
+- [ ] format/refactor scss 
+- [ ] format/refactor js
 
 ## david todo
 - [x] fix comment section in pages/courses/javascript js
+- [ ] fix size of each cart in learning-steps
+- [ ] fix send-comment section border and box-shadow
+- [ ] remove extra padding from send-comment
+- [ ] format html 
+- [ ] format/refactor scss 
 
 ## kamal-h todo
+- [ ] fix cart fonts 
+- [ ] fix cursor pointer in carts
+- [ ] fix cursor pointer in posts
+- [ ] add urls for each cart
+- [ ] add cursor pointer for search button in pages/blog.html
+- [ ] format html 
+- [ ] format scss 
+- [ ] format js
 
 ## ansari todo
+- [ ] use root selector for styles
+- [ ] change .main class 
+- [ ] fix forums size and add margin or padding into main content
+- [ ] fix footer responsive
+- [ ] change table heading color to lighter gray
+- [ ] remove footer extra padding
+- [ ] format html 
+- [ ] format/refactor scss 
+- [ ] format/refactor js
 
 
 # npm scripts

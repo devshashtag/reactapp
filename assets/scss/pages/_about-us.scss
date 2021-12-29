@@ -1,0 +1,67 @@
+.about-us {
+  &__header {
+    background-color: $gray-clr-14;
+    padding-right: 4rem !important;
+    line-height: 5.2rem;
+  }
+  .header__title h2 {
+    color: $black-clr-1;
+    line-height: 5.6rem;
+    font-size: 2.7rem !important;
+  }
+
+  .header__text a {
+    color: $black-clr-1;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    font-size: 1.4rem !important;
+
+    &:hover {
+      color: $gray-clr-13;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  text-align: justify;
+  color: $gray-clr-15;
+  line-height: 2.2rem;
+  margin: 3rem 4rem 15rem 4rem;
+
+  @include breakpoint(xs) {
+    display: block;
+  }
+
+  @include breakpoint(md) {
+    display: flex;
+  }
+
+  &__content-right {
+    flex-basis: 50%;
+    margin-left: 3.2rem;
+  }
+  .content__title a {
+    font-weight: 400;
+    color: $gray-clr-1;
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: 1.8rem !important;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+
+    &:hover {
+      color: $gray-clr-2;
+    }
+  }
+
+  .content__text {
+    margin-top: 1.5rem;
+    font-size: 1.2rem !important;
+  }
+
+  &__content-left {
+    flex-basis: 50%;
+  }
+}
+/* end main-about-us*/
+
