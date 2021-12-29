@@ -1,27 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- font awesome -->
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      />
-  <!-- styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <title>reactapp forums</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 
-<body>
-  <h1>reactapp forums</h1>
+    <!-- styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>reactapp forums</title>
+  </head>
 
-  <!-- scripts -->
-  <script type="module" src="/assets/js/pages/forums.js"></script>
-</body>
+  <body>
+    <!--main forums-->
+    <div class="forums">
+      <!-- main-header -->
+      <div class="main-header">
+        <div class="header__wrapper">
+          <h1 class="header__title">انجمن ها</h1>
+          <div class="header__path">
+            <a href="/">خانه</a>
+            <i class="fas fa-chevron-left"></i>
+            <a href="/pages/forums.html">انجمن ها</a>
+          </div>
+        </div>
+      </div> 
 
+      <section>
+        <main class="main-forum">
+          <div class="col main-forum__col-title">انجمن</div>
+          <div class="col main-forum__col-title">موضوع‌ها</div>
+          <div class="col main-forum__col-title">نوشته‌ها</div>
+          <div class="col main-forum__col-title">آخرین نوشته</div>
+        </main>
+
+        <div class="row main-forum__row">
+          <div class="col row__text">
+            <a href="#" class="row__title">Nodejs</a> <br />
+            در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
+            نظر در مورد پلتفرم محبوب Nodejs بپردازید و دانش خودتون رو با
+            دوستانتون به اشتراک بزارید .
+          </div>
+          <div class="col row__text">105</div>
+          <div class="col row__text">399</div>
+          <div class="col row__text">
+            <a href="#" class=" row__time"> ماه، 2 هفته پیش </a> <br />
+            <a href="#" class="row__name">korosh5775 </a></div>
+        </div>
+
+        <div class="row main-forum__row">
+          <div class="col row__text">
+            <a href="#" class="row__title"> react js </a> <br />
+            در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
+            نظر در مورد کتابخانه مجبوب reactjs بپردازید و دانش خودتون رو با
+            دوستانتون به اشتراک بزارید .
+          </div>
+          <div class="col row__text">68</div>
+          <div class="col row__text">192</div>
+          <div class="col row__text">
+            <a href="#" class="row__time"> 1 ماه، 3 هفته پیش </a> <br />
+            <a href="#" class="row__name"> مهدی حسن زاده </a>
+          </div>
+        </div>
+
+        <div class="row main-forum__row">
+          <div class="col row__text">
+            <a href="#" class="row__title"> بحث و گفت و گو </a> <br />
+            در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
+            نظر در مورد دنیای تکنولوژی ، برنامه نویسی ، طراحی و ... بپردازید و
+            دانش خودتون رو با دوستانتون به اشتراک بزارید .
+          </div>
+          <div class="col row__text">35</div>
+          <div class="col row__text">118</div>
+          <div class="col row__text">
+            <a href="#" class=" row__time"> 2 هفته، 4 روز پیش </a> <br />
+            <a href="#" class="row__name"> مهدی حسن زاده </a>
+          </div>
+        </div>
+
+        <div class="row main-forum__row">
+          <div class="col row__text">
+            <a href="#" class="row__title"> جاوا اسکریپت </a> <br />
+            در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
+            نظر در مورد زبان برنامه نویسی جاوا اسکریپت(javascript) بپردازید و
+            دانش خودتون رو با دوستانتون به اشتراک بزارید .
+          </div>
+          <div class="col row__text">50</div>
+          <div class="col row__text">93</div>
+          <div class="col row__text">
+            <a href="#" class=" row__time"> 2 ماه، 4 هفته پیش </a> <br />
+            <a href="#" class="row__name"> محمد عسکری </a>
+          </div>
+        </div>
+
+        <div class="row main-forum__row">
+          <div class="col row__text">
+            <a href="#" class="row__title"> react native </a> <br />
+            در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
+            نظر در مورد فریمورک مجبوب react native بپردازید و دانش خودتون رو با
+            دوستانتون به اشتراک بزارید .
+          </div>
+          <div class="col row__text">50</div>
+          <div class="col row__text">93</div>
+          <div class="col row__text">
+            <a href="#" class=" row__time"> ماه پیش 1 </a> <br />
+            <a href="#" class="row__name"> mohammadreza sattary </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--end main forums-->
+    <!-- scripts -->
+    <script type="module" src="/assets/js/pages/forums.js"></script>
+  </body>
 </html>
