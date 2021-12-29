@@ -19,7 +19,7 @@
   }
   .input__wrapper {
     color: $gray-clr-2;
-    margin: 10px;
+    margin:1%;
     width: 100%;
     @include flex($fdir: column, $aitem: flex-start);
     @include breakpoint(md) {
@@ -36,6 +36,7 @@
         .input__wrapper {
           @include breakpoint(md) {
             width: 100%;
+            margin:0;
           }
         }
         .input {
