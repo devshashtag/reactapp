@@ -32,13 +32,14 @@ reactapp.ir template
 - [ ] format/reafactor all scss files
 - [ ] format/reafactor all js files
 
-## sajjad todo
+## sajjad todo > left the project
 - [ ] use root selector for styles
 - [ ] create side-menu component
 - [ ] change .main, .comment class 
 - [ ] format html 
 - [ ] format/refactor scss 
 - [ ] format/refactor js
+- [ ] courses/javascript remove repeated course chapter list
 
 ## david todo
 - [x] fix comment section in pages/courses/javascript js
