@@ -51,6 +51,18 @@ export const route = [
         url: "/pages/courses/javascript.html", 
         title: "آموزش جاوااسکریپت", 
         type:"item"
+      },
+      { 
+        url: "/pages/contact.html", 
+        title: "تماس با ما", 
+        type:"item",
+        topbar:false
+      },
+      { 
+        url: "/pages/about-us.html", 
+        title: "درباره ما", 
+        type:"item",
+        topbar:false
       }
     ]
   },
