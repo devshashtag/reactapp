@@ -1887,7 +1887,6 @@
               <div class="comment">
                 <div class="comment__header">
                   <div class="comment__author">md
-                    <span class="author__tag"></span>
                   </div>
                   <time class="comment__time">دسامبر 7, 2021</time>
                   <button class="comment__reply">پاسخ</button>
@@ -1900,7 +1899,6 @@
               <div class="comment">
                 <div class="comment__header">
                   <div class="comment__author">امیرعلی 
-                    <span class="author__tag"></span>
                   </div>
                   <time class="comment__time">دسامبر 22, 2021</time>
                   <button class="comment__reply">پاسخ</button>
@@ -1945,7 +1943,8 @@
                     </p>
                     <div class="input__wrapper">
                       <label for="msg-content">
-                        دیدگاه شما *
+                        دیدگاه شما 
+                        <span class="reqire-input">*</span>
                       </label>
                       <textarea id="msg-content" name="usermsg" class="input"></textarea>
                     </div>
@@ -1953,18 +1952,35 @@
 
                   <div class="form__info">
                     <div class="input__wrapper">
-                      <label for="info-name">نام *</label>
+                      <label for="info-name">نام
+                        <span class="reqire-input">*</span>
+                      </label>
                       <input type="text" name="username" id="info-name" class="input">
                     </div>
                     <div class="input__wrapper">
-                      <label for="info-email">ایمیل *</label>
+                      <label for="info-email">ایمیل
+                        <span class="reqire-input">*</span>
+                      </label>
                       <input type="text" name="email" id="info-email" class="input">
                     </div>
                     <div class="info__captcha">
-                      <label for="form-captcha">i'm not a robot</label>
-                      <input type="checkbox" id="form-captcha">
+                      <div class="input__wrapper">
+                        <label for="send-comment-captcha">i'm not a robot</label>
+                        <input type="checkbox" id="send-comment-captcha">
+                      </div>
+                      <div class="captcha__details">
+                        <div class="captcha-logo">
+                          <span class="captcha-name">reCAPTCHA</span>
+                          <div class="captcha-icon"></div>
+                        </div>
+                        <ul class="captcha-breadcrumb">
+                          <li>Privacy</li>
+                          <li>Terms</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
+                  
                   <button type="submit" class="form__submit no-selec" id="submit-new-comment">فرستادن دیدگاه</button>
                 </form>             
               </div>

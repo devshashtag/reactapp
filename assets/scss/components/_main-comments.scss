@@ -1,8 +1,10 @@
 .main-comments {
+
   border: 1px solid $comment-border-clr;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   width: 100%;
+  font-size: 1.2rem;
   &__tab {
     border-bottom: 1px solid $comment-border-clr;
     padding: 0 3rem;
@@ -21,8 +23,9 @@
   }
 
   &__list {
-    padding: 28px;
+    padding: 1rem ;
     @include flex($fdir: column, $aitem: flex-start);
+    @include breakpoint(sm){padding: 2.3rem;}
   }
 
   .comment {
@@ -31,7 +34,7 @@
     border-radius: 10px;
     padding: 30px 20px;
     margin: 3% 0;
-
+    font-size: 1rem;
     @include transition(box-shadow 0.3s cubic-bezier(0.39, 0.5, 0.15, 1.36));
 
     &__header {
@@ -48,7 +51,9 @@
       color: $gray-clr-1;
       font-weight: bold;
       margin-left: 20px;
+      font-size: 1.2rem;
       .author__tag {
+        padding: .2rem .5rem;
         background-color: $comment-tag-clr;
         color: $white-clr;
         font-size: 0.7rem;
@@ -83,7 +88,7 @@
       box-shadow: 0 2px 30px 0 $comment-hover-clr;
     }
   }
-
+  p{font-size: inherit;}
   &__pagination {
     margin: 15px auto;
     a {
