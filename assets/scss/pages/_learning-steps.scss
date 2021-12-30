@@ -29,7 +29,9 @@
       font-size: 1.3rem;
       margin-bottom: 40px;
 
-      @include breakpoint(md) { font-size: 1.1rem; }
+      @include breakpoint(md) {
+        font-size: 1.1rem;
+      }
     }
   }
 
@@ -51,7 +53,9 @@
           color: $gray-clr-1;
           font-size: 1.4rem;
 
-          @include breakpoint(md) { font-size: 1.2rem; }
+          @include breakpoint(md) {
+            font-size: 1.2rem;
+          }
         }
 
         &__hr {
@@ -63,7 +67,9 @@
       }
     }
 
-    &__box { @extend %card-container; }
+    &__box {
+      @extend %card-container;
+    }
   }
 
   .box {
@@ -102,66 +108,73 @@
   }
 
   .guid-card {
-    background: $react-gr-clr;
-    padding: 2rem 1.5rem;
+    color: $gray-clr-1;
     width: 100%;
     height: 100%;
     position: relative;
     pointer-events: none;
     @extend .no-select;
-
-    @include flex($fdir: column, $jcnt: space-around, $aitem: center);
-
+    border: 1px solid $gray-clr-3;
+    box-shadow: 4px 5px 9px 0px $comment-reply-clr;
+    @include flex($fdir: column, $jcnt: flex-start, $aitem: center);
     @include breakpoint(lg) {
-      justify-content: space-around;
-      padding: 0.5rem 1rem;
-    }
-
-    @include breakpoint(xl) {
-      padding: 2rem 1.5rem;
+      justify-content: flex-start;
     }
 
     .card {
-      &-image {
-        width: 150px;
-        height: 150px;
-        @include breakpoint(lg) {
-          width: 100px;
-          height: 100px;
-          margin-bottom: 0.5rem;
+      &-image-container {
+        width: 100%;
+        height: 50%;
+        @include flex();
+        @include breakpoint(sm) {
+          height: 60%;
         }
+        @include breakpoint(lg) {
+          height: 50%;
+        }
+      }
+      &-image {
+        width: 30%;
+        object-fit: contain;
       }
 
       &-content {
-        height: 40%;
-        @include flex($fdir: column, $jcnt: space-around, $aitem: flex-start);
-        @include breakpoint(md) {
+        width: 100%;
+        height: 50%;
+        padding: 1rem;
+        font-size: 1.3rem;
+        overflow: hidden;
+        @include flex($fdir: column, $aitem: flex-start);
+        @include breakpoint(sm) {
+          height: 60%;
+        }
+        @include breakpoint(lg) {
+          height: 50%;
           justify-content: flex-start;
-          height: initial;
+          font-size: 1rem;
+          padding: 0.5rem;
+        }
+        @include breakpoint(xl) {
+          padding: 1rem;
         }
       }
 
       &-title {
+        flex-grow: 1;
         width: 100%;
-        color: $white-clr;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size:1.4rem;
+        font-size: 1.4rem;
       }
 
       &-description {
+        flex-grow: 2;
+        font-size: inherit;
         width: 100%;
         text-align: justify;
         line-height: 1.5rem;
-        color: $white-clr;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
         overflow: hidden;
-        font-size:1.3rem;
         text-overflow: ellipsis;
       }
     }
