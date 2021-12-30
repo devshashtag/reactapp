@@ -1,5 +1,5 @@
 kind: ExternalService
-name: ra
+name: reactapp
 spec:
   image_pull_policy: Always
   port: 80
