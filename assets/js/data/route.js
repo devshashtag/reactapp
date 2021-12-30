@@ -62,7 +62,6 @@ export const route = [
         url: "/pages/about-us.html", 
         title: "درباره ما", 
         type:"item",
-        topbar:false
       }
     ]
   },
