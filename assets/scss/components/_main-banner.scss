@@ -1,0 +1,37 @@
+
+.main-banner {
+  $blur:.50;
+
+  width:100%;
+  height:50vh;
+  @include flex();
+
+  background: linear-gradient(0deg, 
+  rgba(0, 0, 0, calc($blur - 0.30)), 
+  rgba(0, 0, 0, $blur)), 
+  url("/assets/images/banners/contact-us.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  &__title {
+    text-align:center;
+    font-size:1.6rem;
+    font-weight:400;
+    color:$white-clr;
+    line-height:2;
+    z-index: 0;
+
+    .break-line { display:block; font-size:0; }
+
+    @include breakpoint(sm) {
+      font-size:1.5rem;
+      .break-line { display:inline; font-size:1.5rem; }
+      line-height:normal;
+      
+    }
+    @include breakpoint(md) { font-size:1.6rem; }
+    @include breakpoint(lg) { font-size:1.8rem; }
+  }
+}
