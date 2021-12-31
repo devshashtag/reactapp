@@ -19,7 +19,7 @@ reactapp.ir template
 - [ ] add footer with js
 - [ ] add footer to all pages
 - [x] complete pages/terms.html main
-- [ ] complete pages/contact.html main
+- [x] complete pages/contact.html main
 - [ ] refactor navbar, topbar, sidebar classes
 - [ ] add link to topbar icons
 - [ ] remove global.js if not used
