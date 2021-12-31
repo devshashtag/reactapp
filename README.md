@@ -42,9 +42,9 @@ reactapp.ir template
 
 ## david todo
 - [x] fix comment section in pages/courses/javascript js
-- [ ] fix size of each cart in learning-steps
-- [ ] fix send-comment section border and box-shadow
-- [ ] remove extra padding from send-comment
+- [x] fix size of each cart in learning-steps
+- [x] fix send-comment section border and box-shadow
+- [x] remove extra padding from send-comment
 - [ ] format html 
 - [ ] format/refactor scss 
 
