@@ -23,7 +23,7 @@ reactapp.ir template
 - [ ] refactor navbar, topbar, sidebar classes
 - [ ] add link to topbar icons
 - [ ] remove global.js if not used
-- [ ] check firefox issue on search-bar in navbar letter-spacing
+- [x] check firefox issue on navbar>search-bar font
 - [ ] remove recover-password, javascript.html, my-account.html from navbar while project completed
 - [ ] land it on github pages
 - [ ] minify js, css files with webpack
