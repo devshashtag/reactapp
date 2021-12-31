@@ -22,7 +22,7 @@ reactapp.ir template
 - [x] complete pages/contact.html main
 - [ ] refactor navbar, topbar, sidebar classes
 - [ ] add link to topbar icons
-- [ ] remove global.js if not used
+- [x] remove global.js if not used
 - [x] check firefox issue on navbar>search-bar font
 - [ ] remove recover-password, javascript.html, my-account.html from navbar while project completed
 - [ ] land it on github pages
