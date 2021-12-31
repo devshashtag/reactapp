@@ -84,12 +84,6 @@ $gray-clr-14: #eaeef1;
 $gray-clr-15: #7d7e7f;
 $gray-clr-16: #7b7b7b;
 
-//? sizes
-//* used in main-container
-$max-width: 1230px;
-//* my-account top-bottom logo padding
-$account-logo-padding: 12rem;
-
 //* top-bar
 $topbar-bg: #000;
 
@@ -156,4 +150,11 @@ $recover-pass-form-input-icon-fg:#aaa;
 $recover-pass-form-submit-bg:$yellow-clr;
 $recover-pass-form-submit-fg:$white-clr;
 $recover-pass-form-header-text-fg:#7d7e7f;
+
+
+//? sizes
+//* used in main-container
+$max-width: 1230px;
+//* my-account top-bottom logo padding
+$account-logo-padding: 12rem;
 
