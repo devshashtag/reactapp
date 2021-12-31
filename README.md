@@ -14,7 +14,7 @@ reactapp.ir template
 
 ## devshashtag todo
 - [x] scroll to top in pages/courses/javascript.html
-- [ ] \_variables change colors order and sizes
+- [x] \_variables move the sizes to the bottom of the colors
 - [ ] create footer template in display.js
 - [ ] add footer with js
 - [ ] add footer to all pages
