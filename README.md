@@ -15,6 +15,8 @@ reactapp.ir template
 ## devshashtag todo
 - [x] scroll to top in pages/courses/javascript.html
 - [x] \_variables move the sizes to the bottom of the colors
+- [ ] fix size of each cart in learning-steps
+- [ ] use components/\_main-banner for learning-steps banner
 - [ ] create footer template in display.js
 - [ ] add footer with js
 - [ ] add footer to all pages
@@ -43,7 +45,6 @@ reactapp.ir template
 
 ## david todo
 - [x] fix comment section in pages/courses/javascript js
-- [ ] fix size of each cart in learning-steps
 - [ ] fix send-comment section border and box-shadow
 - [ ] remove extra padding from send-comment
 - [ ] format html 
