@@ -1,4 +1,8 @@
 .contact-us {
+  .main-banner {
+    background-image: url("/assets/images/banners/contact-us.jpg");
+  }
+
   &__content { 
     background-color:$white-clr; 
     padding:2rem 1rem 5rem;
@@ -81,6 +85,8 @@
           padding: 0.6rem 1rem;
           margin-top:.5rem;
           resize: vertical;
+          border:1px solid $gray-clr-3;
+          border-radius:5px;
           font-size:1.3rem;
         }
       }
@@ -94,10 +100,10 @@
 
         &-submit {
           cursor:pointer;
-          font-size:1.5rem;
+          font-size:1.7rem;
           padding:1rem;
           border-radius:4px;
-          background-color:$gray-clr-4;
+          background-color:$gray-clr-2;
           color:$white-clr;
           box-shadow: 0 0 10px $gray-clr-5;
 
