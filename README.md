@@ -14,17 +14,19 @@ reactapp.ir template
 
 ## devshashtag todo
 - [x] scroll to top in pages/courses/javascript.html
-- [ ] \_variables change colors order and sizes
+- [x] \_variables move the sizes to the bottom of the colors
+- [ ] fix size of each cart in learning-steps
+- [ ] use components/\_main-banner for learning-steps banner
 - [ ] create footer template in display.js
 - [ ] add footer with js
 - [ ] add footer to all pages
 - [x] complete pages/terms.html main
-- [ ] complete pages/contact.html main
+- [x] complete pages/contact.html main
 - [ ] refactor navbar, topbar, sidebar classes
 - [ ] add link to topbar icons
-- [ ] remove global.js if not used
-- [ ] check firefox issue on search-bar in navbar letter-spacing
-- [ ] remove lost-password, javascript.html, my-account.html from navbar while project completed
+- [x] remove global.js if not used
+- [x] check firefox issue on navbar>search-bar font
+- [ ] remove recover-password, javascript.html, my-account.html from navbar while project completed
 - [ ] land it on github pages
 - [ ] minify js, css files with webpack
 - [ ] export an kit-starter scss for later-use 
@@ -32,13 +34,14 @@ reactapp.ir template
 - [ ] format/reafactor all scss files
 - [ ] format/reafactor all js files
 
-## sajjad todo
+## sajjad todo > left the project
 - [ ] use root selector for styles
 - [ ] create side-menu component
 - [ ] change .main, .comment class 
 - [ ] format html 
 - [ ] format/refactor scss 
 - [ ] format/refactor js
+- [ ] courses/javascript remove repeated course chapter list
 
 ## david todo
 - [x] fix comment section in pages/courses/javascript js

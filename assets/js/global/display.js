@@ -192,7 +192,7 @@ const sidebarTemplate = (route) => {
       <!-- sidebar search -->
       <div class="sidebar__search">
         <form class="search__form" role="search" method="get" action="/">
-          <input class="search-field" type="search" name="s" placeholder="ورود و اژه کلیدی...">
+          <input class="search-field" type="search" name="s" placeholder="ورود واژه کلیدی...">
           <button class="search-submit" type="submit">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>

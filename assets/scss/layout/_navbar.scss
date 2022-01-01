@@ -153,6 +153,7 @@
     bottom:0;
     height:100%;
     opacity:0;
+    z-index:1;
     visibility: hidden;
 
     @include transition(transform .5s ease, opacity .5s ease);
@@ -170,6 +171,8 @@
         background-color: $navbar-search-input-bg;
         color: $navbar-search-input-fg; 
         font-size:2rem;
+        font-family:inherit;
+        font-weight:400;
         height:100%;
         width:100%;
         padding: {
