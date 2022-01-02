@@ -1,193 +1,174 @@
 .learning-steps {
-  width: 100%;
-  @include flex($fdir: column);
-
   .main-banner {
     background-image: url("/assets/images/banners/learning-steps.jpg");
   }
 
-  .steps {
-    &__content {
-      width: 100%;
-      max-width: 1200px;
-      padding: 1.5rem;
-      margin: auto;
-    }
+  .steps__content {
+    width: 100%;
+    max-width: $max-width;
+    padding: 1rem;
+    margin: auto;
   }
 
   .content {
-    &__paragraph {
+    &__intro {
+      font-size:1.4rem;
+      padding:1rem .5rem 3rem;
       text-align: justify;
-      color: $gray-clr-2;
-      font-size: 1.3rem;
-      margin-bottom: 40px;
+      color:$gray-clr-2;
 
-      @include breakpoint(md) {
-        font-size: 1.1rem;
-      }
+      @include breakpoint(sm) { font-size:1.3rem; }
+      @include breakpoint(md) { font-size:1.4rem; }
     }
-  }
 
-  .guid {
     &__header {
-      padding-right: 2rem;
-      margin-bottom: 30px;
-
-      @include flex($jcnt: flex-start);
+      @include flex($fdir:row-reverse, $gap:1rem);
 
       .header {
-        &__icon {
-          color: $gray-clr-1;
-          font-size: 2.5rem;
+        &__line {
+          flex:1;
+          background-color:$gray-clr-5;
+          height:2px;
+        }  
+
+        &__text {
+          font-size:1.3rem;
+          font-family:inherit;
         }
 
-        &__title {
-          margin-right: 10px;
-          color: $gray-clr-1;
-          font-size: 1.4rem;
+        &__logo {
+          @include flex();
+          font-size:2rem;
+          color:$gray-clr-1;
+          padding-right:1.3rem;
+          border-radius: 100%;
 
-          @include breakpoint(md) {
-            font-size: 1.2rem;
-          }
-        }
-
-        &__hr {
-          margin-right: 10px;
-          height: 1px;
-          flex-grow: 1;
-          background-color: $gray-clr-5;
+          @include breakpoint(md) { font-size:2.5rem; }
         }
       }
     }
 
-    &__box {
-      @extend %card-container;
-    }
+    &__guide { padding:3rem .5rem 5rem; }
   }
 
-  .box {
-    &__linkitem {
-      width: 260px;
-      height: 260px;
+  .guide {
+    &__cards {
+      @extend %card-container; 
+      justify-content:center;
+      gap:1rem 1rem;
+      margin:0 auto;
+      width:95%;
+      max-width:$max-width;
+      @include breakpoint(sm) { width:80%;}
+      @include breakpoint(md) { width:80%; }
+      @include breakpoint(lg) { width:100%;}
 
-      @include transition(all 1s);
-
-      @include breakpoint(sm) {
-        width: 80%;
-        max-width: 400px;
-        min-height: 400px;
-      }
-
-      @include breakpoint(md) {
-        max-width: initial;
-        width: 90%;
-        min-height: 42vw;
-      }
-
-      @include breakpoint(lg) {
-        width: 100%;
-
-        height: 22.6vw;
-        min-height: 219px;
-        max-height: 270px;
-      }
-
-      @include breakpoint(xl) {
-        max-height: initial;
-        width: 100%;
-        height: 274.8px;
+      
+      // card links
+      a {
+        color: $white-clr;
       }
     }
-  }
 
-  .guid-card {
-    color: $gray-clr-1;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    pointer-events: none;
-    @extend .no-select;
-    border: 1px solid $gray-clr-3;
-    box-shadow: 4px 5px 9px 0px $comment-reply-clr;
-    @include flex($fdir: column, $jcnt: flex-start, $aitem: center);
-    @include breakpoint(lg) {
-      justify-content: flex-start;
-    }
+    &__card {
+      position: relative;
+      @extend .no-select;
+      box-shadow: 4px 5px 9px 0px $gray-clr-mid,
+                  0 0 5px $gray-clr-mid inset;
+      border-radius:7px;
 
-    .card {
-      &-image-container {
-        width: 100%;
-        height: 50%;
-        @include flex();
-        @include breakpoint(sm) {
-          height: 60%;
-        }
-        @include breakpoint(lg) {
-          height: 50%;
-        }
-      }
-      &-image {
-        width: 30%;
-        object-fit: contain;
+      height: 230px;
+      min-width:300px;
+      max-width:400px;
+
+      @include transition(all .3s ease);
+
+      @include breakpoint(sm) { min-width:400px; max-width:450px; }
+      @include breakpoint(md) { min-width:300px; max-width:330px; }
+      @include breakpoint(lg) { min-width:210px; max-width:260px; }
+
+      &:hover {
+        z-index:1;
+
+        box-shadow: 0 0 10px  $gray-clr-3,
+                    0 0 2px $gray-clr-3 inset;
+
+        @include transform(scale(1.05));
+        @include breakpoint(lg) { @include transform(scale(1.1)); }
+
+        .card-title { text-shadow:0 0 10px $white-clr; }
       }
 
-      &-content {
-        width: 100%;
-        height: 50%;
-        padding: 1rem;
-        font-size: 1.3rem;
-        overflow: hidden;
-        @include flex($fdir: column, $aitem: flex-start);
-        @include breakpoint(sm) {
-          height: 60%;
-        }
-        @include breakpoint(lg) {
-          height: 50%;
-          justify-content: flex-start;
-          font-size: 1rem;
-          padding: 0.5rem;
-        }
-        @include breakpoint(xl) {
-          padding: 1rem;
+      // card bg and logo
+      &--react {
+        background: $react-gr-clr;
+        .card-content {
+          background-image: url("/assets/images/learning-steps/card-react.png");
         }
       }
 
-      &-title {
-        flex-grow: 1;
-        width: 100%;
-        font-size: 1.4rem;
+      &--nodejs {
+        background: $nodeJs-gr-clr;
+        .card-content {
+          background-image: url("/assets/images/learning-steps/card-nodejs.png");
+        }
       }
 
-      &-description {
-        flex-grow: 2;
-        font-size: inherit;
-        width: 100%;
-        text-align: justify;
-        line-height: 1.5rem;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
-        overflow: hidden;
-        text-overflow: ellipsis;
+      &--react-native {
+        background: $reactnative-gr-clr;
+        .card-content {
+          background-image: url("/assets/images/learning-steps/card-react_native.png");
+        }
+      }
+
+      &--javascript {
+        background: $js-gr-clr;
+        .card-content {
+          background-image: url("/assets/images/learning-steps/card-javascript.png");
+        }
       }
     }
   }
 
-  .steps-card {
-    &__reac {
-      background: $react-gr-clr;
+  .card {
+    &-content {
+      @include flex($fdir:column,$aitem:flex-start, $jcnt:flex-end);
+      border-radius:inherit;
+      height:100%;
+      width:100%;
+
+      background-position:10px 10px;
+      background-size: 50px 50px;
+      background-repeat:no-repeat;
     }
 
-    &__nodejs {
-      background: $nodeJs-gr-clr;
+    &-title {
+      padding: 2rem 1rem;
+      color:$white-clr;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight:500;
+      font-family:inherit;
+      @include breakpoint(lg) { font-size:1.3rem; }
     }
 
-    &__reactnative {
-      background: $reactnative-gr-clr;
-    }
+    &-description {
+      flex:1;
+      background-color:#5551;
+      @include flex($jcnt:flex-start, $aitem:flex-start);
+      width:100%;
+      height:100%;
+      padding:.8rem 1rem;
 
-    &__js {
-      background: $js-gr-clr;
+      text-align: justify;
+      overflow: hidden;
+
+      font-size:1.5rem;
+      font-weight:300;
+      font-family: inherit;
+
+      @include breakpoint(sm) { font-size:1.3rem; }
+      @include breakpoint(lg) { font-size:1.1rem; }
     }
   }
 }
