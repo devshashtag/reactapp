@@ -126,7 +126,7 @@ const courses = [
     title: `ذخیره سازی اطلاعات با AsyncStorage در React Native`,
     author: "علی",
     price: 0,
-    image: "/assets/images/courses/12.bmp",
+    image: "/assets/images/courses/12.png",
     students: 312,
     full: false,
     proposal: false,
