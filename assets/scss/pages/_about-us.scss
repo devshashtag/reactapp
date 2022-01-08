@@ -32,7 +32,7 @@
       color: $gray-clr-2;
       font-size: 1.4rem;
       text-align: justify;
-      @incude breakpoint(md) {
+      @include breakpoint(md) {
         font-size: 1.25rem;
       }
 
