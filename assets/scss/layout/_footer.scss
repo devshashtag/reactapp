@@ -56,26 +56,23 @@
       grid-template-columns: 1fr 1fr;
       gap: 1rem 2rem;
 
-      li {
-        @include flex($jcnt: flex-start, $aitem: center);
-      }
-
       li a {
+        @include flex($dsp: inline-flex, $jcnt: flex-start, $aitem: center);
         color: $white-clr;
-      }
 
-      li::before {
-        content: "";
-        display: inline-flex;
-        width: 0;
-        height: 1px;
-        margin-left: 5px;
-        background-color: $white-clr;
-        @include transition(all 0.2s ease);
-      }
+        &::before {
+          content: "";
+          display: inline-flex;
+          width: 0;
+          height: 1px;
+          margin-left: 5px;
+          background-color: $white-clr;
+          @include transition(all 0.2s ease);
+        }
 
-      li:hover::before {
-        width: 1rem;
+        &:hover::before {
+          width: 1rem;
+        }
       }
     }
   }
