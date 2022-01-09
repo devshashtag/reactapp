@@ -21,9 +21,20 @@ reactapp.ir template
 - [x] \_variables move the sizes to the bottom of the colors
 - [x] fix size of each cart in learning-steps
 - [x] use components/\_main-banner for learning-steps banner
+- [x] make footer responsive
 - [ ] create footer template in display.js
 - [ ] add footer with js
 - [ ] add footer to all pages
+- [x] make forums responsive
+- [x] forums pages > use root selector for styles
+- [x] change .main class
+- [x] fix forums size and add margin or padding into main content
+- [x] change table heading color to lighter gray
+- [x] remove footer extra padding
+- [ ] javascript page > use root selector for styles
+- [ ] create side-menu component
+- [ ] javascript > change .main
+- [x] courses/javascript remove repeated course chapter list
 - [x] complete pages/terms.html main
 - [x] complete pages/contact.html main
 - [ ] refactor navbar, topbar, sidebar classes
@@ -38,15 +49,8 @@ reactapp.ir template
 - [ ] format/reafactor all scss files
 - [ ] format/reafactor all js files
 
-## sajjad todo > left the project
+## sajjad todo > left the project > todos moved for devshashtag
 
-- [ ] use root selector for styles
-- [ ] create side-menu component
-- [ ] change .main, .comment class
-- [ ] format html
-- [ ] format/refactor scss
-- [ ] format/refactor js
-- [ ] courses/javascript remove repeated course chapter list
 
 ## david todo
 
@@ -68,17 +72,8 @@ reactapp.ir template
 - [ ] format scss
 - [ ] format js
 
-## ansari todo
+## ansari todo > left the project > todos moved for devshashtag
 
-- [ ] use root selector for styles
-- [ ] change .main class
-- [ ] fix forums size and add margin or padding into main content
-- [ ] fix footer responsive
-- [ ] change table heading color to lighter gray
-- [ ] remove footer extra padding
-- [ ] format html
-- [ ] format/refactor scss
-- [ ] format/refactor js
 
 # npm scripts
 
