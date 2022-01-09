@@ -69,22 +69,25 @@ const displayBlogs = (data = [], value) => {
 // header templates
 
 //# header navigation templates
-// active item
+// current page url
 let doc_name = baseUrl(document.location.pathname);
 
 // templates
-// url template
+// if {current page url} == {a item in navbar} then {disable it}
+// anchor template
 const linkTemplate = (item) =>
   `\n<a ${
     baseUrl(item.url).includes(doc_name) ? `class="is-active" ` : ``
   }href="${item.url}">${item.title}</a>\n`;
 // list item template
 const listTemplate = (item) => `\n<li>${linkTemplate(item)}</li>\n`;
-// list dropdown template
-const dropdownTemplate = (item, angle = "down", toggle_for) => {
+// nav dropdown template
+const dropdownTemplate = (item, angle, toggle_for) => {
+  // use angle-down for navbar
+  // use angle-left for sidebar
   let icon_classes = `
     ${toggle_for ? `${toggle_for}__dropdown--toggle ` : ``}
-    fa fa-angle-${angle === `down` ? `down` : `left`}
+    fa fa-angle-${angle? `left` : `down`}
   `;
 
   let dropdown = `
@@ -144,7 +147,7 @@ const navbarTemplate = (route) => {
         <button class="search-submit" type="submit">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
-      </form> 
+      </form>
     </div>
     <!-- navbar menu -->
     <nav class="navbar__menu">
@@ -196,7 +199,7 @@ const sidebarTemplate = (route) => {
           <button class="search-submit" type="submit">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
-        </form> 
+        </form>
       </div>
 
       <!-- sidebar navigation -->
