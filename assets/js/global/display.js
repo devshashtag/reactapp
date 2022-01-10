@@ -120,7 +120,7 @@ const topbarTemplate = () => {
     </ul>
     <div class="topbar__icons">
       <div class="topbar__icon topbar__search">
-        <i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i>
+        <a><i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i></a>
       </div>
       <div class="topbar__icon topbar__bag">
         <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>

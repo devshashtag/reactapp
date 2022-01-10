@@ -24,14 +24,12 @@
 
   &__icons {
     padding: 1.37rem 2rem;
-    font-size: 1.8rem;
 
     @include flex($jcnt: left, $gap: 2.3rem);
     @include breakpoint(sm) {
       max-width: 540px;
       width: 100%;
       margin: 0 auto;
-      font-size: 1.6rem;
       padding: 1.05rem 1.6rem;
     }
 
@@ -41,8 +39,7 @@
     }
 
     @include breakpoint(lg) {
-      gap: 3rem;
-      font-size: 1.5rem;
+      gap: 2rem;
       width: auto;
       margin: 0;
       padding: 0.5rem 0;
@@ -59,20 +56,34 @@
     }
 
     a {
+      min-height: 2.8rem;
       font-size: 1.8rem;
       color: $white-clr;
+
+      @include flex();
+
+      @include breakpoint(sm) {
+        font-size: 1.6rem;
+      }
+
+      @include breakpoint(lg) {
+        min-height: 2.5rem;
+        font-size: 1.5rem;
+      }
     }
   }
 
   &__search {
     width: 28px;
+    font-size: 1.5rem;
     @include flex($dsp: none);
+
     @include breakpoint(lg) {
       display: flex;
     }
 
     .fa-close {
-      font-size: 2rem;
+      font-size: 1.9rem;
       color: $topbar-search-close-bg;
       &:hover {
         text-shadow: 0 0 1.5rem $topbar-search-close-hover-bg;
