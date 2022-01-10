@@ -123,10 +123,10 @@ const topbarTemplate = () => {
         <i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i>
       </div>
       <div class="topbar__icon topbar__bag">
-        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
       </div>
       <div class="topbar__icon topbar__perm">
-        <i class="fas fa-user" aria-hidden="true"></i>
+        <a href="/pages/my-account.html"><i class="fas fa-user" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
