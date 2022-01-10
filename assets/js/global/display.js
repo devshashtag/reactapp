@@ -87,7 +87,7 @@ const dropdownTemplate = (item, angle, toggle_for) => {
   // use angle-left for sidebar
   let icon_classes = `
     ${toggle_for ? `${toggle_for}__dropdown--toggle ` : ``}
-    fa fa-angle-${angle? `left` : `down`}
+    fa fa-angle-${angle ? `left` : `down`}
   `;
 
   let dropdown = `
@@ -221,6 +221,44 @@ const sidebarTemplate = (route) => {
   return sidebar;
 };
 
+const footerTemplate = () => {
+  const footer = `
+  <!-- start footer -->
+  <div class="footer">
+    <div class="footer__content">
+      <div class="footer__contact-info">
+        <h3 class="contact-info__title">منتظرتون هستیم</h3>
+        <div class="info-box">
+          <i class="fas fa-phone" aria-hidden="true"></i>09150274110
+        </div>
+        <div class="info-box">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:reactapp.ir@gmail.com">reactapp.ir@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <ul>
+          <li><a href="/pages/blog.html">بلاگ</a></li>
+          <li><a href="#">ویدیو کست</a></li>
+          <li><a href="/pages/terms.html">قوانین</a></li>
+        </ul>
+      </div>
+      <div class="footer__text">
+        تمام تلاش ما در برند reactapp در کنار آموزش با کیفیت و استفاده از دانش روز، اضافه کردن چاشنی تجربه چندین ساله
+        فعالیت در پروژه های داخلی و خارجی بوده. زمانی که شما به یادگیری اختصاص دادید برای ما اهمیت بسیار بالایی داره و
+        به همین دلیل سعی میکنیم متحوای تولید شده، غنی، پر بار و در راستای نیاز های بازار کار باشه.
+      </div>
+    </div>
+    <div class="footer__copyright">
+      کلیه حقوق این سایت محفوظ و متعلق به reactapp.ir میباشد.
+    </div>
+  </div>
+  <!-- end footer -->
+  `;
+
+  return footer;
+};
+
 const bodyWrapperTemplate = (template) => {
   const bodyWrapper = `
     <!-- start body wrapper -->
@@ -245,4 +283,6 @@ export {
   navbarTemplate,
   sidebarTemplate,
   bodyWrapperTemplate,
+  // footer
+  footerTemplate,
 };
