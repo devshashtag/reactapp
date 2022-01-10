@@ -38,7 +38,7 @@ reactapp.ir template
 - [x] complete pages/terms.html main
 - [x] complete pages/contact.html main
 - [ ] refactor navbar, topbar, sidebar classes
-- [ ] add link to topbar icons
+- [x] add link to topbar icons
 - [x] remove global.js if not used
 - [x] check firefox issue on navbar>search-bar font
 - [ ] remove extra links from navbar,sidebar when project completed
