@@ -22,9 +22,9 @@ reactapp.ir template
 - [x] fix size of each cart in learning-steps
 - [x] use components/\_main-banner for learning-steps banner
 - [x] make footer responsive
-- [ ] create footer template in display.js
-- [ ] add footer with js
-- [ ] add footer to all pages
+- [x] create footer template in display.js
+- [x] add footer with js
+- [x] add footer to all pages
 - [x] make forums responsive
 - [x] forums pages > use root selector for styles
 - [x] change .main class
@@ -41,7 +41,6 @@ reactapp.ir template
 - [x] add link to topbar icons
 - [x] remove global.js if not used
 - [x] check firefox issue on navbar>search-bar font
-- [ ] remove extra links from navbar,sidebar when project completed
 - [ ] land it on github pages
 - [ ] minify js, css files with webpack
 - [ ] export an kit-starter scss for later-use
@@ -50,7 +49,6 @@ reactapp.ir template
 - [ ] format/reafactor all js files
 
 ## sajjad todo > left the project > todos moved for devshashtag
-
 
 ## david todo
 
@@ -73,7 +71,6 @@ reactapp.ir template
 - [ ] format js
 
 ## ansari todo > left the project > todos moved for devshashtag
-
 
 # npm scripts
 
