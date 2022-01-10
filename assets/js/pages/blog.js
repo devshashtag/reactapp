@@ -8,10 +8,11 @@ import blogs from "/assets/js/data/blogs.js";
 
 //* runs when page load
 window.addEventListener("DOMContentLoaded", function () {
+  // header, footer
+  renderDefaultTemplate(document.body.innerHTML);
+
+  // code here
   //* get content element
   const blogsContent = getElement(".blogs__content");
   blogsContent.innerHTML = displayBlogs(blogs);
-
-  // header, footer
-  renderDefaultTemplate(document.body.innerHTML);
 });

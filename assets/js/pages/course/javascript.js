@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
   // header, footer
   renderDefaultTemplate(document.body.innerHTML);
 
+  // code here
   // Frequently Asked Questions
   const questions = getElement(".frequently-questions");
 

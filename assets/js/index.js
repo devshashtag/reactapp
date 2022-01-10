@@ -9,6 +9,10 @@ import blogs from "/assets/js/data/blogs.js";
 
 //* display items when page load
 window.addEventListener("DOMContentLoaded", function () {
+  // header, footer
+  renderDefaultTemplate(document.body.innerHTML);
+
+  // code here
   // displayFullCourses
   const fullCourses = getElement(".full__content");
   fullCourses.innerHTML = dispalyCourses(courses, "full");
@@ -20,7 +24,4 @@ window.addEventListener("DOMContentLoaded", function () {
   // displayNewestBlogs
   const blogsContent = getElement(".blogs__content");
   blogsContent.innerHTML = displayBlogs(blogs, 4);
-
-  // header, footer
-  renderDefaultTemplate(document.body.innerHTML);
 });
