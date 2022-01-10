@@ -1,12 +1,9 @@
-//* ReactApp
-//* for: ReactApp/pages/my-account/recover-password.html
-import { headerInit } from "/assets/js/global/header.js";
+import { renderDefaultTemplate } from "/assets/js/global/render.js";
 
-
-//* display items when page load
+//* runs when page load
 window.addEventListener("DOMContentLoaded", function () {
+  // code here
 
-  headerInit(); // header
-
+  // header, footer
+  renderDefaultTemplate(document.body.innerHTML);
 });
-
