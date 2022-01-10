@@ -2,21 +2,16 @@
 import { getElement } from "/assets/js/global/utils.js";
 import { dispalyCourses } from "/assets/js/global/display.js";
 
-import { headerInit } from "/assets/js/global/header.js";
+import { renderDefaultTemplate } from "/assets/js/global/render.js";
 
 //? specific imports
 import courses from "/assets/js/data/courses.js";
 
-//* get content element
-const couresesContent = getElement(".courses__content");
-
 window.addEventListener("DOMContentLoaded", function () {
-  displayAllCourses();
-
-  //header 
-  headerInit();
-});
-
-const displayAllCourses = () => {
+  //* display courses
+  const couresesContent = getElement(".courses__content");
   couresesContent.innerHTML = dispalyCourses(courses);
-};
+
+  // header, footer
+  renderDefaultTemplate(document.body.innerHTML);
+});
