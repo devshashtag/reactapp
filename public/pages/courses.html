@@ -1,124 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <title>reactapp courses</title>
-  </head>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <main id="course">
-      <!-- main-header -->
-      <div class="main-header">
-        <div class="header__wrapper">
-          <h1 class="header__title">دوره ها</h1>
-          <div class="header__path">
-            <a href="/">خانه</a>
-            <i class="fas fa-chevron-left"></i>
-            <a href="/pages/courses.html">دوره ها</a>
-          </div>
-        </div>
-      </div> 
-      <section class="courses">
-        <!--! sort -->
-        <div class="courses__sort">
-          <div class="sort__btns">
-            <button class="selected">
-              <svg
-                version="1.1"
-                id="Grid"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 20 20"
-                enable-background="new 0 0 20 20"
-                xml:space="preserve"
-              >
-                <path
-                  d="M8,4H5C4.447,4,4,4.447,4,5v3c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1V5C9,4.448,8.553,4,8,4z M15,4h-3
+  <!-- styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <!-- scripts -->
+  <script type="module" src="/assets/js/pages/courses.js"></script>
+
+  <title>reactapp courses</title>
+</head>
+
+<body>
+  <main id="course">
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+      <div class="breadcrumb__wrapper">
+        <h1>دوره ها</h1>
+        <nav class="breadcrumb__list">
+          <li><a href="/">خانه</a></li>
+          <li>دوره ها</li>
+        </nav>
+      </div>
+    </div>
+
+    <section class="courses">
+      <!--! sort -->
+      <div class="courses__sort">
+        <div class="sort__btns">
+          <button class="selected">
+            <svg version="1.1" id="Grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+              <path d="M8,4H5C4.447,4,4,4.447,4,5v3c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1V5C9,4.448,8.553,4,8,4z M15,4h-3
                   c-0.553,0-1,0.447-1,1v3c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1V5C16,4.448,15.553,4,15,4z M8,11H5c-0.553,0-1,0.447-1,1v3
                   c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1v-3C9,11.448,8.553,11,8,11z M15,11h-3c-0.553,0-1,0.447-1,1v3c0,0.552,0.447,1,1,1h3
-                  c0.553,0,1-0.448,1-1v-3C16,11.448,15.553,11,15,11z"
-                ></path>
-              </svg>
-            </button>
-            <button>
-              <svg
-                version="1.1"
-                id="List"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 20 20"
-                enable-background="new 0 0 20 20"
-                xml:space="preserve"
-              >
-                <path
-                  d="M14.4,9H8.6C8.048,9,8,9.447,8,10s0.048,1,0.6,1h5.8c0.552,0,0.6-0.447,0.6-1S14.952,9,14.4,9z M16.4,14H8.6
+                  c0.553,0,1-0.448,1-1v-3C16,11.448,15.553,11,15,11z"></path>
+            </svg>
+          </button>
+          <button>
+            <svg version="1.1" id="List" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+              <path d="M14.4,9H8.6C8.048,9,8,9.447,8,10s0.048,1,0.6,1h5.8c0.552,0,0.6-0.447,0.6-1S14.952,9,14.4,9z M16.4,14H8.6
                   C8.048,14,8,14.447,8,15s0.048,1,0.6,1h7.8c0.552,0,0.6-0.447,0.6-1S16.952,14,16.4,14z M8.6,6h7.8C16.952,6,17,5.553,17,5
                   s-0.048-1-0.6-1H8.6C8.048,4,8,4.447,8,5S8.048,6,8.6,6z M5.4,9H3.6C3.048,9,3,9.447,3,10s0.048,1,0.6,1h1.8C5.952,11,6,10.553,6,10
                   S5.952,9,5.4,9z M5.4,14H3.6C3.048,14,3,14.447,3,15s0.048,1,0.6,1h1.8C5.952,16,6,15.553,6,15S5.952,14,5.4,14z M5.4,4H3.6
-                  C3.048,4,3,4.447,3,5s0.048,1,0.6,1h1.8C5.952,6,6,5.553,6,5S5.952,4,5.4,4z"
-                ></path>
-              </svg>
-            </button>
+                  C3.048,4,3,4.447,3,5s0.048,1,0.6,1h1.8C5.952,6,6,5.553,6,5S5.952,4,5.4,4z"></path>
+            </svg>
+          </button>
+        </div>
+        <!--! end fo sort -->
+
+        <!--! form -->
+        <form class="sort__form">
+          <div class="form__select">
+            <select name="orderby">
+              <option value="popularity">مرتب سازی بر اساس محبوبیت</option>
+              <option value="date">مرتب سازی بر اساس جدیدترین</option>
+              <option value="price">مرتب سازی بر اساس هزینه: کم به زیاد</option>
+              <option value="price-desc" selected>مرتب سازی بر اساس هزینه: زیاد به کم</option>
+            </select>
           </div>
-          <!--! end fo sort -->
-          
-          <!--! form -->
-          <form class="sort__form">
-            <div class="form__select">
-              <select name="orderby">
-                <option value="popularity">مرتب سازی بر اساس محبوبیت</option>
-                <option value="date">مرتب سازی بر اساس جدیدترین</option>
-                <option value="price"
-                  >مرتب سازی بر اساس هزینه: کم به زیاد</option
-                >
-                <option value="price-desc" selected
-                  >مرتب سازی بر اساس هزینه: زیاد به کم</option
-                >
-              </select>
-            </div>
-            <div class="form__search">
-              <input
-                type="text"
-                name="search"
-                id="search"
-                placeholder="جستجوی دوره …"
-              />
-              <button><i class="fa fa-search"></i></button>
-            </div>
-          </form>
-          <!--! end of form -->
-        </div>
-        <div class="courses__content">
-          <!--! courses rendered here -->
-        </div>
-        <div class="courses__pagination">
-          <a class="active" href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">...</a>
-          <a href="#">6</a>
-          <a href="#"><i class="fa fa-angle-left"></i></a>
-        </div>
-      </section>
-    </main>
-    <!-- scripts -->
-    <script type="module" src="/assets/js/pages/courses.js"></script>
-  </body>
+          <div class="form__search">
+            <input type="text" name="search" id="search" placeholder="جستجوی دوره …" />
+            <button><i class="fa fa-search"></i></button>
+          </div>
+        </form>
+        <!--! end of form -->
+      </div>
+      <div class="courses__content">
+        <!--! courses rendered here -->
+      </div>
+      <div class="courses__pagination">
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">...</a>
+        <a href="#">6</a>
+        <a href="#"><i class="fa fa-angle-left"></i></a>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

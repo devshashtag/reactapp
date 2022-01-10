@@ -1,26 +1,20 @@
 {
-  "name": "luxury-hotels",
+  "name": "reactapp",
   "version": "1.0.0",
-  "description": "first project luxury hotels",
-  "main": "server.js",
+  "description": "reactapp.ir template",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevsHashtag/luxury-hotels.git"
+    "url": "git+https://github.com/DevsHashtag/ReactApp.git"
   },
-  "keywords": [
-    "luxury-hotels"
-  ],
-  "author": "DevsHashtag, Kamal Heydari, saeideh ansari, sajjad",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DevsHashtag/luxury-hotels/issues"
+    "url": "https://github.com/DevsHashtag/ReactApp/issues"
   },
-  "homepage": "https://github.com/DevsHashtag/luxury-hotels#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/DevsHashtag/ReactApp#readme"
 }

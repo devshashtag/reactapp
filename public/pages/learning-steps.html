@@ -11,41 +11,49 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- styles -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- scripts -->
+    <script type="module" src="/assets/js/pages/learning-steps.js"></script>
 
     <title>reactapp learning-step</title>
   </head>
 
   <body>
-    <!-- start main learning-step -->
+    <!-- start learning-step -->
     <main class="learning-steps">
-      <div class="steps__header">
-        <h1 class="header__title">راهنمای یادگیری</h1>
+      <!-- main-banner -->
+      <div class="main-banner">
+        <h2>راهنمای یادگیری</h2>
       </div>
+
+      <!-- steps content -->
       <div class="steps__content">
-        <p class="content__paragraph">
+        <!-- content introduction -->
+        <div class="content__intro">
           ما در reactapp.ir سعی می کنیم محتوای آموزشی را در اختیار شما کاربران
           عزیز قرار دهیم تا بتوانید مفاهیم javascript در front-end و back-end را
           به بهترین شکل ممکن فرا بگیرید و ضمن تبدیل شدن به یک Full Stack
           Developer وارد بازار کار شوید، به همین جهت گام های یادگیری را برای شما
           مشخص نموده ایم تا بتوانید به راحتی وارد دنیای javascript شوید.
-        </p>
-        <section class="content__guid">
-          <div class="guid__header">
-            <i class="far fa-edit header__icon"></i>
-            <div class="header__title">راهنمای یادگیری</div>
-            <div class="header__hr"></div>
-          </div>
+        </div>
 
-          <div class="guid__box">
-            <a href="#" class="box__linkitem">
-              <div class="guid-card steps-card__reac">
-                <img
-                  src="/assets/images/learning-steps/react-card.png"
-                  class="card-image"
-                  alt="تصویر"
-                />
+        <!-- content header -->
+        <div class="content__header">
+          <div class="header__line"></div>
+          <div class="header__text">راهنمای یادگیری</div>
+          <div class="header__logo">
+            <i class="far fa-edit header__icon"></i>
+          </div>
+        </div>
+
+        <!-- content guide -->
+        <section class="content__guide">
+          <div class="guide__cards">
+            <a href="#">
+              <div class="guide__card guide__card--react">
                 <div class="card-content">
                   <h2 class="card-title">آموزش React</h2>
                   <p class="card-description">
@@ -57,13 +65,8 @@
               </div>
             </a>
 
-            <a href="#" class="box__linkitem">
-              <div class="guid-card steps-card__nodejs">
-                <img
-                  src="/assets/images/learning-steps/nodeJs-card.png"
-                  class="card-image"
-                  alt="تصویر"
-                />
+            <a href="#">
+              <div class="guide__card guide__card--nodejs">
                 <div class="card-content">
                   <h2 class="card-title">آموزش Nodejs</h2>
                   <p class="card-description">
@@ -74,13 +77,8 @@
               </div>
             </a>
 
-            <a href="#" class="box__linkitem">
-              <div class="guid-card steps-card__reactnative">
-                <img
-                  src="/assets/images/learning-steps/reactNative-card.png"
-                  class="card-image"
-                  alt="تصویر"
-                />
+            <a href="#">
+              <div class="guide__card guide__card--react-native">
                 <div class="card-content">
                   <h2 class="card-title">آموزش React Native</h2>
                   <p class="card-description">
@@ -92,16 +90,10 @@
               </div>
             </a>
 
-            <a href="#" class="box__linkitem">
-              <div class="guid-card steps-card__js">
-                <img
-                  src="/assets/images/learning-steps/js-card.png"
-                  class="card-image"
-                  alt="تصویر"
-                />
-
+            <a href="#">
+              <div class="guide__card guide__card--javascript">
                 <div class="card-content">
-                  <h2 class="card-title">آموزش JavaScript</h2>
+                  <h2 class="card-title">آموزش Javascript</h2>
                   <p class="card-description">
                     جاوا اسکریپت یه زبان برنامه نویسی قدرتمنده که با استفاده از
                     اون می تونین اپلیکیشن های موبایل، وب سایت، وب اپلیکیشن و
@@ -114,9 +106,6 @@
         </section>
       </div>
     </main>
-    <!--end main learning-step-->
-
-    <!-- scripts -->
-    <script type="module" src="/assets/js/pages/learning-steps.js"></script>
+    <!--end learning-step-->
   </body>
 </html>

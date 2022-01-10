@@ -1,13 +1,9 @@
-//? global imports
-import { headerInit } from "/assets/js/global/header.js";
+import { renderDefaultTemplate } from "/assets/js/global/render.js";
 
-//? specific imports
-
-
-
+//* runs when page load
 window.addEventListener("DOMContentLoaded", function () {
+  // header, footer
+  renderDefaultTemplate(document.body.innerHTML);
 
-  headerInit(); // header
-
+  // code here
 });
-

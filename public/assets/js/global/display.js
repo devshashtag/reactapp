@@ -5,21 +5,28 @@ const dispalyCourses = (data = [], type = "title") => {
 
   const displayItems = filterItems
     .map((item) => {
-      return ` <article class="course">
-  <div class="course__header">
+      return ` <article class="course-card">
+  <div class="course-card__header">
+    <a href=${item.url ? item.url : "#"}>
     <img src='${item.image}' alt='${item.title}' />
+    </a>
     <div class='header__icon' >
     <i class="fas fa-play"></i>
     <i class="fas fa-user-plus"></i>
     </div>
   </div>
-  <div class="course__content">
-    <h3 class="content__title">${item.title}</h3>
+  <div class="course-card__content">
+    <h3 class="content__title">
+    <a href=${item.url ? item.url : "#"}>
+    ${item.title}
+    </a>
+    </h3>
     <div class="content__author">
     <i class="fas fa-chalkboard-teacher"></i>
-    <span>${item.author}</span></div>
+    <a href='#'>${item.author}</a>
+    </div>
   </div>
-  <div class="course__footer">
+  <div class="course-card__footer">
   <div class="footer__student">
   <i class="fas fa-users"></i>
   <span>${separate(item.students)}</span>
@@ -39,16 +46,20 @@ const displayBlogs = (data = [], value) => {
   const displayItmes = data
     .slice(0, value)
     .map((item) => {
-      return `<article class="blog">
+      return `<article class="blog-card">
+  <a href=${item.url ? item.url : "#"}>
   <img
     src="${item.image}"
     alt="${item.name}"
-    class="blog__img"
-  />
-  <h3 class="blog__title">
+    class="blog-card__img"
+     />
+  </a>
+  <h3 class="blog-card__title">
+  <a href=${item.url ? item.url : "#"}>
   ${item.title}
+  </a>
   </h3>
-  <button class="blog__btn">بیشتر بخوانید</button>
+  <a href=${item.url ? item.url : "#"} class="blog-card__btn">بیشتر بخوانید</a>
 </article>`;
     })
     .join("");
@@ -58,22 +69,25 @@ const displayBlogs = (data = [], value) => {
 // header templates
 
 //# header navigation templates
-// active item
+// current page url
 let doc_name = baseUrl(document.location.pathname);
 
 // templates
-// url template
+// if {current page url} == {a item in navbar} then {disable it}
+// anchor template
 const linkTemplate = (item) =>
   `\n<a ${
     baseUrl(item.url).includes(doc_name) ? `class="is-active" ` : ``
   }href="${item.url}">${item.title}</a>\n`;
 // list item template
 const listTemplate = (item) => `\n<li>${linkTemplate(item)}</li>\n`;
-// list dropdown template
-const dropdownTemplate = (item, angle = "down", toggle_for) => {
+// nav dropdown template
+const dropdownTemplate = (item, angle, toggle_for) => {
+  // use angle-down for navbar
+  // use angle-left for sidebar
   let icon_classes = `
     ${toggle_for ? `${toggle_for}__dropdown--toggle ` : ``}
-    fa fa-angle-${angle === `down` ? `down` : `left`}
+    fa fa-angle-${angle ? `left` : `down`}
   `;
 
   let dropdown = `
@@ -106,13 +120,13 @@ const topbarTemplate = () => {
     </ul>
     <div class="topbar__icons">
       <div class="topbar__icon topbar__search">
-        <i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i>
+        <a><i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i></a>
       </div>
       <div class="topbar__icon topbar__bag">
-        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
       </div>
       <div class="topbar__icon topbar__perm">
-        <i class="fas fa-user" aria-hidden="true"></i>
+        <a href="/pages/my-account.html"><i class="fas fa-user" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
@@ -133,7 +147,7 @@ const navbarTemplate = (route) => {
         <button class="search-submit" type="submit">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
-      </form> 
+      </form>
     </div>
     <!-- navbar menu -->
     <nav class="navbar__menu">
@@ -181,11 +195,11 @@ const sidebarTemplate = (route) => {
       <!-- sidebar search -->
       <div class="sidebar__search">
         <form class="search__form" role="search" method="get" action="/">
-          <input class="search-field" type="search" name="s" placeholder="ورود و اژه کلیدی...">
+          <input class="search-field" type="search" name="s" placeholder="ورود واژه کلیدی...">
           <button class="search-submit" type="submit">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
-        </form> 
+        </form>
       </div>
 
       <!-- sidebar navigation -->
@@ -205,6 +219,44 @@ const sidebarTemplate = (route) => {
   `;
 
   return sidebar;
+};
+
+const footerTemplate = () => {
+  const footer = `
+  <!-- start footer -->
+  <div class="footer">
+    <div class="footer__content">
+      <div class="footer__contact-info">
+        <h3 class="contact-info__title">منتظرتون هستیم</h3>
+        <div class="info-box">
+          <i class="fas fa-phone" aria-hidden="true"></i>09150274110
+        </div>
+        <div class="info-box">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:reactapp.ir@gmail.com">reactapp.ir@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <ul>
+          <li><a href="/pages/blog.html">بلاگ</a></li>
+          <li><a href="#">ویدیو کست</a></li>
+          <li><a href="/pages/terms.html">قوانین</a></li>
+        </ul>
+      </div>
+      <div class="footer__text">
+        تمام تلاش ما در برند reactapp در کنار آموزش با کیفیت و استفاده از دانش روز، اضافه کردن چاشنی تجربه چندین ساله
+        فعالیت در پروژه های داخلی و خارجی بوده. زمانی که شما به یادگیری اختصاص دادید برای ما اهمیت بسیار بالایی داره و
+        به همین دلیل سعی میکنیم متحوای تولید شده، غنی، پر بار و در راستای نیاز های بازار کار باشه.
+      </div>
+    </div>
+    <div class="footer__copyright">
+      کلیه حقوق این سایت محفوظ و متعلق به reactapp.ir میباشد.
+    </div>
+  </div>
+  <!-- end footer -->
+  `;
+
+  return footer;
 };
 
 const bodyWrapperTemplate = (template) => {
@@ -231,4 +283,6 @@ export {
   navbarTemplate,
   sidebarTemplate,
   bodyWrapperTemplate,
+  // footer
+  footerTemplate,
 };
