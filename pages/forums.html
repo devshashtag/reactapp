@@ -1,124 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
 
-  <!-- styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <title>reactapp forums</title>
-</head>
+    <!-- scripts -->
+    <script type="module" src="/assets/js/pages/forums.js"></script>
 
-<body>
-  <!--main forums-->
-  <main class="forums">
-    <!-- breadcrumb -->
-    <div class="breadcrumb">
-      <div class="breadcrumb__wrapper">
-        <h1>انجمن ها</h1>
-        <nav class="breadcrumb__list">
-          <li><a href="/">خانه</a></li>
-          <li>انجمن ها</li>
-        </nav>
-      </div>
-    </div>
+    <title>reactapp forums</title>
+  </head>
 
-    <section class="forums__content">
-      <div class="content__table">
-        <div class="table__column">
-          <div class="column-title">انجمن</div>
-          <div class="column-title">موضوع‌ها</div>
-          <div class="column-title">نوشته‌ها</div>
-          <div class="column-title">آخرین نوشته</div>
-        </div>
-        <div class="table__rows">
-          <!-- table row -->
-          <div class="table__row">
-            <div>
-              <a href="#">Nodejs</a><br />
-              در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
-              نظر در مورد پلتفرم محبوب Nodejs بپردازید و دانش خودتون رو با
-              دوستانتون به اشتراک بزارید .
-            </div>
-            <div>106</div>
-            <div>400</div>
-            <div>
-              <a href="#" class="row-date">1 هفته، 6 روز پیش</a><br />
-              <a href="#" class="cell-name">hamid</a>
-            </div>
-          </div>
-          <!-- table row -->
-          <div class="table__row">
-            <div>
-              <a href="#">react js</a><br />
-              در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
-              نظر در مورد کتابخانه مجبوب reactjs بپردازید و دانش خودتون رو با
-              دوستانتون به اشتراک بزارید .
-            </div>
-            <div>68</div>
-            <div>193</div>
-            <div>
-              <a href="#" class="row-date">2 هفته پیش</a><br />
-              <a href="#" class="cell-name">Moh-R</a>
-            </div>
-          </div>
-          <!-- table row -->
-          <div class="table__row">
-            <div>
-              <a href="#"> بحث و گفت و گو </a><br />
-              در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
-              نظر در مورد دنیای تکنولوژی ، برنامه نویسی ، طراحی و ... بپردازید و
-              دانش خودتون رو با دوستانتون به اشتراک بزارید .
-            </div>
-            <div>35</div>
-            <div>118</div>
-            <div>
-              <a href="#" class="row-date"> 2 هفته، 4 روز پیش </a><br />
-              <a href="#" class="cell-name"> مهدی حسن زاده </a>
-            </div>
-          </div>
-          <!-- table row -->
-          <div class="table__row">
-            <div>
-              <a href="#"> جاوا اسکریپت </a><br />
-              در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
-              نظر در مورد زبان برنامه نویسی جاوا اسکریپت(javascript) بپردازید و
-              دانش خودتون رو با دوستانتون به اشتراک بزارید .
-            </div>
-            <div>50</div>
-            <div>93</div>
-            <div>
-              <a href="#" class="row-date"> 2 ماه، 4 هفته پیش </a><br />
-              <a href="#" class="cell-name"> محمد عسکری </a>
-            </div>
-          </div>
-          <!-- table row -->
-          <div class="table__row">
-            <div>
-              <a href="#">react native</a><br />
-              در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و تبادل
-              نظر در مورد فریمورک مجبوب react native بپردازید و دانش خودتون رو با
-              دوستانتون به اشتراک بزارید .
-            </div>
-            <div>50</div>
-            <div>93</div>
-            <div>
-              <a href="#" class="row-date">ماه پیش 1</a><br />
-              <a href="#" class="cell-name">mohammadreza sattary</a>
-            </div>
-          </div>
+  <body>
+    <!--main forums-->
+    <main class="forums">
+      <!-- breadcrumb -->
+      <div class="breadcrumb">
+        <div class="breadcrumb__wrapper">
+          <h1>انجمن ها</h1>
+          <nav class="breadcrumb__list">
+            <li><a href="/">خانه</a></li>
+            <li>انجمن ها</li>
+          </nav>
         </div>
       </div>
-    </section>
-  </main>
-  <!--end main forums-->
-  <!-- scripts -->
-  <script type="module" src="/assets/js/pages/forums.js"></script>
-</body>
 
+      <section class="forums__content">
+        <div class="content__table">
+          <div class="table__column">
+            <div class="column-title">انجمن</div>
+            <div class="column-title">موضوع‌ها</div>
+            <div class="column-title">نوشته‌ها</div>
+            <div class="column-title">آخرین نوشته</div>
+          </div>
+          <div class="table__rows">
+            <!-- table row -->
+            <div class="table__row">
+              <div>
+                <a href="#">Nodejs</a><br />
+                در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و
+                تبادل نظر در مورد پلتفرم محبوب Nodejs بپردازید و دانش خودتون رو
+                با دوستانتون به اشتراک بزارید .
+              </div>
+              <div>106</div>
+              <div>400</div>
+              <div>
+                <a href="#" class="row-date">1 هفته، 6 روز پیش</a><br />
+                <a href="#" class="cell-name">hamid</a>
+              </div>
+            </div>
+            <!-- table row -->
+            <div class="table__row">
+              <div>
+                <a href="#">react js</a><br />
+                در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و
+                تبادل نظر در مورد کتابخانه مجبوب reactjs بپردازید و دانش خودتون
+                رو با دوستانتون به اشتراک بزارید .
+              </div>
+              <div>68</div>
+              <div>193</div>
+              <div>
+                <a href="#" class="row-date">2 هفته پیش</a><br />
+                <a href="#" class="cell-name">Moh-R</a>
+              </div>
+            </div>
+            <!-- table row -->
+            <div class="table__row">
+              <div>
+                <a href="#"> بحث و گفت و گو </a><br />
+                در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و
+                تبادل نظر در مورد دنیای تکنولوژی ، برنامه نویسی ، طراحی و ...
+                بپردازید و دانش خودتون رو با دوستانتون به اشتراک بزارید .
+              </div>
+              <div>35</div>
+              <div>118</div>
+              <div>
+                <a href="#" class="row-date"> 2 هفته، 4 روز پیش </a><br />
+                <a href="#" class="cell-name"> مهدی حسن زاده </a>
+              </div>
+            </div>
+            <!-- table row -->
+            <div class="table__row">
+              <div>
+                <a href="#"> جاوا اسکریپت </a><br />
+                در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و
+                تبادل نظر در مورد زبان برنامه نویسی جاوا اسکریپت(javascript)
+                بپردازید و دانش خودتون رو با دوستانتون به اشتراک بزارید .
+              </div>
+              <div>50</div>
+              <div>93</div>
+              <div>
+                <a href="#" class="row-date"> 2 ماه، 4 هفته پیش </a><br />
+                <a href="#" class="cell-name"> محمد عسکری </a>
+              </div>
+            </div>
+            <!-- table row -->
+            <div class="table__row">
+              <div>
+                <a href="#">react native</a><br />
+                در این دسته از تالار گفتمان شما کاربران عزیز میتونید به بحث و
+                تبادل نظر در مورد فریمورک مجبوب react native بپردازید و دانش
+                خودتون رو با دوستانتون به اشتراک بزارید .
+              </div>
+              <div>50</div>
+              <div>93</div>
+              <div>
+                <a href="#" class="row-date">ماه پیش 1</a><br />
+                <a href="#" class="cell-name">mohammadreza sattary</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--end main forums-->
+  </body>
 </html>
