@@ -2,15 +2,15 @@
   background-color: $black-clr-1;
   color: $white-clr;
   font-size: 1.22rem;
-  max-width: $max-width;
-  margin: 0 auto;
-
+  
   &__content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem 0;
     padding: 3rem 1.5rem 4rem;
-
+    
+    max-width: $max-width;
+    margin: 0 auto;
     @include breakpoint(lg) {
       grid-template-columns: 1fr 35% 1fr;
     }
@@ -89,5 +89,7 @@
 
   &__copyright {
     padding: 1rem 1.5rem;
+    max-width: $max-width;
+    margin: 0 auto;
   }
 }
