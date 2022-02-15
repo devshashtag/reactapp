@@ -1,6 +1,8 @@
 .about-us {
   &__content {
     padding: 2rem 1.5rem;
+    max-width: $max-width;
+    margin: 0 auto;
     @include flex($fdir: column, $aitem: flex-start, $gap: 4rem);
     @include breakpoint(md) {
       flex-direction: row;
