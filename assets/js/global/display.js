@@ -110,23 +110,25 @@ const topbarTemplate = () => {
   const topbar = `
   <!-- start topbar -->
   <div class="topbar no-select">
-    <ul class="topbar__links">
-      <li>
-        <a class="topbar__link" href="/pages/about-us.html">درباره ما</a>
-      </li>
-      <li>
-        <a class="topbar__link" href="/pages/contact.html">تماس با ما</a>
-      </li>
-    </ul>
-    <div class="topbar__icons">
-      <div class="topbar__icon topbar__search">
-        <a><i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i></a>
-      </div>
-      <div class="topbar__icon topbar__bag">
-        <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
-      </div>
-      <div class="topbar__icon topbar__perm">
-        <a href="/pages/my-account.html"><i class="fas fa-user" aria-hidden="true"></i></a>
+    <div class="topbar__container">
+      <ul class="topbar__links">
+        <li>
+          <a class="topbar__link" href="/pages/about-us.html">درباره ما</a>
+        </li>
+        <li>
+          <a class="topbar__link" href="/pages/contact.html">تماس با ما</a>
+        </li>
+      </ul>
+      <div class="topbar__icons">
+        <div class="topbar__icon topbar__search">
+          <a><i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i></a>
+        </div>
+        <div class="topbar__icon topbar__bag">
+          <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        </div>
+        <div class="topbar__icon topbar__perm">
+          <a href="/pages/my-account.html"><i class="fas fa-user" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
   </div>
@@ -140,45 +142,47 @@ const navbarTemplate = (route) => {
   const navbar = `
   <!-- start navbar -->
   <div class="navbar no-select">
-    <!-- navbar search -->
-    <div class="navbar__search">
-      <form class="search__form" role="search" method="get" action="/">
-        <input class="search-input" type="search" name="s" placeholder="جستجوی دوره، استاد، مطالب و ...">
-        <button class="search-submit" type="submit">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </form>
-    </div>
-    <!-- navbar menu -->
-    <nav class="navbar__menu">
-      <!-- menu list -->
-      <ul class="menu__list">
-        ${route
-          .map((item) => {
-            return item.type == "dropdown"
-              ? dropdownTemplate(item)
-              : listTemplate(item);
-          })
-          .join("")}
-      </ul>
-      <!-- menu button -->
-      <a class="menu__account" href="/pages/my-account.html">
-        <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
-      </a>
-    </nav>
-    <!-- navbar brand -->
-    <div class="navbar__brand">
-      <!-- brand image -->
-      <div class="brand__img">
-        <a href="/">
-          <img src="/assets/images/navbar/brand.png" alt="reactapp brand">
-        </a>
+    <div class="navbar__container">
+      <!-- navbar search -->
+      <div class="navbar__search">
+        <form class="search__form" role="search" method="get" action="/">
+          <input class="search-input" type="search" name="s" placeholder="جستجوی دوره، استاد، مطالب و ...">
+          <button class="search-submit" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
-      <!-- sidebar toggle in navbar as toggle -->
-      <div class="navbar--toggle">
-        <div class="toggle__top"></div>
-        <div class="toggle__mid"></div>
-        <div class="toggle__btm"></div>
+      <!-- navbar menu -->
+      <nav class="navbar__menu">
+        <!-- menu list -->
+        <ul class="menu__list">
+          ${route
+            .map((item) => {
+              return item.type == "dropdown"
+                ? dropdownTemplate(item)
+                : listTemplate(item);
+            })
+            .join("")}
+        </ul>
+        <!-- menu button -->
+        <a class="menu__account" href="/pages/my-account.html">
+          <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+        </a>
+      </nav>
+      <!-- navbar brand -->
+      <div class="navbar__brand">
+        <!-- brand image -->
+        <div class="brand__img">
+          <a href="/">
+            <img src="/assets/images/navbar/brand.png" alt="reactapp brand">
+          </a>
+        </div>
+        <!-- sidebar toggle in navbar as toggle -->
+        <div class="navbar--toggle">
+          <div class="toggle__top"></div>
+          <div class="toggle__mid"></div>
+          <div class="toggle__btm"></div>
+        </div>
       </div>
     </div>
   </div>

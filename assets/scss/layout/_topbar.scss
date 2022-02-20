@@ -1,12 +1,16 @@
 .topbar {
   background-color: $topbar-bg;
-  @include transition(all 0.5s ease);
 
-  @include flex($jcnt: left, $gap: 3rem);
-  @include breakpoint(lg) {
-    padding: 0 6rem;
+  &__container {
+    max-width: $max-width;
+    margin: 0 auto;
+    @include transition(all 0.5s ease);
+
+    @include flex($jcnt: left, $gap: 3rem);
+    @include breakpoint(lg) {
+      padding: 0 6rem;
+    }
   }
-
   &__links {
     @include flex($dsp: none, $gap: 2rem);
     @include breakpoint(lg) {

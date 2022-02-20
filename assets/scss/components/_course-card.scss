@@ -6,7 +6,7 @@
   transform: translateY(0);
   transition: 0.3s;
   position: relative;
-background-color: $white-clr;
+  background-color: $white-clr;
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 0 1rem 0.1rem $gray-clr-5;
