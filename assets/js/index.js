@@ -1,17 +1,18 @@
 //? global imports
 import { getElement } from "/assets/js/global/utils.js";
 import { dispalyCourses, displayBlogs } from "/assets/js/global/display.js";
-import { renderDefaultTemplate } from "/assets/js/global/render.js";
+import {
+  topbarEvent,
+  navbarEvent,
+  sidebarEvent,
+} from "/assets/js/global/headerEvents.js";
 
 //? specific imports
 import courses from "/assets/js/data/courses.js";
 import blogs from "/assets/js/data/blogs.js";
 
-//* display items when page load
+//? display items when page load
 window.addEventListener("DOMContentLoaded", function () {
-  // header, footer
-  renderDefaultTemplate(document.body.innerHTML);
-
   // code here
   // displayFullCourses
   const fullCourses = getElement(".full__content");
@@ -24,4 +25,9 @@ window.addEventListener("DOMContentLoaded", function () {
   // displayNewestBlogs
   const blogsContent = getElement(".blogs__content");
   blogsContent.innerHTML = displayBlogs(blogs, 4);
+
+  // set Header Events
+  topbarEvent();
+  sidebarEvent();
+  navbarEvent();
 });
