@@ -23,11 +23,5 @@ const separate = (Number) => {
 // toggle multiple classes for an element
 const toggleClasses = (el, ...cls) => cls.map(cl => el.classList.toggle(cl));
 
-// header
-const baseUrl = (url) => {
-  let file_name = url.replace('\\','/').replace('.html','').split('/').pop();
-  file_name = file_name?file_name:'/';
-  return file_name
-}
 
-export { getElement, separate, toggleClasses, baseUrl };
+export { getElement, separate, toggleClasses };
