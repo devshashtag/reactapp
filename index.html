@@ -1,357 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>reactapp home</title>
-  </head>
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <body>
-    <!-- start sidebar -->
-    <div class="sidebar no-select">
-      <!-- sidebar search -->
-      <div class="sidebar__search">
-        <form class="search__form" role="search" method="get" action="/">
-          <input
-            class="search-field"
-            type="search"
-            name="s"
-            placeholder="ورود واژه کلیدی..."
-          />
-          <button class="search-submit" type="submit">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </button>
-        </form>
-      </div>
+  <title>reactapp home</title>
+</head>
 
-      <!-- sidebar navigation -->
-      <nav class="sidebar__nav">
-        <ul class="sidebar__list">
-          <li>
-            <a class="is-active" href="/">صفحه اصلی</a>
-          </li>
-
-          <!-- dropdown template -->
-          <li class="list__dropdown">
-            <div class="dropdown__header">
-              <a href="/pages/courses.html">دوره ها</a>
-
-              <i class="sidebar__dropdown--toggle fa fa-angle-left"></i>
-            </div>
-            <ul class="dropdown__list">
-              <li>
-                <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="/pages/blog.html">بلاگ</a>
-          </li>
-
-          <li>
-            <a href="/pages/forums.html">تالار گفتمان</a>
-          </li>
-
-          <li>
-            <a href="#tel">کانال تلگرام</a>
-          </li>
-
-          <!-- dropdown template -->
-          <li class="list__dropdown">
-            <div class="dropdown__header">
-              <a href="#!">صفحات بی ادرس</a>
-
-              <i class="sidebar__dropdown--toggle fa fa-angle-left"></i>
-            </div>
-            <ul class="dropdown__list">
-              <li>
-                <a href="/pages/my-account.html">حساب من</a>
-              </li>
-
-              <li>
-                <a href="/pages/my-account/recover-password.html"
-                  >بازیابی رمز عبور</a
-                >
-              </li>
-
-              <li>
-                <a href="/pages/courses/javascript.html">آموزش جاوااسکریپت</a>
-              </li>
-
-              <li>
-                <a href="/pages/contact.html">تماس با ما</a>
-              </li>
-
-              <li>
-                <a href="/pages/about-us.html">درباره ما</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+<body>
+  <!-- start sidebar -->
+  <div class="sidebar no-select">
+    <!-- sidebar search -->
+    <div class="sidebar__search">
+      <form class="search__form" role="search" method="get" action="/">
+        <input class="search-field" type="search" name="s" placeholder="ورود واژه کلیدی..." />
+        <button class="search-submit" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
     </div>
-    <!-- end sidebar -->
 
-    <!-- start body wrapper -->
-    <div class="body--wrap">
-      <!-- overlay all elements -->
-      <div class="body--overlay"></div>
+    <!-- sidebar navigation -->
+    <nav class="sidebar__nav">
+      <ul class="sidebar__list">
+        <li>
+          <a class="is-active" href="/">صفحه اصلی</a>
+        </li>
 
-      <!-- start topbar -->
-      <div class="topbar no-select">
-        <div class="topbar__container">
-          <ul class="topbar__links">
+        <!-- dropdown template -->
+        <li class="list__dropdown">
+          <div class="dropdown__header">
+            <a href="/pages/courses.html">دوره ها</a>
+
+            <i class="sidebar__dropdown--toggle fa fa-angle-left"></i>
+          </div>
+          <ul class="dropdown__list">
             <li>
-              <a class="topbar__link" href="/pages/about-us.html">درباره ما</a>
-            </li>
-            <li>
-              <a class="topbar__link" href="/pages/contact.html">تماس با ما</a>
+              <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
             </li>
           </ul>
-          <div class="topbar__icons">
-            <div class="topbar__icon topbar__search">
-              <a
-                ><i
-                  class="topbar__search--toggle fa fa-search"
-                  aria-hidden="true"
-                ></i
-              ></a>
-            </div>
-            <div class="topbar__icon topbar__bag">
-              <a href="#"
-                ><i class="fa fa-shopping-bag" aria-hidden="true"></i
-              ></a>
-            </div>
-            <div class="topbar__icon topbar__perm">
-              <a href="/pages/my-account.html"
-                ><i class="fas fa-user" aria-hidden="true"></i
-              ></a>
-            </div>
+        </li>
+
+        <li>
+          <a href="/pages/blog.html">بلاگ</a>
+        </li>
+
+        <li>
+          <a href="/pages/forums.html">تالار گفتمان</a>
+        </li>
+
+        <li>
+          <a href="#tel">کانال تلگرام</a>
+        </li>
+
+        <!-- dropdown template -->
+        <li class="list__dropdown">
+          <div class="dropdown__header">
+            <a href="#!">صفحات بی ادرس</a>
+
+            <i class="sidebar__dropdown--toggle fa fa-angle-left"></i>
+          </div>
+          <ul class="dropdown__list">
+            <li>
+              <a href="/pages/my-account.html">حساب من</a>
+            </li>
+
+            <li>
+              <a href="/pages/my-account/recover-password.html">بازیابی رمز عبور</a>
+            </li>
+
+            <li>
+              <a href="/pages/courses/javascript.html">آموزش جاوااسکریپت</a>
+            </li>
+
+            <li>
+              <a href="/pages/contact.html">تماس با ما</a>
+            </li>
+
+            <li>
+              <a href="/pages/about-us.html">درباره ما</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- end sidebar -->
+
+  <!-- start body wrapper -->
+  <div class="body--wrap">
+    <!-- overlay all elements -->
+    <div class="body--overlay"></div>
+
+    <!-- start topbar -->
+    <div class="topbar no-select">
+      <div class="topbar__container">
+        <ul class="topbar__links">
+          <li>
+            <a class="topbar__link" href="/pages/about-us.html">درباره ما</a>
+          </li>
+          <li>
+            <a class="topbar__link" href="/pages/contact.html">تماس با ما</a>
+          </li>
+        </ul>
+        <div class="topbar__icons">
+          <div class="topbar__icon topbar__search">
+            <a><i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i></a>
+          </div>
+          <div class="topbar__icon topbar__bag">
+            <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+          </div>
+          <div class="topbar__icon topbar__perm">
+            <a href="/pages/my-account.html"><i class="fas fa-user" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
-      <!-- end topbar -->
-
-      <!-- start navbar -->
-      <div class="navbar no-select">
-        <div class="navbar__container">
-          <!-- navbar search -->
-          <div class="navbar__search">
-            <form class="search__form" role="search" method="get" action="/">
-              <input
-                class="search-input"
-                type="search"
-                name="s"
-                placeholder="جستجوی دوره، استاد، مطالب و ..."
-              />
-              <button class="search-submit" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
-          <!-- navbar menu -->
-          <nav class="navbar__menu">
-            <!-- menu list -->
-            <ul class="menu__list">
-              <li>
-                <a class="is-active" href="/">صفحه اصلی</a>
-              </li>
-
-              <!-- dropdown template -->
-              <li class="list__dropdown">
-                <div class="dropdown__header">
-                  <a href="/pages/courses.html">دوره ها</a>
-
-                  <i class="fa fa-angle-down"></i>
-                </div>
-                <ul class="dropdown__list">
-                  <li>
-                    <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="/pages/blog.html">بلاگ</a>
-              </li>
-
-              <li>
-                <a href="/pages/forums.html">تالار گفتمان</a>
-              </li>
-
-              <li>
-                <a href="#tel">کانال تلگرام</a>
-              </li>
-
-              <!-- dropdown template -->
-              <li class="list__dropdown">
-                <div class="dropdown__header">
-                  <a href="#!">صفحات بی ادرس</a>
-
-                  <i class="fa fa-angle-down"></i>
-                </div>
-                <ul class="dropdown__list">
-                  <li><a href="/pages/my-account.html">حساب من</a></li>
-
-                  <li>
-                    <a href="/pages/my-account/recover-password.html"
-                      >بازیابی رمز عبور</a
-                    >
-                  </li>
-
-                  <li>
-                    <a href="/pages/courses/javascript.html"
-                      >آموزش جاوااسکریپت</a
-                    >
-                  </li>
-
-                  <li>
-                    <a href="/pages/contact.html">تماس با ما</a>
-                  </li>
-
-                  <li>
-                    <a href="/pages/about-us.html">درباره ما</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <!-- menu button -->
-            <a class="menu__account" href="/pages/my-account.html">
-              <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
-            </a>
-          </nav>
-          <!-- navbar brand -->
-          <div class="navbar__brand">
-            <!-- brand image -->
-            <div class="brand__img">
-              <a href="/">
-                <img
-                  src="/assets/images/navbar/brand.png"
-                  alt="reactapp brand"
-                />
-              </a>
-            </div>
-            <!-- sidebar toggle in navbar as toggle -->
-            <div class="navbar--toggle">
-              <div class="toggle__top"></div>
-              <div class="toggle__mid"></div>
-              <div class="toggle__btm"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end navbar -->
-
-      <!-- main home -->
-      <main id="home">
-        <!--! banner-top -->
-        <div class="banner-top">
-          <img src="/assets/images/banners/home-banner-1.jpg" alt="banner" />
-        </div>
-        <!--! end of banner-top -->
-
-        <!--! full courses -->
-        <section class="full-courses">
-          <div class="full__header">
-            <h2>دوره های جامع</h2>
-          </div>
-          <div class="full__content">
-            <!--? courses rendered here -->
-          </div>
-        </section>
-        <!--! end of full courses -->
-
-        <!--! banner-mid -->
-        <div class="banner-mid">
-          <h3 class="banner-mid__title">حرکت در مسیر فول استک شدن</h3>
-          <p class="banner-mid__desc-1">
-            آموزش ساخت اپلیکیشن فروشگاهی به همراه پنل مدیریت
-          </p>
-          <p class="banner-mid__desc-2">
-            JavaScript - ReactJS - NodeJS - React Native - GraphQL
-          </p>
-          <a href="#" class="banner-mid__link">شروع مسیر</a>
-        </div>
-        <!--! end of banner-mid -->
-
-        <!--! proposal courses -->
-        <section class="proposal-courses">
-          <div class="proposal__header">
-            <h2 class="header__title">دوره های پیشنهادی</h2>
-            <a href="#" class="header__btn">همه دوره ها</a>
-          </div>
-          <div class="proposal__content">
-            <!--? courses rendered here -->
-          </div>
-        </section>
-        <!--! end of proposal courses -->
-
-        <!--! blogs -->
-        <section class="blogs">
-          <div class="blogs__header">
-            <h2 class="header__title">مقالات</h2>
-            <a href="#" class="header__btn">مشاهده همه</a>
-          </div>
-          <div class="blogs__content">
-            <!--? blogs rendered here -->
-          </div>
-          <a href="#" class="blogs__btn"> مشاهده همه مقالات </a>
-        </section>
-        <!--! end of blogs -->
-      </main>
-      <!-- end of main home -->
-
-      <!-- start footer -->
-      <div class="footer">
-        <div class="footer__content">
-          <div class="footer__contact-info">
-            <h3 class="contact-info__title">منتظرتون هستیم</h3>
-            <div class="info-box">
-              <i class="fas fa-phone" aria-hidden="true"></i>09150274110
-            </div>
-            <div class="info-box">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <a href="mailto:reactapp.ir@gmail.com">reactapp.ir@gmail.com</a>
-            </div>
-          </div>
-          <div class="footer__links">
-            <ul>
-              <li><a href="/pages/blog.html">بلاگ</a></li>
-              <li><a href="#">ویدیو کست</a></li>
-              <li><a href="/pages/terms.html">قوانین</a></li>
-            </ul>
-          </div>
-          <div class="footer__text">
-            تمام تلاش ما در برند reactapp در کنار آموزش با کیفیت و استفاده از
-            دانش روز، اضافه کردن چاشنی تجربه چندین ساله فعالیت در پروژه های
-            داخلی و خارجی بوده. زمانی که شما به یادگیری اختصاص دادید برای ما
-            اهمیت بسیار بالایی داره و به همین دلیل سعی میکنیم متحوای تولید شده،
-            غنی، پر بار و در راستای نیاز های بازار کار باشه.
-          </div>
-        </div>
-        <div class="footer__copyright">
-          کلیه حقوق این سایت محفوظ و متعلق به reactapp.ir میباشد.
-        </div>
-      </div>
-      <!-- end footer -->
     </div>
-    <!-- end body wrapper -->
+    <!-- end topbar -->
 
-    <!-- scrips -->
-    <script type="module" src="/assets/js/index.js"></script>
-  </body>
+    <!-- start navbar -->
+    <div class="navbar no-select">
+      <div class="navbar__container">
+        <!-- navbar search -->
+        <div class="navbar__search">
+          <form class="search__form" role="search" method="get" action="/">
+            <input class="search-input" type="search" name="s" placeholder="جستجوی دوره، استاد، مطالب و ..." />
+            <button class="search-submit" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <!-- navbar menu -->
+        <nav class="navbar__menu">
+          <!-- menu list -->
+          <ul class="menu__list">
+            <li>
+              <a class="is-active" href="/">صفحه اصلی</a>
+            </li>
+
+            <!-- dropdown template -->
+            <li class="list__dropdown">
+              <div class="dropdown__header">
+                <a href="/pages/courses.html">دوره ها</a>
+
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <ul class="dropdown__list">
+                <li>
+                  <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="/pages/blog.html">بلاگ</a>
+            </li>
+
+            <li>
+              <a href="/pages/forums.html">تالار گفتمان</a>
+            </li>
+
+            <li>
+              <a href="#tel">کانال تلگرام</a>
+            </li>
+
+            <!-- dropdown template -->
+            <li class="list__dropdown">
+              <div class="dropdown__header">
+                <a href="#!">صفحات بی ادرس</a>
+
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <ul class="dropdown__list">
+                <li><a href="/pages/my-account.html">حساب من</a></li>
+
+                <li>
+                  <a href="/pages/my-account/recover-password.html">بازیابی رمز عبور</a>
+                </li>
+
+                <li>
+                  <a href="/pages/courses/javascript.html">آموزش جاوااسکریپت</a>
+                </li>
+
+                <li>
+                  <a href="/pages/contact.html">تماس با ما</a>
+                </li>
+
+                <li>
+                  <a href="/pages/about-us.html">درباره ما</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- menu button -->
+          <a class="menu__account" href="/pages/my-account.html">
+            <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+          </a>
+        </nav>
+        <!-- navbar brand -->
+        <div class="navbar__brand">
+          <!-- brand image -->
+          <div class="brand__img">
+            <a href="/">
+              <img src="/assets/images/navbar/brand.png" alt="reactapp brand" />
+            </a>
+          </div>
+          <!-- sidebar toggle in navbar as toggle -->
+          <div class="navbar--toggle">
+            <div class="toggle__top"></div>
+            <div class="toggle__mid"></div>
+            <div class="toggle__btm"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- main home -->
+    <main id="home">
+      <!--! banner-top -->
+      <div class="banner-top">
+        <img src="/assets/images/banners/home-banner-1.jpg" alt="banner" />
+      </div>
+      <!--! end of banner-top -->
+
+      <!--! full courses -->
+      <section class="full-courses">
+        <div class="full__header">
+          <h2>دوره های جامع</h2>
+        </div>
+        <div class="full__content">
+          <!--? courses rendered here -->
+        </div>
+      </section>
+      <!--! end of full courses -->
+
+      <!--! banner-mid -->
+      <div class="banner-mid">
+        <h3 class="banner-mid__title">حرکت در مسیر فول استک شدن</h3>
+        <p class="banner-mid__desc-1">
+          آموزش ساخت اپلیکیشن فروشگاهی به همراه پنل مدیریت
+        </p>
+        <p class="banner-mid__desc-2">
+          JavaScript - ReactJS - NodeJS - React Native - GraphQL
+        </p>
+        <a href="#" class="banner-mid__link">شروع مسیر</a>
+      </div>
+      <!--! end of banner-mid -->
+
+      <!--! proposal courses -->
+      <section class="proposal-courses">
+        <div class="proposal__header">
+          <h2 class="header__title">دوره های پیشنهادی</h2>
+          <a href="#" class="header__btn">همه دوره ها</a>
+        </div>
+        <div class="proposal__content">
+          <!--? courses rendered here -->
+        </div>
+      </section>
+      <!--! end of proposal courses -->
+
+      <!--! blogs -->
+      <section class="blogs">
+        <div class="blogs__header">
+          <h2 class="header__title">مقالات</h2>
+          <a href="#" class="header__btn">مشاهده همه</a>
+        </div>
+        <div class="blogs__content">
+          <!--? blogs rendered here -->
+        </div>
+        <a href="#" class="blogs__btn"> مشاهده همه مقالات </a>
+      </section>
+      <!--! end of blogs -->
+    </main>
+    <!-- end of main home -->
+
+    <!-- start footer -->
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__contact-info">
+          <h3 class="contact-info__title">منتظرتون هستیم</h3>
+          <div class="info-box">
+            <i class="fas fa-phone" aria-hidden="true"></i>09109999999
+          </div>
+          <div class="info-box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:reactapp.ir@gmail.com">reactapp.ir@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="/pages/blog.html">بلاگ</a></li>
+            <li><a href="#">ویدیو کست</a></li>
+            <li><a href="/pages/terms.html">قوانین</a></li>
+          </ul>
+        </div>
+        <div class="footer__text">
+          تمام تلاش ما در برند reactapp در کنار آموزش با کیفیت و استفاده از
+          دانش روز، اضافه کردن چاشنی تجربه چندین ساله فعالیت در پروژه های
+          داخلی و خارجی بوده. زمانی که شما به یادگیری اختصاص دادید برای ما
+          اهمیت بسیار بالایی داره و به همین دلیل سعی میکنیم متحوای تولید شده،
+          غنی، پر بار و در راستای نیاز های بازار کار باشه.
+        </div>
+      </div>
+      <div class="footer__copyright">
+        کلیه حقوق این سایت محفوظ و متعلق به reactapp.ir میباشد.
+      </div>
+    </div>
+    <!-- end footer -->
+  </div>
+  <!-- end body wrapper -->
+
+  <!-- scrips -->
+  <script type="module" src="/assets/js/index.js"></script>
+</body>
+
 </html>
