@@ -4,12 +4,12 @@ const courses = [
     title: `آموزش مقدماتی تا پیشرفته جاوا اسکریپت (javascript) – کاملا پروژه محور
   `,
     author: "مهدی",
-    price: 239000,
+    price: 269000,
     image: "/assets/images/courses/1.jpg",
     students: 451,
     full: true,
     proposal: false,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const courses = [
     students: 219,
     full: true,
     proposal: false,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const courses = [
     students: 452,
     full: true,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const courses = [
     students: 612,
     full: true,
     proposal: false,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const courses = [
     students: 435,
     full: false,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const courses = [
     students: 1637,
     full: false,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const courses = [
     students: 66,
     full: false,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 8,
@@ -86,7 +86,7 @@ const courses = [
     students: 243,
     full: false,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 9,
@@ -97,7 +97,7 @@ const courses = [
     students: 961,
     full: false,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 10,
@@ -108,7 +108,7 @@ const courses = [
     students: 4167,
     full: false,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 11,
@@ -119,7 +119,7 @@ const courses = [
     students: 211,
     full: false,
     proposal: true,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
   {
     id: 12,
@@ -130,7 +130,7 @@ const courses = [
     students: 312,
     full: false,
     proposal: false,
-    url:'/pages/courses/javascript.html'
+    url: '/pages/courses/javascript.html'
   },
 ];
 export default courses;
