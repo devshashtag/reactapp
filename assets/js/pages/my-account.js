@@ -1,7 +1,6 @@
 import { getElement } from "/assets/js/global/utils.js";
 import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/headerEvents.js";
 
-//* runs when page load
 window.addEventListener("DOMContentLoaded", function () {
   // code here
   // toggles

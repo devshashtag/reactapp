@@ -5,7 +5,6 @@ import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/header
 // blogs data
 import blogs from "/assets/js/data/blogs.js";
 
-//* runs when page load
 window.addEventListener("DOMContentLoaded", function () {
   // code here
   //* get content element

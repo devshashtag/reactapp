@@ -7,7 +7,6 @@ import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/header
 import courses from "/assets/js/data/courses.js";
 import blogs from "/assets/js/data/blogs.js";
 
-//? display items when page load
 window.addEventListener("DOMContentLoaded", function () {
   // displayFullCourses
   const fullCourses = getElement(".full__content");
