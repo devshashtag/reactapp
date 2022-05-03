@@ -20,74 +20,256 @@
 </head>
 
 <body>
-  <main id="course">
-    <!-- breadcrumb -->
-    <div class="breadcrumb">
-      <div class="breadcrumb__wrapper">
-        <h1>دوره ها</h1>
-        <nav class="breadcrumb__list">
-          <li><a href="/">خانه</a></li>
-          <li>دوره ها</li>
-        </nav>
-      </div>
+  <!-- start sidebar -->
+  <div class="sidebar no-select">
+    <!-- sidebar search -->
+    <div class="sidebar__search">
+      <form class="search__form" role="search" method="get" action="/">
+        <input class="search-field" type="search" name="s" placeholder="ورود واژه کلیدی..." />
+        <button class="search-submit" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
     </div>
 
-    <section class="courses">
-      <!--! sort -->
-      <div class="courses__sort">
-        <div class="sort__btns">
-          <button class="selected">
-            <svg version="1.1" id="Grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-              <path d="M8,4H5C4.447,4,4,4.447,4,5v3c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1V5C9,4.448,8.553,4,8,4z M15,4h-3
+    <!-- sidebar navigation -->
+    <nav class="sidebar__nav">
+      <ul class="sidebar__list">
+        <li><a href="/">صفحه اصلی</a></li>
+
+        <!-- dropdown template -->
+        <li class="list__dropdown">
+          <div class="dropdown__header">
+            <a class="is-active" href="/pages/courses.html">دوره ها</a>
+
+            <i class="sidebar__dropdown--toggle fa fa-angle-left"></i>
+          </div>
+          <ul class="dropdown__list">
+            <li>
+              <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="/pages/blog.html">بلاگ</a>
+        </li>
+
+        <li>
+          <a href="/pages/forums.html">تالار گفتمان</a>
+        </li>
+
+        <li>
+          <a href="#tel">کانال تلگرام</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- end sidebar -->
+
+  <!-- start body wrap -->
+  <div class="body--wrap">
+    <!-- overlay all elements -->
+    <div class="body--overlay"></div>
+
+    <!-- start topbar -->
+    <div class="topbar no-select">
+      <div class="topbar__container">
+        <ul class="topbar__links">
+          <li>
+            <a class="topbar__link" href="/pages/about-us.html">درباره ما</a>
+          </li>
+          <li>
+            <a class="topbar__link" href="/pages/contact.html">تماس با ما</a>
+          </li>
+        </ul>
+        <div class="topbar__icons">
+          <div class="topbar__icon topbar__search">
+            <a><i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i></a>
+          </div>
+          <div class="topbar__icon topbar__bag">
+            <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+          </div>
+          <div class="topbar__icon topbar__perm">
+            <a href="/pages/my-account.html"><i class="fas fa-user" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end topbar -->
+
+    <!-- start navbar -->
+    <div class="navbar no-select">
+      <div class="navbar__container">
+        <!-- navbar search -->
+        <div class="navbar__search">
+          <form class="search__form" role="search" method="get" action="/">
+            <input class="search-input" type="search" name="s" placeholder="جستجوی دوره، استاد، مطالب و ..." />
+            <button class="search-submit" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <!-- navbar menu -->
+        <nav class="navbar__menu">
+          <!-- menu list -->
+          <ul class="menu__list">
+            <li><a href="/">صفحه اصلی</a></li>
+
+            <!-- dropdown template -->
+            <li class="list__dropdown">
+              <div class="dropdown__header">
+                <a class="is-active" href="/pages/courses.html">دوره ها</a>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <ul class="dropdown__list">
+                <li>
+                  <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="/pages/blog.html">بلاگ</a>
+            </li>
+
+            <li>
+              <a href="/pages/forums.html">تالار گفتمان</a>
+            </li>
+
+            <li>
+              <a href="#tel">کانال تلگرام</a>
+            </li>
+          </ul>
+          <!-- menu button -->
+          <a class="menu__account" href="/pages/my-account.html">
+            <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+          </a>
+        </nav>
+        <!-- navbar brand -->
+        <div class="navbar__brand">
+          <!-- brand image -->
+          <div class="brand__img">
+            <a href="/">
+              <img src="/assets/images/navbar/brand.png" alt="reactapp brand" />
+            </a>
+          </div>
+          <!-- sidebar toggle in navbar as toggle -->
+          <div class="navbar--toggle">
+            <div class="toggle__top"></div>
+            <div class="toggle__mid"></div>
+            <div class="toggle__btm"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- main course -->
+    <main id="course">
+      <!-- breadcrumb -->
+      <div class="breadcrumb">
+        <div class="breadcrumb__wrapper">
+          <h1>دوره ها</h1>
+          <nav class="breadcrumb__list">
+            <li><a href="/">خانه</a></li>
+            <li>دوره ها</li>
+          </nav>
+        </div>
+      </div>
+
+      <section class="courses">
+        <!--! sort -->
+        <div class="courses__sort">
+          <div class="sort__btns">
+            <button class="selected">
+              <svg version="1.1" id="Grid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                <path d="M8,4H5C4.447,4,4,4.447,4,5v3c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1V5C9,4.448,8.553,4,8,4z M15,4h-3
                   c-0.553,0-1,0.447-1,1v3c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1V5C16,4.448,15.553,4,15,4z M8,11H5c-0.553,0-1,0.447-1,1v3
                   c0,0.552,0.447,1,1,1h3c0.553,0,1-0.448,1-1v-3C9,11.448,8.553,11,8,11z M15,11h-3c-0.553,0-1,0.447-1,1v3c0,0.552,0.447,1,1,1h3
                   c0.553,0,1-0.448,1-1v-3C16,11.448,15.553,11,15,11z"></path>
-            </svg>
-          </button>
-          <button>
-            <svg version="1.1" id="List" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-              <path d="M14.4,9H8.6C8.048,9,8,9.447,8,10s0.048,1,0.6,1h5.8c0.552,0,0.6-0.447,0.6-1S14.952,9,14.4,9z M16.4,14H8.6
+              </svg>
+            </button>
+            <button>
+              <svg version="1.1" id="List" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                <path d="M14.4,9H8.6C8.048,9,8,9.447,8,10s0.048,1,0.6,1h5.8c0.552,0,0.6-0.447,0.6-1S14.952,9,14.4,9z M16.4,14H8.6
                   C8.048,14,8,14.447,8,15s0.048,1,0.6,1h7.8c0.552,0,0.6-0.447,0.6-1S16.952,14,16.4,14z M8.6,6h7.8C16.952,6,17,5.553,17,5
                   s-0.048-1-0.6-1H8.6C8.048,4,8,4.447,8,5S8.048,6,8.6,6z M5.4,9H3.6C3.048,9,3,9.447,3,10s0.048,1,0.6,1h1.8C5.952,11,6,10.553,6,10
                   S5.952,9,5.4,9z M5.4,14H3.6C3.048,14,3,14.447,3,15s0.048,1,0.6,1h1.8C5.952,16,6,15.553,6,15S5.952,14,5.4,14z M5.4,4H3.6
                   C3.048,4,3,4.447,3,5s0.048,1,0.6,1h1.8C5.952,6,6,5.553,6,5S5.952,4,5.4,4z"></path>
-            </svg>
-          </button>
-        </div>
-        <!--! end fo sort -->
+              </svg>
+            </button>
+          </div>
+          <!--! end fo sort -->
 
-        <!--! form -->
-        <form class="sort__form">
-          <div class="form__select">
-            <select name="orderby">
-              <option value="popularity">مرتب سازی بر اساس محبوبیت</option>
-              <option value="date">مرتب سازی بر اساس جدیدترین</option>
-              <option value="price">مرتب سازی بر اساس هزینه: کم به زیاد</option>
-              <option value="price-desc" selected>مرتب سازی بر اساس هزینه: زیاد به کم</option>
-            </select>
+          <!--! form -->
+          <form class="sort__form">
+            <div class="form__select">
+              <select name="orderby">
+                <option value="popularity">مرتب سازی بر اساس محبوبیت</option>
+                <option value="date">مرتب سازی بر اساس جدیدترین</option>
+                <option value="price">مرتب سازی بر اساس هزینه: کم به زیاد</option>
+                <option value="price-desc" selected>مرتب سازی بر اساس هزینه: زیاد به کم</option>
+              </select>
+            </div>
+            <div class="form__search">
+              <input type="text" name="search" id="search" placeholder="جستجوی دوره …" />
+              <button><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+          <!--! end of form -->
+        </div>
+        <div class="courses__content">
+          <!--! courses rendered here -->
+        </div>
+        <div class="courses__pagination">
+          <a class="active" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#"><i class="fa fa-angle-left"></i></a>
+        </div>
+      </section>
+    </main>
+    <!-- end main course -->
+
+    <!-- start footer -->
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__contact-info">
+          <h3 class="contact-info__title">منتظرتون هستیم</h3>
+          <div class="info-box">
+            <i class="fas fa-phone" aria-hidden="true"></i>09109999999
           </div>
-          <div class="form__search">
-            <input type="text" name="search" id="search" placeholder="جستجوی دوره …" />
-            <button><i class="fa fa-search"></i></button>
+          <div class="info-box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:reactapp.ir@gmail.com">reactapp.ir@gmail.com</a>
           </div>
-        </form>
-        <!--! end of form -->
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="/pages/blog.html">بلاگ</a></li>
+            <li><a href="#">ویدیو کست</a></li>
+            <li><a href="/pages/terms.html">قوانین</a></li>
+          </ul>
+        </div>
+        <div class="footer__text">
+          تمام تلاش ما در برند reactapp در کنار آموزش با کیفیت و استفاده از
+          دانش روز، اضافه کردن چاشنی تجربه چندین ساله فعالیت در پروژه های
+          داخلی و خارجی بوده. زمانی که شما به یادگیری اختصاص دادید برای ما
+          اهمیت بسیار بالایی داره و به همین دلیل سعی میکنیم متحوای تولید شده،
+          غنی، پر بار و در راستای نیاز های بازار کار باشه.
+        </div>
       </div>
-      <div class="courses__content">
-        <!--! courses rendered here -->
+      <div class="footer__copyright">
+        کلیه حقوق این سایت محفوظ و متعلق به reactapp.ir میباشد.
       </div>
-      <div class="courses__pagination">
-        <a class="active" href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">...</a>
-        <a href="#">6</a>
-        <a href="#"><i class="fa fa-angle-left"></i></a>
-      </div>
-    </section>
-  </main>
+    </div>
+    <!-- end footer -->
+  </div>
+  <!-- end body wrap -->
 </body>
 
 </html>
