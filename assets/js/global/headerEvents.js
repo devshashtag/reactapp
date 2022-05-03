@@ -1,25 +1,12 @@
 import { getElement, toggleClasses } from "/assets/js/global/utils.js";
 
-// Default Variables
-
-// top bar
-// topbar search toggle
-const searchToggle = getElement(".topbar__search--toggle");
-const navbar = getElement(".navbar");
-
-// navbar
-// navbar toggle for sidebar
-const sidebar = getElement(".sidebar");
-const bodyWrapper = getElement(".body--wrap");
-const bodyOverlay = getElement(".body--overlay");
-const navbarToggle = getElement(".navbar--toggle");
-
-// sidebar
-// check clicking on sidebar__list
-let sidebarList = getElement(".sidebar__list");
-
 // Event functions
 function topbarEvent() {
+  // top bar
+  // topbar search toggle
+  const searchToggle = getElement(".topbar__search--toggle");
+  const navbar = getElement(".navbar");
+
   // display search-form in navbar while clicking topbar__search--toggle
   searchToggle.addEventListener("click", () => {
     toggleClasses(searchToggle, "fa-search", "fa-close");
@@ -28,6 +15,13 @@ function topbarEvent() {
 }
 
 function navbarEvent() {
+  // navbar
+  // navbar toggle for sidebar
+  const sidebar = getElement(".sidebar");
+  const bodyWrapper = getElement(".body--wrap");
+  const bodyOverlay = getElement(".body--overlay");
+  const navbarToggle = getElement(".navbar--toggle");
+
   // while clicking on .navbar--toggle display .sidebar
   navbarToggle.addEventListener("click", () => {
     sidebar.classList.toggle("is-active");
@@ -46,6 +40,10 @@ function navbarEvent() {
 }
 
 function sidebarEvent() {
+  // sidebar
+  // check clicking on sidebar__list
+  let sidebarList = getElement(".sidebar__list");
+
   // while clicking on dropdown toggle display .dropdown__list
   sidebarList.addEventListener("click", (el) => {
     if (el.target.classList.contains("sidebar__dropdown--toggle")) {

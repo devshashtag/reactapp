@@ -1,8 +1,12 @@
-import { renderDefaultTemplate } from "/assets/js/global/render.js";
+import {
+  navbarEvent,
+  sidebarEvent,
+} from "/assets/js/global/headerEvents.js";
 
 window.addEventListener("DOMContentLoaded", function () {
-  // header, footer
-  renderDefaultTemplate(document.body.innerHTML);
-
   // code here
+
+  // Header Events
+  navbarEvent();
+  sidebarEvent();
 });
