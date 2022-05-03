@@ -15,8 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
   const couresesContent = getElement(".courses__content");
   couresesContent.innerHTML = dispalyCourses(courses);
 
-  // set Header Events
+  // Header Events
   topbarEvent();
-  sidebarEvent();
   navbarEvent();
+  sidebarEvent();
 });

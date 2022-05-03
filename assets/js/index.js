@@ -25,8 +25,8 @@ window.addEventListener("DOMContentLoaded", function () {
   const blogsContent = getElement(".blogs__content");
   blogsContent.innerHTML = displayBlogs(blogs, 4);
 
-  // set Header Events
+  // Header Events
   topbarEvent();
-  sidebarEvent();
   navbarEvent();
+  sidebarEvent();
 });
