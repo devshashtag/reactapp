@@ -1,111 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- scripts -->
-    <script type="module" src="/assets/js/pages/learning-steps.js"></script>
+  <!-- styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
-    <title>reactapp learning-step</title>
-  </head>
+  <title>reactapp learning-step</title>
+</head>
 
-  <body>
-    <!-- start learning-step -->
-    <main class="learning-steps">
-      <!-- main-banner -->
-      <div class="main-banner">
-        <h2>راهنمای یادگیری</h2>
+<body>
+  <!-- start learning-step -->
+  <main class="learning-steps">
+    <!-- main-banner -->
+    <div class="main-banner">
+      <h2>راهنمای یادگیری</h2>
+    </div>
+
+    <!-- steps content -->
+    <div class="steps__content">
+      <!-- content introduction -->
+      <div class="content__intro">
+        ما در reactapp.ir سعی می کنیم محتوای آموزشی را در اختیار شما کاربران
+        عزیز قرار دهیم تا بتوانید مفاهیم javascript در front-end و back-end را
+        به بهترین شکل ممکن فرا بگیرید و ضمن تبدیل شدن به یک Full Stack
+        Developer وارد بازار کار شوید، به همین جهت گام های یادگیری را برای شما
+        مشخص نموده ایم تا بتوانید به راحتی وارد دنیای javascript شوید.
       </div>
 
-      <!-- steps content -->
-      <div class="steps__content">
-        <!-- content introduction -->
-        <div class="content__intro">
-          ما در reactapp.ir سعی می کنیم محتوای آموزشی را در اختیار شما کاربران
-          عزیز قرار دهیم تا بتوانید مفاهیم javascript در front-end و back-end را
-          به بهترین شکل ممکن فرا بگیرید و ضمن تبدیل شدن به یک Full Stack
-          Developer وارد بازار کار شوید، به همین جهت گام های یادگیری را برای شما
-          مشخص نموده ایم تا بتوانید به راحتی وارد دنیای javascript شوید.
+      <!-- content header -->
+      <div class="content__header">
+        <div class="header__line"></div>
+        <div class="header__text">راهنمای یادگیری</div>
+        <div class="header__logo">
+          <i class="far fa-edit header__icon"></i>
         </div>
-
-        <!-- content header -->
-        <div class="content__header">
-          <div class="header__line"></div>
-          <div class="header__text">راهنمای یادگیری</div>
-          <div class="header__logo">
-            <i class="far fa-edit header__icon"></i>
-          </div>
-        </div>
-
-        <!-- content guide -->
-        <section class="content__guide">
-          <div class="guide__cards">
-            <a href="#">
-              <div class="guide__card guide__card--react">
-                <div class="card-content">
-                  <h2 class="card-title">آموزش React</h2>
-                  <p class="card-description">
-                    React یه کتابخونه جاوا اسکریپتیه که با استفاده از اون
-                    میتونین وب سایت و وب اپلیکیشن های فوق العاده سریع ایجاد
-                    کنین.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="guide__card guide__card--nodejs">
-                <div class="card-content">
-                  <h2 class="card-title">آموزش Nodejs</h2>
-                  <p class="card-description">
-                    Nodejs یه پلتفرم بر مبنای موتور جاوا اسکریپته که برای پیاده
-                    سازی برنامه های Real-time مبتی بر داده استفاده می شود.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="guide__card guide__card--react-native">
-                <div class="card-content">
-                  <h2 class="card-title">آموزش React Native</h2>
-                  <p class="card-description">
-                    React Natice یه فریمورک جاوا اسکریپتیه که میتونین با اون و
-                    تنها یکبار کد زدن و خروجی native برای دو سیستم عامل ios و
-                    android بگیرین.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="guide__card guide__card--javascript">
-                <div class="card-content">
-                  <h2 class="card-title">آموزش Javascript</h2>
-                  <p class="card-description">
-                    جاوا اسکریپت یه زبان برنامه نویسی قدرتمنده که با استفاده از
-                    اون می تونین اپلیکیشن های موبایل، وب سایت، وب اپلیکیشن و
-                    برنامه های تحت ویندوز بنویسین.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
       </div>
-    </main>
-    <!--end learning-step-->
-  </body>
+
+      <!-- content guide -->
+      <section class="content__guide">
+        <div class="guide__cards">
+          <a href="#">
+            <div class="guide__card guide__card--react">
+              <div class="card-content">
+                <h2 class="card-title">آموزش React</h2>
+                <p class="card-description">
+                  React یه کتابخونه جاوا اسکریپتیه که با استفاده از اون
+                  میتونین وب سایت و وب اپلیکیشن های فوق العاده سریع ایجاد
+                  کنین.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="guide__card guide__card--nodejs">
+              <div class="card-content">
+                <h2 class="card-title">آموزش Nodejs</h2>
+                <p class="card-description">
+                  Nodejs یه پلتفرم بر مبنای موتور جاوا اسکریپته که برای پیاده
+                  سازی برنامه های Real-time مبتی بر داده استفاده می شود.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="guide__card guide__card--react-native">
+              <div class="card-content">
+                <h2 class="card-title">آموزش React Native</h2>
+                <p class="card-description">
+                  React Natice یه فریمورک جاوا اسکریپتیه که میتونین با اون و
+                  تنها یکبار کد زدن و خروجی native برای دو سیستم عامل ios و
+                  android بگیرین.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="guide__card guide__card--javascript">
+              <div class="card-content">
+                <h2 class="card-title">آموزش Javascript</h2>
+                <p class="card-description">
+                  جاوا اسکریپت یه زبان برنامه نویسی قدرتمنده که با استفاده از
+                  اون می تونین اپلیکیشن های موبایل، وب سایت، وب اپلیکیشن و
+                  برنامه های تحت ویندوز بنویسین.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!--end learning-step-->
+
+
+  <!-- scripts -->
+  <script type="module" src="/assets/js/pages/learning-steps.js"></script>
+</body>
+
 </html>
