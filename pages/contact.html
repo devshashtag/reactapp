@@ -1,127 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
 
-    <!-- scripts -->
-    <script type="module" src="/assets/js/pages/contact.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
-    <title>reactapp contact</title>
-  </head>
+  <title>reactapp contact</title>
+</head>
 
-  <body>
-    <!-- start contact-us -->
-    <main class="contact-us">
-      <!-- main-banner -->
-      <div class="main-banner">
-        <h2 class="main-banner__title">
-          ما برای کمک به شما اینجا هستیم!<br />
-          هر زمان که بخواهید با ما در ارتباط باشید<span class="break-line"
-            >،</span
-          >
-          از پاسخ به سوالات شما خوشحال می شویم
-        </h2>
+<body>
+  <!-- start contact-us -->
+  <main class="contact-us">
+    <!-- main-banner -->
+    <div class="main-banner">
+      <h2 class="main-banner__title">
+        ما برای کمک به شما اینجا هستیم!<br />
+        هر زمان که بخواهید با ما در ارتباط باشید<span class="break-line">،</span>
+        از پاسخ به سوالات شما خوشحال می شویم
+      </h2>
+    </div>
+
+    <section class="contact-us__content">
+      <!-- content title -->
+      <div class="content__purpose">
+        هدف ما در وب سایت آموزشی reactapp.ir از ابتدا شروع فعالیت ایجاد یک
+        ارتباط قوی و موثر بین برنامه نویسان javascript بوده است. ما نسبت به
+        کاربران خود متعهدیم که سطح دوره ها و مقالات آموزشی که ارائه می دهیم
+        گویای این امر است. همیشه از یافتن راه حل چالش های شما خوشحالیم، و اگر
+        راه حلی از قبل وجود نداشته باشد یک راه حل جدید برای حل چالش شما ایجاد
+        خواهیم کرد. همچین برای حل مشکلات برنامه نویسی خود می توانید از طریق
+        بخش
+        <a href="/pages/forums.html">تالار گفتمان</a>
+        با ما و سایر توسعه دهندگان در ارتباط باشید
       </div>
 
-      <section class="contact-us__content">
-        <!-- content title -->
-        <div class="content__purpose">
-          هدف ما در وب سایت آموزشی reactapp.ir از ابتدا شروع فعالیت ایجاد یک
-          ارتباط قوی و موثر بین برنامه نویسان javascript بوده است. ما نسبت به
-          کاربران خود متعهدیم که سطح دوره ها و مقالات آموزشی که ارائه می دهیم
-          گویای این امر است. همیشه از یافتن راه حل چالش های شما خوشحالیم، و اگر
-          راه حلی از قبل وجود نداشته باشد یک راه حل جدید برای حل چالش شما ایجاد
-          خواهیم کرد. همچین برای حل مشکلات برنامه نویسی خود می توانید از طریق
-          بخش
-          <a href="/pages/forums.html">تالار گفتمان</a>
-          با ما و سایر توسعه دهندگان در ارتباط باشید
+      <!-- content comminu -->
+      <div class="content__send-msg">
+        <!-- send-msg header -->
+        <div class="send-msg__header">
+          <div class="header__line"></div>
+          <div class="header__text">پل های ارتباطی</div>
+          <div class="header__logo">
+            <i class="fas fa-phone"></i>
+          </div>
         </div>
 
-        <!-- content comminu -->
-        <div class="content__send-msg">
-          <!-- send-msg header -->
-          <div class="send-msg__header">
-            <div class="header__line"></div>
-            <div class="header__text">پل های ارتباطی</div>
-            <div class="header__logo">
-              <i class="fas fa-phone"></i>
-            </div>
-          </div>
-
-          <!-- send-msg find-us -->
-          <div class="send-msg__findus">
-            <p>ایمیل: reactapp.ir@gmail.com</p>
-            <p>شماره تماس: 09150274110</p>
-            <p>تلگرام: <a href="#">alirezabakamal@</a></p>
-          </div>
-
-          <!-- send-msg form -->
-          <form class="send-msg__form" action="" method="post">
-            <label
-              >ارتباط با:
-              <select name="support" required>
-                <option value="sales">واحد فروش</option>
-                <option value="help">واحد فنی</option>
-              </select>
-            </label>
-
-            <label for="lastname"
-              >نام شما:
-              <input
-                type="text"
-                name="username"
-                placeholder="لطفا نام خود را وارد کنید"
-                required
-              />
-            </label>
-
-            <div class="form-box">
-              <label
-                >ایمیل شما:
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="لطفا ایمیل خود را وارد کنید"
-                  required
-                />
-              </label>
-
-              <label
-                >شماره همراه:
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="درصورت تمایل شماره خود را وارد کنید"
-                />
-              </label>
-            </div>
-
-            <label
-              >متن پیام
-              <textarea
-                name="message"
-                placeholder="لطفا پیام خود را وارد کنید"
-                rows="5"
-                required
-              ></textarea>
-            </label>
-
-            <button class="form-submit" type="submit">ارسال</button>
-          </form>
+        <!-- send-msg find-us -->
+        <div class="send-msg__findus">
+          <p>ایمیل: reactapp.ir@gmail.com</p>
+          <p>شماره تماس: 09150274110</p>
+          <p>تلگرام: <a href="#">alirezabakamal@</a></p>
         </div>
-      </section>
-    </main>
-    <!-- end contact-us -->
-  </body>
+
+        <!-- send-msg form -->
+        <form class="send-msg__form" action="" method="post">
+          <label>ارتباط با:
+            <select name="support" required>
+              <option value="sales">واحد فروش</option>
+              <option value="help">واحد فنی</option>
+            </select>
+          </label>
+
+          <label for="lastname">نام شما:
+            <input type="text" name="username" placeholder="لطفا نام خود را وارد کنید" required />
+          </label>
+
+          <div class="form-box">
+            <label>ایمیل شما:
+              <input type="email" name="email" placeholder="لطفا ایمیل خود را وارد کنید" required />
+            </label>
+
+            <label>شماره همراه:
+              <input type="tel" name="phone" placeholder="درصورت تمایل شماره خود را وارد کنید" />
+            </label>
+          </div>
+
+          <label>متن پیام
+            <textarea name="message" placeholder="لطفا پیام خود را وارد کنید" rows="5" required></textarea>
+          </label>
+
+          <button class="form-submit" type="submit">ارسال</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- end contact-us -->
+
+  <!-- scripts -->
+  <script type="module" src="/assets/js/pages/contact.js"></script>
+</body>
+
 </html>
