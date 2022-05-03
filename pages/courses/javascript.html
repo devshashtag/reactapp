@@ -1,28 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- scripts -->
-    <script type="module" src="/assets/js/pages/course/javascript.js"></script>
+  <!-- styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
-    <title>reactapp javascript</title>
-  </head>
+  <title>reactapp javascript</title>
+</head>
 
-  <body class="js-body">
+<body class="js-body">
+  <!-- start sidebar -->
+  <div class="sidebar no-select">
+    <!-- sidebar search -->
+    <div class="sidebar__search">
+      <form class="search__form" role="search" method="get" action="/">
+        <input class="search-field" type="search" name="s" placeholder="ورود واژه کلیدی..." />
+        <button class="search-submit" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- sidebar navigation -->
+    <nav class="sidebar__nav">
+      <ul class="sidebar__list">
+        <li>
+          <a class="is-active" href="/">صفحه اصلی</a>
+        </li>
+
+        <!-- dropdown template -->
+        <li class="list__dropdown">
+          <div class="dropdown__header">
+            <a href="/pages/courses.html">دوره ها</a>
+
+            <i class="sidebar__dropdown--toggle fa fa-angle-left"></i>
+          </div>
+          <ul class="dropdown__list">
+            <li>
+              <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="/pages/blog.html">بلاگ</a>
+        </li>
+
+        <li>
+          <a href="/pages/forums.html">تالار گفتمان</a>
+        </li>
+
+        <li>
+          <a href="#tel">کانال تلگرام</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- end sidebar -->
+
+  <!-- start body wrapper -->
+  <div class="body--wrap">
+    <!-- overlay all elements -->
+    <div class="body--overlay"></div>
+
+    <!-- start topbar -->
+    <div class="topbar no-select">
+      <div class="topbar__container">
+        <ul class="topbar__links">
+          <li>
+            <a class="topbar__link" href="/pages/about-us.html">درباره ما</a>
+          </li>
+          <li>
+            <a class="topbar__link" href="/pages/contact.html">تماس با ما</a>
+          </li>
+        </ul>
+        <div class="topbar__icons">
+          <div class="topbar__icon topbar__search">
+            <a><i class="topbar__search--toggle fa fa-search" aria-hidden="true"></i></a>
+          </div>
+          <div class="topbar__icon topbar__bag">
+            <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+          </div>
+          <div class="topbar__icon topbar__perm">
+            <a href="/pages/my-account.html"><i class="fas fa-user" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end topbar -->
+
+    <!-- start navbar -->
+    <div class="navbar no-select">
+      <div class="navbar__container">
+        <!-- navbar search -->
+        <div class="navbar__search">
+          <form class="search__form" role="search" method="get" action="/">
+            <input class="search-input" type="search" name="s" placeholder="جستجوی دوره، استاد، مطالب و ..." />
+            <button class="search-submit" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+        <!-- navbar menu -->
+        <nav class="navbar__menu">
+          <!-- menu list -->
+          <ul class="menu__list">
+            <li>
+              <a class="is-active" href="/">صفحه اصلی</a>
+            </li>
+
+            <!-- dropdown template -->
+            <li class="list__dropdown">
+              <div class="dropdown__header">
+                <a href="/pages/courses.html">دوره ها</a>
+
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <ul class="dropdown__list">
+                <li>
+                  <a href="/pages/learning-steps.html">راهنمای یادگیری</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="/pages/blog.html">بلاگ</a>
+            </li>
+
+            <li>
+              <a href="/pages/forums.html">تالار گفتمان</a>
+            </li>
+
+            <li>
+              <a href="#tel">کانال تلگرام</a>
+            </li>
+          </ul>
+          <!-- menu button -->
+          <a class="menu__account" href="/pages/my-account.html">
+            <i class="account__icon fa fa-user-lock">&nbsp;</i> ورود و ثبت نام
+          </a>
+        </nav>
+        <!-- navbar brand -->
+        <div class="navbar__brand">
+          <!-- brand image -->
+          <div class="brand__img">
+            <a href="/">
+              <img src="/assets/images/navbar/brand.png" alt="reactapp brand" />
+            </a>
+          </div>
+          <!-- sidebar toggle in navbar as toggle -->
+          <div class="navbar--toggle">
+            <div class="toggle__top"></div>
+            <div class="toggle__mid"></div>
+            <div class="toggle__btm"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
+
     <!-- breadcrumb -->
     <div class="breadcrumb">
       <div class="breadcrumb__wrapper">
@@ -51,10 +195,7 @@
       <main class="main-course">
         <!-- image js courses -->
         <div class="image-course-container">
-          <img
-            src="../../assets/images/courses/1.jpg"
-            alt="آموزش پیشرفته جاوا اسکریپت"
-          />
+          <img src="../../assets/images/courses/1.jpg" alt="آموزش پیشرفته جاوا اسکریپت" />
           <div class="image_play-icon">
             <div class="play-icon">
               <i class="fas fa-play"></i>
@@ -144,10 +285,7 @@
           <!-- our instagram -->
           <div class="our-instagram">
             <div class="image-instagram">
-              <img
-                src="../../assets/images/courses/javascript/INSAT-3.jpg"
-                alt="Our Instagram"
-              />
+              <img src="../../assets/images/courses/javascript/INSAT-3.jpg" alt="Our Instagram" />
             </div>
           </div>
         </aside>
@@ -184,18 +322,11 @@
           <!-- Why Js blog -->
           <div class="why-js-post">
             <div class="image-js-post">
-              <img
-                src="../../assets/images/courses/javascript/Learn-Javascript-1-300x208.jpg"
-                alt="why js?"
-              />
+              <img src="../../assets/images/courses/javascript/Learn-Javascript-1-300x208.jpg" alt="why js?" />
             </div>
             <div class="post-title">چرا باید جاوا اسکریپت را یاد بگیریم؟</div>
             <div class="next-arrow">
-              <img
-                class="next-arrow"
-                src="../../assets/icons/next-arrow.png"
-                alt="next-arrow"
-              />
+              <img class="next-arrow" src="../../assets/icons/next-arrow.png" alt="next-arrow" />
             </div>
           </div>
           <br />
@@ -1123,44 +1254,26 @@
                         دیدگاه شما
                         <span class="reqire-input">*</span>
                       </label>
-                      <textarea
-                        id="msg-content"
-                        name="usermsg"
-                        class="input"
-                      ></textarea>
+                      <textarea id="msg-content" name="usermsg" class="input"></textarea>
                     </div>
                   </div>
 
                   <div class="form__info">
                     <div class="input__wrapper">
-                      <label for="info-name"
-                        >نام
+                      <label for="info-name">نام
                         <span class="reqire-input">*</span>
                       </label>
-                      <input
-                        type="text"
-                        name="username"
-                        id="info-name"
-                        class="input"
-                      />
+                      <input type="text" name="username" id="info-name" class="input" />
                     </div>
                     <div class="input__wrapper">
-                      <label for="info-email"
-                        >ایمیل
+                      <label for="info-email">ایمیل
                         <span class="reqire-input">*</span>
                       </label>
-                      <input
-                        type="text"
-                        name="email"
-                        id="info-email"
-                        class="input"
-                      />
+                      <input type="text" name="email" id="info-email" class="input" />
                     </div>
                     <div class="info__captcha">
                       <div class="input__wrapper">
-                        <label for="send-comment-captcha"
-                          >i'm not a robot</label
-                        >
+                        <label for="send-comment-captcha">i'm not a robot</label>
                         <input type="checkbox" id="send-comment-captcha" />
                       </div>
                       <div class="captcha__details">
@@ -1176,11 +1289,7 @@
                     </div>
                   </div>
 
-                  <button
-                    type="submit"
-                    class="form__submit no-selec"
-                    id="submit-new-comment"
-                  >
+                  <button type="submit" class="form__submit no-selec" id="submit-new-comment">
                     فرستادن دیدگاه
                   </button>
                 </form>
@@ -1275,10 +1384,7 @@
         <!-- programmer-course -->
         <div class="programmer-course">
           <div class="programmer-image">
-            <img
-              src="../../assets/images/courses/javascript/Mahdi-Hasanzadeh-e1611826674339-120x120.jpeg"
-              alt="مهدی"
-            />
+            <img src="../../assets/images/courses/javascript/Mahdi-Hasanzadeh-e1611826674339-120x120.jpeg" alt="مهدی" />
           </div>
           <div class="programmer-desc">
             <h4>مهدی</h4>
@@ -1288,10 +1394,7 @@
         <!-- our instagram -->
         <div class="our-instagram">
           <div class="image-instagram">
-            <img
-              src="../../assets/images/courses/javascript/INSAT-3.jpg"
-              alt="Our Instagram"
-            />
+            <img src="../../assets/images/courses/javascript/INSAT-3.jpg" alt="Our Instagram" />
           </div>
         </div>
         <!-- share box -->
@@ -1313,8 +1416,48 @@
       </aside>
     </section>
 
-    <div class="btn-scroll">
-      <a href="#"><i class="fas fa-chevron-up"></i></a>
+    <!-- start footer -->
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__contact-info">
+          <h3 class="contact-info__title">منتظرتون هستیم</h3>
+          <div class="info-box">
+            <i class="fas fa-phone" aria-hidden="true"></i>09109999999
+          </div>
+          <div class="info-box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:reactapp.ir@gmail.com">reactapp.ir@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <ul>
+            <li><a href="/pages/blog.html">بلاگ</a></li>
+            <li><a href="#">ویدیو کست</a></li>
+            <li><a href="/pages/terms.html">قوانین</a></li>
+          </ul>
+        </div>
+        <div class="footer__text">
+          تمام تلاش ما در برند reactapp در کنار آموزش با کیفیت و استفاده از
+          دانش روز، اضافه کردن چاشنی تجربه چندین ساله فعالیت در پروژه های
+          داخلی و خارجی بوده. زمانی که شما به یادگیری اختصاص دادید برای ما
+          اهمیت بسیار بالایی داره و به همین دلیل سعی میکنیم متحوای تولید شده،
+          غنی، پر بار و در راستای نیاز های بازار کار باشه.
+        </div>
+      </div>
+      <div class="footer__copyright">
+        کلیه حقوق این سایت محفوظ و متعلق به reactapp.ir میباشد.
+      </div>
     </div>
-  </body>
+    <!-- end footer -->
+  </div>
+  <!-- end body wrapper -->
+
+  <div class="btn-scroll">
+    <a href="#"><i class="fas fa-chevron-up"></i></a>
+  </div>
+
+  <!-- scripts -->
+  <script type="module" src="/assets/js/pages/course/javascript.js"></script>
+</body>
+
 </html>

@@ -1,13 +1,10 @@
 import { getElement } from "/assets/js/global/utils.js";
-import { renderDefaultTemplate } from "/assets/js/global/render.js";
+import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/headerEvents.js";
 
 let $ = document;
 
 //* runs when page load
 window.addEventListener("DOMContentLoaded", function () {
-  // header, footer
-  renderDefaultTemplate(document.body.innerHTML);
-
   // code here
   // Frequently Asked Questions
   const questions = getElement(".frequently-questions");
@@ -77,4 +74,9 @@ window.addEventListener("DOMContentLoaded", function () {
       asideCourse.classList.remove("aside-active");
     }
   });
+
+  // Header Events
+  topbarEvent();
+  navbarEvent();
+  sidebarEvent();
 });
