@@ -211,7 +211,7 @@
           display: none;
         }
 
-        .changer--login {
+        [class^="changer--"] {
           font-family: inherit;
           cursor: pointer;
           color: $black-clr-1;
