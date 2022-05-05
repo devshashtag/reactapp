@@ -68,7 +68,7 @@ section {
   left: 0;
   top: 0;
   width: 4rem;
-  padding:1rem;
+  padding: 1rem;
   font-size: 1.7rem;
 
   @include flex();
@@ -96,14 +96,14 @@ section {
 }
 
 %formSelect {
-  background-color:$gray-clr-7;
+  background-color: $gray-clr-7;
   border: 1px solid $gray-clr-4;
-  cursor:pointer;
+  cursor: pointer;
   width: 100%;
   padding: 0.6rem 1rem;
-  margin-top:.5rem;
+  margin-top: 0.5rem;
   border-radius: 4px;
-  font-size:1.3rem;
+  font-size: 1.3rem;
   font-family: inherit;
   line-height: inherit;
 
@@ -122,6 +122,6 @@ section {
   user-select: none;
 }
 
-.no-selec:focus {
+.no-select:focus {
   outline: none !important;
 }
