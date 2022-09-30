@@ -1,4 +1,4 @@
-project_name="ReactApp"
+project_name="reactapp"
 temp_dir="template"
 mkdir -p "$temp_dir"
 

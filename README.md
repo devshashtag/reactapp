@@ -132,13 +132,13 @@ terms.html
 > chmod +x scripts/page_creator.sh; ./scripts/page_creator.sh
 
 Enter html path (example: folder_name/file_name.html):
-ReactApp/pages/terms.html
+reactapp/pages/terms.html
 ========================================
 html file successfully created at:
-ReactApp/pages/terms.html
+reactapp/pages/terms.html
 ========================================
-scss path: ReactApp/assets/scss/pages/_terms.scss
-js   path: ReactApp/assets/js/pages/terms.js
+scss path: reactapp/assets/scss/pages/_terms.scss
+js   path: reactapp/assets/js/pages/terms.js
 ========================================
 for scss file Enter 1
 for js   file Enter 2
@@ -147,9 +147,9 @@ for exit Enter other numbers
 Enter a number: 3
 ========================================
 scss file successfully created at:
-> ReactApp/assets/scss/pages/_terms.scss
+> reactapp/assets/scss/pages/_terms.scss
 ========================================
 js file successfully created at:
-> ReactApp/assets/js/pages/terms.js
+> reactapp/assets/js/pages/terms.js
 ========================================
 ```

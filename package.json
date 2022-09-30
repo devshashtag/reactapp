@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevsHashtag/ReactApp.git"
+    "url": "git+https://github.com/DevsHashtag/reactapp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DevsHashtag/ReactApp/issues"
+    "url": "https://github.com/DevsHashtag/reactapp/issues"
   },
-  "homepage": "https://github.com/DevsHashtag/ReactApp#readme"
+  "homepage": "https://github.com/DevsHashtag/reactapp#readme"
 }
