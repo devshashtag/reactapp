@@ -1,10 +1,14 @@
 //? global imports
-import { getElement } from "/assets/js/global/utils.js";
-import { dispalyCourses } from "/assets/js/global/display.js";
-import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/headerEvents.js";
+import { getElement } from "/reactapp/assets/js/global/utils.js";
+import { dispalyCourses } from "/reactapp/assets/js/global/display.js";
+import {
+  topbarEvent,
+  navbarEvent,
+  sidebarEvent,
+} from "/reactapp/assets/js/global/headerEvents.js";
 
 //? specific imports
-import courses from "/assets/js/data/courses.js";
+import courses from "/reactapp/assets/js/data/courses.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   //* display courses

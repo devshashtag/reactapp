@@ -1,4 +1,8 @@
-import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/headerEvents.js";
+import {
+  topbarEvent,
+  navbarEvent,
+  sidebarEvent,
+} from "/reactapp/assets/js/global/headerEvents.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   // code here
@@ -8,4 +12,3 @@ window.addEventListener("DOMContentLoaded", function () {
   navbarEvent();
   sidebarEvent();
 });
-

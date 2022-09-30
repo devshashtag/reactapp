@@ -1,4 +1,4 @@
-import { getElement, toggleClasses } from "/assets/js/global/utils.js";
+import { getElement, toggleClasses } from "/reactapp/assets/js/global/utils.js";
 
 // Event functions
 function topbarEvent() {

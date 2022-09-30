@@ -59,7 +59,7 @@ cat <<EOL >> "${html_file}"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/reactapp/assets/css/styles.css" />
     <title>${project_name} ${html_name}</title>
   </head>
 
@@ -67,7 +67,7 @@ cat <<EOL >> "${html_file}"
     <h1>${project_name} ${html_name}</h1>
 
     <!-- script loader -->
-    <script type="module" src="/assets/js/index.js"></script>
+    <script type="module" src="/reactapp/assets/js/index.js"></script>
   </body>
 </html>
 EOL

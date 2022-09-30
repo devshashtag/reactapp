@@ -1,5 +1,9 @@
-import { getElement } from "/assets/js/global/utils.js";
-import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/headerEvents.js";
+import { getElement } from "/reactapp/assets/js/global/utils.js";
+import {
+  topbarEvent,
+  navbarEvent,
+  sidebarEvent,
+} from "/reactapp/assets/js/global/headerEvents.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   // code here

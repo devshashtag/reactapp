@@ -31,64 +31,64 @@ html {
   font-family: IRANSans;
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/fonts/iransans/eot/iransans-web-black.eot");
-  src: url("/assets/fonts/iransans/woff2/iransans-web-black.woff2") format("woff2"), url("/assets/fonts/iransans/woff/iransans-web-black.woff") format("woff"), url("/assets/fonts/iransans/ttf/iransans-web-black.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/iransans/eot/iransans-web-black.eot");
+  src: url("/reactapp/assets/fonts/iransans/woff2/iransans-web-black.woff2") format("woff2"), url("/reactapp/assets/fonts/iransans/woff/iransans-web-black.woff") format("woff"), url("/reactapp/assets/fonts/iransans/ttf/iransans-web-black.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: IRANSans;
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/fonts/iransans/eot/iransans-web-medium.eot");
-  src: url("/assets/fonts/iransans/woff2/iransans-web-medium.woff2") format("woff2"), url("/assets/fonts/iransans/woff/iransans-web-medium.woff") format("woff"), url("/assets/fonts/iransans/ttf/iransans-web-medium.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/iransans/eot/iransans-web-medium.eot");
+  src: url("/reactapp/assets/fonts/iransans/woff2/iransans-web-medium.woff2") format("woff2"), url("/reactapp/assets/fonts/iransans/woff/iransans-web-medium.woff") format("woff"), url("/reactapp/assets/fonts/iransans/ttf/iransans-web-medium.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: IRANSans;
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/iransans/eot/iransans-web-light.eot");
-  src: url("/assets/fonts/iransans/woff2/iransans-web-light.woff2") format("woff2"), url("/assets/fonts/iransans/woff/iransans-web-light.woff") format("woff"), url("/assets/fonts/iransans/ttf/iransans-web-light.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/iransans/eot/iransans-web-light.eot");
+  src: url("/reactapp/assets/fonts/iransans/woff2/iransans-web-light.woff2") format("woff2"), url("/reactapp/assets/fonts/iransans/woff/iransans-web-light.woff") format("woff"), url("/reactapp/assets/fonts/iransans/ttf/iransans-web-light.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: IRANSans;
   font-style: normal;
   font-weight: 200;
-  src: url("/assets/fonts/iransans/eot/iransans-web-ultralight.eot");
-  src: url("/assets/fonts/iransans/woff2/iransans-web-ultralight.woff2") format("woff2"), url("/assets/fonts/iransans/woff/iransans-web-ultralight.woff") format("woff"), url("/assets/fonts/iransans/ttf/iransans-web-ultralight.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/iransans/eot/iransans-web-ultralight.eot");
+  src: url("/reactapp/assets/fonts/iransans/woff2/iransans-web-ultralight.woff2") format("woff2"), url("/reactapp/assets/fonts/iransans/woff/iransans-web-ultralight.woff") format("woff"), url("/reactapp/assets/fonts/iransans/ttf/iransans-web-ultralight.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: IRANSans;
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/iransans/eot/iransans-web.eot");
-  src: url("/assets/fonts/iransans/woff2/iransans-web.woff2") format("woff2"), url("/assets/fonts/iransans/woff/iransans-web.woff") format("woff"), url("/assets/fonts/iransans/ttf/iransans-web.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/iransans/eot/iransans-web.eot");
+  src: url("/reactapp/assets/fonts/iransans/woff2/iransans-web.woff2") format("woff2"), url("/reactapp/assets/fonts/iransans/woff/iransans-web.woff") format("woff"), url("/reactapp/assets/fonts/iransans/ttf/iransans-web.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: yekan;
   font-style: normal;
   font-weight: 600;
-  src: url("/assets/fonts/yekan/eot/iran-yekan-web-bold.eot");
-  src: url("/assets/fonts/yekan/woff/iran-yekan-web-bold.woff") format("woff"), url("/assets/fonts/yekan/ttf/iran-yekan-web-bold.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/yekan/eot/iran-yekan-web-bold.eot");
+  src: url("/reactapp/assets/fonts/yekan/woff/iran-yekan-web-bold.woff") format("woff"), url("/reactapp/assets/fonts/yekan/ttf/iran-yekan-web-bold.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: yekan;
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/fonts/yekan/eot/iran-yekan-web-light.eot");
-  src: url("/assets/fonts/yekan/woff/iran-yekan-web-light.woff") format("woff"), url("/assets/fonts/yekan/ttf/iran-yekan-web-light.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/yekan/eot/iran-yekan-web-light.eot");
+  src: url("/reactapp/assets/fonts/yekan/woff/iran-yekan-web-light.woff") format("woff"), url("/reactapp/assets/fonts/yekan/ttf/iran-yekan-web-light.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: yekan;
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/fonts/yekan/eot/iran-yekan-web-regular.eot");
-  src: url("/assets/fonts/yekan/woff/iran-yekan-web-regular.woff") format("woff"), url("/assets/fonts/yekan/ttf/iran-yekan-web-regular.ttf") format("truetype");
+  src: url("/reactapp/assets/fonts/yekan/eot/iran-yekan-web-regular.eot");
+  src: url("/reactapp/assets/fonts/yekan/woff/iran-yekan-web-regular.woff") format("woff"), url("/reactapp/assets/fonts/yekan/ttf/iran-yekan-web-regular.ttf") format("truetype");
 }
 body {
   font-family: IRANSans, yekan, Arial, sans-serif;
@@ -579,7 +579,7 @@ section {
 }
 
 .banner-mid {
-  background: url("/assets/images/banners/home-banner-2.png") no-repeat center center/cover;
+  background: url("/reactapp/assets/images/banners/home-banner-2.png") no-repeat center center/cover;
   height: 35rem;
   display: flex;
   flex-direction: column;
@@ -1682,7 +1682,7 @@ section {
 }
 
 .learning-steps .main-banner {
-  background-image: url("/assets/images/banners/learning-steps.jpg");
+  background-image: url("/reactapp/assets/images/banners/learning-steps.jpg");
 }
 .learning-steps .steps__content {
   width: 100%;
@@ -1820,25 +1820,25 @@ section {
   background: linear-gradient(180deg, #4d01df 0%, #8a2be1 100%);
 }
 .learning-steps .guide__card--react .card-content {
-  background-image: url("/assets/images/learning-steps/card-react.png");
+  background-image: url("/reactapp/assets/images/learning-steps/card-react.png");
 }
 .learning-steps .guide__card--nodejs {
   background: linear-gradient(180deg, #1d7401 0%, #6e9601 100%);
 }
 .learning-steps .guide__card--nodejs .card-content {
-  background-image: url("/assets/images/learning-steps/card-nodejs.png");
+  background-image: url("/reactapp/assets/images/learning-steps/card-nodejs.png");
 }
 .learning-steps .guide__card--react-native {
   background: linear-gradient(180deg, #4751ca 0%, #00a2e3 100%);
 }
 .learning-steps .guide__card--react-native .card-content {
-  background-image: url("/assets/images/learning-steps/card-react_native.png");
+  background-image: url("/reactapp/assets/images/learning-steps/card-react_native.png");
 }
 .learning-steps .guide__card--javascript {
   background: linear-gradient(180deg, #edaf20 0%, #ed5e01 100%);
 }
 .learning-steps .guide__card--javascript .card-content {
-  background-image: url("/assets/images/learning-steps/card-javascript.png");
+  background-image: url("/reactapp/assets/images/learning-steps/card-javascript.png");
 }
 .learning-steps .card-content {
   display: flex;
@@ -2899,7 +2899,7 @@ section {
   width: 130px;
   height: 130px;
   margin: auto;
-  background: url("/assets/images/my-account/account-logo.png") no-repeat center center;
+  background: url("/reactapp/assets/images/my-account/account-logo.png") no-repeat center center;
   background-color: #ffb606;
   border-radius: 100%;
 }
@@ -3113,7 +3113,7 @@ section {
 }
 
 .contact-us .main-banner {
-  background-image: url("/assets/images/banners/contact-us.jpg");
+  background-image: url("/reactapp/assets/images/banners/contact-us.jpg");
 }
 .contact-us__content {
   background-color: #fff;

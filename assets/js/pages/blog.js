@@ -1,9 +1,13 @@
-import { getElement } from "/assets/js/global/utils.js";
-import { displayBlogs } from "/assets/js/global/display.js";
-import { topbarEvent, navbarEvent, sidebarEvent } from "/assets/js/global/headerEvents.js";
+import { getElement } from "/reactapp/assets/js/global/utils.js";
+import { displayBlogs } from "/reactapp/assets/js/global/display.js";
+import {
+  topbarEvent,
+  navbarEvent,
+  sidebarEvent,
+} from "/reactapp/assets/js/global/headerEvents.js";
 
 // blogs data
-import blogs from "/assets/js/data/blogs.js";
+import blogs from "/reactapp/assets/js/data/blogs.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   // code here
