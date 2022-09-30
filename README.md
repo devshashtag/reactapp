@@ -41,14 +41,12 @@ reactapp.ir template
 - [x] add link to topbar icons
 - [x] remove global.js if not used
 - [x] check firefox issue on navbar>search-bar font
-- [ ] land it on github pages
+- [x] land it on github pages
 - [ ] minify js, css files with webpack
 - [ ] export an kit-starter scss for later-use
 - [ ] format/reafactor all html files
 - [ ] format/reafactor all scss files
 - [ ] format/reafactor all js files
-
-## sajjad todo > left the project > todos moved for devshashtag
 
 ## david todo
 
@@ -69,8 +67,6 @@ reactapp.ir template
 - [ ] format html
 - [ ] format scss
 - [ ] format js
-
-## ansari todo > left the project > todos moved for devshashtag
 
 # npm scripts
 
