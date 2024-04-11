@@ -58,14 +58,14 @@ $green-clr: #1fbd50;
 $green-clr-1: #055;
 
 //* used in links hover
-$cyan-clr-2:#2db29e;
-$cyan-clr-5:#8ff;
-$cyan-clr-8:#4ff;
+$cyan-clr-2: #2db29e;
+$cyan-clr-5: #8ff;
+$cyan-clr-8: #4ff;
 
-$react-gr-clr:linear-gradient(180deg,#4d01df 0%,#8a2be1 100%);
-$nodeJs-gr-clr:linear-gradient(180deg,#1d7401 0%,#6e9601 100%);
-$js-gr-clr:linear-gradient(180deg,#edaf20 0%,#ed5e01 100%);
-$reactnative-gr-clr:linear-gradient(180deg,#4751ca 0%,#00a2e3 100%);
+$react-gr-clr: linear-gradient(180deg, #4d01df 0%, #8a2be1 100%);
+$nodeJs-gr-clr: linear-gradient(180deg, #1d7401 0%, #6e9601 100%);
+$js-gr-clr: linear-gradient(180deg, #edaf20 0%, #ed5e01 100%);
+$reactnative-gr-clr: linear-gradient(180deg, #4751ca 0%, #00a2e3 100%);
 
 //*comment
 $comment-msg-clr: #7d7e7f;
@@ -154,8 +154,7 @@ $recover-pass-form-header-text-fg: #7d7e7f;
 
 //? sizes
 //* used in main-container
-$max-width: 1230px;
+$max-width: 1400px;
 
 //* my-account top-bottom logo padding
 $account-logo-padding: 12rem;
-

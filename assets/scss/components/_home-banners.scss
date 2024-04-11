@@ -4,8 +4,9 @@
 }
 
 .banner-mid {
-  background: url("/reactapp/assets/images/banners/home-banner-2.png") no-repeat
-    center center/cover;
+  max-width: calc($max-width * 1.5);
+  margin: 0 auto;
+  background: url('/reactapp/assets/images/banners/home-banner-2.png') no-repeat center center/cover;
   height: 35rem;
   display: flex;
   flex-direction: column;

@@ -1,31 +1,18 @@
-import { getElement } from "/reactapp/assets/js/global/utils.js";
-import {
-  topbarEvent,
-  navbarEvent,
-  sidebarEvent,
-} from "/reactapp/assets/js/global/headerEvents.js";
-
-window.addEventListener("DOMContentLoaded", function () {
-  // code here
+window.addEventListener('DOMContentLoaded', function () {
   // toggles
-  const changerLogin = getElement(".changer--login");
-  const changerRegister = getElement(".changer--register");
+  const toggleLogin = document.querySelector('.changer--login');
+  const toggleRegister = document.querySelector('.changer--register');
 
   // forms
-  const accountLogin = getElement(".wrapper__login");
-  const accountRegister = getElement(".wrapper__register");
+  const login = document.querySelector('.wrapper__login');
+  const register = document.querySelector('.wrapper__register');
 
   // callbacks
   function accountCB() {
-    accountLogin.classList.toggle("is-active");
-    accountRegister.classList.toggle("is-active");
+    login.classList.toggle('is-active');
+    register.classList.toggle('is-active');
   }
 
-  changerLogin.addEventListener("click", accountCB);
-  changerRegister.addEventListener("click", accountCB);
-
-  // Header Events
-  topbarEvent();
-  navbarEvent();
-  sidebarEvent();
+  toggleLogin.addEventListener('click', accountCB);
+  toggleRegister.addEventListener('click', accountCB);
 });

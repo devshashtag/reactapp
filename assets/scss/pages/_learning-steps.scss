@@ -1,6 +1,6 @@
 .learning-steps {
   .main-banner {
-    background-image: url("/reactapp/assets/images/banners/learning-steps.jpg");
+    background-image: url('/reactapp/reactapp/assets/images/banners/learning-steps.jpg');
   }
 
   .steps__content {
@@ -127,28 +127,28 @@
       &--react {
         background: $react-gr-clr;
         .card-content {
-          background-image: url("/reactapp/assets/images/learning-steps/card-react.png");
+          background-image: url('/reactapp/reactapp/assets/images/learning-steps/card-react.png');
         }
       }
 
       &--nodejs {
         background: $nodeJs-gr-clr;
         .card-content {
-          background-image: url("/reactapp/assets/images/learning-steps/card-nodejs.png");
+          background-image: url('/reactapp/reactapp/assets/images/learning-steps/card-nodejs.png');
         }
       }
 
       &--react-native {
         background: $reactnative-gr-clr;
         .card-content {
-          background-image: url("/reactapp/assets/images/learning-steps/card-react_native.png");
+          background-image: url('/reactapp/reactapp/assets/images/learning-steps/card-react_native.png');
         }
       }
 
       &--javascript {
         background: $js-gr-clr;
         .card-content {
-          background-image: url("/reactapp/assets/images/learning-steps/card-javascript.png");
+          background-image: url('/reactapp/reactapp/assets/images/learning-steps/card-javascript.png');
         }
       }
     }
